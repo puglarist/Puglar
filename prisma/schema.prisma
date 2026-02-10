@@ -11,12 +11,14 @@ enum UserRole {
   PLAYER
   MODDER
   CREATOR
+  MODERATOR
   ADMIN
 }
 
 enum PresenceStatus {
   ONLINE
   IN_MATCH
+  IN_STUDIO
   IDLE
   OFFLINE
 }
@@ -34,8 +36,8 @@ enum Platform {
 enum BuildChannel {
   ALPHA
   BETA
-  LIVE
   PTR
+  LIVE
 }
 
 enum ModVisibility {
@@ -58,6 +60,7 @@ enum MatchMode {
   CUSTOM
   TOURNAMENT
   PVE
+  HARDCORE
 }
 
 enum RealmType {
@@ -85,6 +88,7 @@ enum AssetType {
   BLUEPRINT
   MAP
   PREFAB
+  NIAGARA_EFFECT
 }
 
 enum InputDevice {
@@ -103,6 +107,7 @@ enum WorkloadType {
   AUDIO
   SCRIPT
   XR
+  STORAGE
 }
 
 enum TicketStatus {
@@ -119,6 +124,39 @@ enum ModerationActionType {
   KICK
   BAN
   MOD_REMOVE
+}
+
+enum AuthorityModel {
+  DEDICATED_SERVER
+  LISTEN_SERVER
+  PEER_ASSISTED
+}
+
+enum VoiceTransport {
+  NONE
+  PROXIMITY
+  TEAM
+  GLOBAL
+}
+
+enum BuildArtifactType {
+  CLIENT
+  DEDICATED_SERVER
+  CONTENT_BUNDLE
+  MOD_SDK
+}
+
+enum InventoryRarity {
+  COMMON
+  RARE
+  EPIC
+  LEGENDARY
+}
+
+enum AntiCheatSignal {
+  CLEAN
+  SUSPECT
+  BLOCKED
 }
 
 model User {
@@ -144,19 +182,23 @@ model User {
   reportsAuthored    IssueTicket[]             @relation("IssueReporter")
   reportsAssigned    IssueTicket[]             @relation("IssueAssignee")
   moderationActions  ModerationAction[]        @relation("ActionBy")
-  bans               ModerationAction[]        @relation("ActionTarget")
+  penaltiesReceived  ModerationAction[]        @relation("ActionTarget")
   telemetryEvents    TelemetryEvent[]
   workloadSnapshots  WorkloadSnapshot[]
   crashReports       CrashReport[]
   chatMessages       ChatMessage[]
   createdBlueprints  BlueprintAsset[]          @relation("BlueprintAuthor")
   createdQuestGraphs QuestGraph[]              @relation("QuestAuthor")
+  buildAuthorships   EngineBuild[]             @relation("BuildAuthor")
+  inventories        PlayerInventory[]
+  loadoutBindings    AbilityLoadoutBinding[]
+  replayOwnerships   MatchReplay[]
 
   @@index([role, status])
 }
 
 model UserProfile {
-  userId                  String   @id
+  userId                  String      @id
   avatarUrl               String?
   bio                     String?
   pronouns                String?
@@ -166,47 +208,55 @@ model UserProfile {
   dominantHand            String?
   vrMotionSicknessProfile String?
   comfortSettings         Json?
-  createdAt               DateTime @default(now())
-  updatedAt               DateTime @updatedAt
-  user                    User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  locomotionStyle         String?
+  hapticsIntensityPct     Int?
+  createdAt               DateTime    @default(now())
+  updatedAt               DateTime    @updatedAt
+  user                    User        @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
 model UserDevice {
-  id                String      @id @default(cuid())
-  userId            String
-  platform          Platform
-  hardwareClass     String
-  gpuTier           String?
-  cpuTier           String?
-  memoryGb          Int?
-  supportsVR        Boolean     @default(false)
-  supportsHandTrack Boolean     @default(false)
-  supportsWebXR     Boolean     @default(false)
-  benchmarkScore    Float?
-  lastSeenAt        DateTime?
-  user              User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  id                   String          @id @default(cuid())
+  userId               String
+  platform             Platform
+  hardwareClass        String
+  gpuTier              String?
+  cpuTier              String?
+  memoryGb             Int?
+  supportsVR           Boolean         @default(false)
+  supportsHandTrack    Boolean         @default(false)
+  supportsWebXR        Boolean         @default(false)
+  benchmarkScore       Float?
+  antiCheatSignal      AntiCheatSignal @default(CLEAN)
+  firmwareVersion      String?
+  runtimeName          String?
+  runtimeVersion       String?
+  lastSeenAt           DateTime?
+  user                 User            @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId, platform])
+  @@index([antiCheatSignal, lastSeenAt])
 }
 
 model Realm {
-  id                 String        @id @default(cuid())
+  id                 String               @id @default(cuid())
   ownerId            String
-  slug               String        @unique
+  slug               String               @unique
   name               String
   description        String?
   type               RealmType
-  status             ContentStatus @default(DRAFT)
-  maxPlayers         Int           @default(64)
-  supportsVR         Boolean       @default(true)
-  supportsWebXR      Boolean       @default(true)
-  physicsTickRate    Int           @default(60)
-  serverAuthority    Boolean       @default(true)
+  status             ContentStatus        @default(DRAFT)
+  maxPlayers         Int                  @default(64)
+  supportsVR         Boolean              @default(true)
+  supportsWebXR      Boolean              @default(true)
+  physicsTickRate    Int                  @default(60)
+  authorityModel     AuthorityModel       @default(DEDICATED_SERVER)
+  netcodeRegionHint  String?
   environmentProfile Json?
   publishedAt        DateTime?
-  createdAt          DateTime      @default(now())
-  updatedAt          DateTime      @updatedAt
-  owner              User          @relation("RealmOwner", fields: [ownerId], references: [id], onDelete: Cascade)
+  createdAt          DateTime             @default(now())
+  updatedAt          DateTime             @updatedAt
+  owner              User                 @relation("RealmOwner", fields: [ownerId], references: [id], onDelete: Cascade)
   members            RealmMember[]
   lobbies            Lobby[]
   mapRevisions       MapRevision[]
@@ -214,96 +264,125 @@ model Realm {
   loadouts           GameplayLoadout[]
   tickets            IssueTicket[]
   chatChannels       ChatChannel[]
+  partitions         WorldPartitionCell[]
+  replicationRules   ReplicationGraphRule[]
+  xrProfiles         XRSceneProfile[]
+  replays            MatchReplay[]
+  economyItems       InventoryItemDefinition[]
+  leaderboardSeasons LeaderboardSeason[]
 
   @@index([ownerId, status])
   @@index([type, supportsVR, supportsWebXR])
 }
 
 model RealmMember {
-  realmId    String
-  userId     String
-  permissions Json
-  joinedAt   DateTime @default(now())
-  realm      Realm    @relation(fields: [realmId], references: [id], onDelete: Cascade)
-  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  realmId      String
+  userId       String
+  permissions  Json
+  joinedAt     DateTime @default(now())
+  lastActiveAt DateTime?
+  realm        Realm    @relation(fields: [realmId], references: [id], onDelete: Cascade)
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@id([realmId, userId])
 }
 
 model Lobby {
-  id                  String       @id @default(cuid())
-  realmId             String
-  hostId              String
-  sessionType         SessionType
-  matchMode           MatchMode
-  joinCode            String       @unique
-  maxPlayers          Int
-  partySizeLimit      Int          @default(4)
-  voiceEnabled        Boolean      @default(true)
-  crossplayEnabled    Boolean      @default(true)
-  antiCheatProfile    String?
-  realismPreset       String?
-  netcodeRegion       String
-  tickRate            Int          @default(60)
-  startedAt           DateTime?
-  endedAt             DateTime?
-  createdAt           DateTime     @default(now())
-  realm               Realm        @relation(fields: [realmId], references: [id], onDelete: Cascade)
-  host                User         @relation("LobbyHost", fields: [hostId], references: [id], onDelete: Cascade)
-  participants        SessionParticipant[]
-  workloadSnapshots   WorkloadSnapshot[]
-  telemetryEvents     TelemetryEvent[]
-  chatChannels        ChatChannel[]
-  moderationActions   ModerationAction[]
+  id                String               @id @default(cuid())
+  realmId           String
+  hostId            String
+  buildId           String?
+  sessionType       SessionType
+  matchMode         MatchMode
+  joinCode          String               @unique
+  maxPlayers        Int
+  partySizeLimit    Int                  @default(4)
+  voiceTransport    VoiceTransport       @default(TEAM)
+  crossplayEnabled  Boolean              @default(true)
+  antiCheatProfile  String?
+  realismPreset     String?
+  netcodeRegion     String
+  tickRate          Int                  @default(60)
+  startedAt         DateTime?
+  endedAt           DateTime?
+  createdAt         DateTime             @default(now())
+  realm             Realm                @relation(fields: [realmId], references: [id], onDelete: Cascade)
+  host              User                 @relation("LobbyHost", fields: [hostId], references: [id], onDelete: Cascade)
+  build             EngineBuild?         @relation(fields: [buildId], references: [id], onDelete: SetNull)
+  participants      SessionParticipant[]
+  workloadSnapshots WorkloadSnapshot[]
+  telemetryEvents   TelemetryEvent[]
+  chatChannels      ChatChannel[]
+  moderationActions ModerationAction[]
+  leaderboardRows   LeaderboardEntry[]
 
   @@index([realmId, matchMode])
   @@index([hostId, createdAt])
+  @@index([buildId, createdAt])
 }
 
 model SessionParticipant {
-  lobbyId         String
-  userId          String
-  team            String?
-  skillRating     Int?
-  pingMs          Int?
-  packetLossPct   Float?
-  joinedAt        DateTime @default(now())
-  leftAt          DateTime?
-  isSpectator     Boolean  @default(false)
-  xrTrackingMode  String?
-  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  lobby           Lobby    @relation(fields: [lobbyId], references: [id], onDelete: Cascade)
+  lobbyId        String
+  userId         String
+  team           String?
+  skillRating    Int?
+  pingMs         Int?
+  packetLossPct  Float?
+  joinedAt       DateTime @default(now())
+  leftAt         DateTime?
+  isSpectator    Boolean  @default(false)
+  xrTrackingMode String?
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lobby          Lobby    @relation(fields: [lobbyId], references: [id], onDelete: Cascade)
 
   @@id([lobbyId, userId])
   @@index([userId, joinedAt])
 }
 
+model EngineBuild {
+  id               String            @id @default(cuid())
+  authoredByUserId String?
+  versionTag       String
+  channel          BuildChannel
+  artifactType     BuildArtifactType
+  commitSha        String
+  releaseNotes     String?
+  metadata         Json?
+  deployedAt       DateTime?
+  createdAt        DateTime          @default(now())
+  authoredBy       User?             @relation("BuildAuthor", fields: [authoredByUserId], references: [id], onDelete: SetNull)
+  lobbies          Lobby[]
+
+  @@unique([versionTag, artifactType])
+  @@index([channel, deployedAt])
+}
+
 model ModPackage {
-  id                   String          @id @default(cuid())
-  ownerId              String
-  slug                 String          @unique
-  name                 String
-  description          String?
-  visibility           ModVisibility   @default(PRIVATE)
-  status               ContentStatus   @default(DRAFT)
-  compatibleEngine     String
-  compatibleBuilds     String[]
-  tags                 String[]
-  downloadCount        Int             @default(0)
-  ratingAvg            Float?
-  trustScore           Float?
-  sandboxRequired      Boolean         @default(true)
-  wasmAllowed          Boolean         @default(false)
-  scriptBudgetMs       Int             @default(5)
-  memoryBudgetMb       Int             @default(256)
-  publishedAt          DateTime?
-  createdAt            DateTime        @default(now())
-  updatedAt            DateTime        @updatedAt
-  owner                User            @relation("ModOwner", fields: [ownerId], references: [id], onDelete: Cascade)
-  versions             ModVersion[]
-  contributors         ModContributor[]
-  blueprintAssets      BlueprintAsset[]
-  questGraphs          QuestGraph[]
+  id               String            @id @default(cuid())
+  ownerId          String
+  slug             String            @unique
+  name             String
+  description      String?
+  visibility       ModVisibility     @default(PRIVATE)
+  status           ContentStatus     @default(DRAFT)
+  compatibleEngine String
+  compatibleBuilds String[]
+  tags             String[]
+  downloadCount    Int               @default(0)
+  ratingAvg        Float?
+  trustScore       Float?
+  sandboxRequired  Boolean           @default(true)
+  wasmAllowed      Boolean           @default(false)
+  scriptBudgetMs   Int               @default(5)
+  memoryBudgetMb   Int               @default(256)
+  publishedAt      DateTime?
+  createdAt        DateTime          @default(now())
+  updatedAt        DateTime          @updatedAt
+  owner            User              @relation("ModOwner", fields: [ownerId], references: [id], onDelete: Cascade)
+  versions         ModVersion[]
+  contributors     ModContributor[]
+  blueprintAssets  BlueprintAsset[]
+  questGraphs      QuestGraph[]
 
   @@index([ownerId, status])
   @@index([visibility, publishedAt])
@@ -314,7 +393,7 @@ model ModContributor {
   userId      String
   roleLabel   String
   permissions Json
-  addedAt     DateTime @default(now())
+  addedAt     DateTime   @default(now())
   mod         ModPackage @relation(fields: [modId], references: [id], onDelete: Cascade)
   user        User       @relation(fields: [userId], references: [id], onDelete: Cascade)
 
@@ -322,26 +401,26 @@ model ModContributor {
 }
 
 model ModVersion {
-  id                 String        @id @default(cuid())
-  modId              String
-  semver             String
-  changelog          String?
-  status             ContentStatus @default(DRAFT)
-  releaseChannel     BuildChannel  @default(ALPHA)
-  manifest           Json
-  dependencies       Json?
-  artifactUrl        String
-  checksumSha256     String
-  packageSizeBytes   BigInt
-  installTimeMsP50   Int?
-  runtimeBudgetMs    Int?
-  gcBudgetMs         Int?
-  publishedAt        DateTime?
-  createdAt          DateTime      @default(now())
-  mod                ModPackage    @relation(fields: [modId], references: [id], onDelete: Cascade)
-  scripts            ScriptVersion[]
-  assets             EngineAsset[]
-  workloadSnapshots  WorkloadSnapshot[]
+  id                String            @id @default(cuid())
+  modId             String
+  semver            String
+  changelog         String?
+  status            ContentStatus     @default(DRAFT)
+  releaseChannel    BuildChannel      @default(ALPHA)
+  manifest          Json
+  dependencies      Json?
+  artifactUrl       String
+  checksumSha256    String
+  packageSizeBytes  BigInt
+  installTimeMsP50  Int?
+  runtimeBudgetMs   Int?
+  gcBudgetMs        Int?
+  publishedAt       DateTime?
+  createdAt         DateTime          @default(now())
+  mod               ModPackage        @relation(fields: [modId], references: [id], onDelete: Cascade)
+  scripts           ScriptVersion[]
+  assets            EngineAsset[]
+  workloadSnapshots WorkloadSnapshot[]
 
   @@unique([modId, semver])
   @@index([status, releaseChannel])
@@ -372,46 +451,78 @@ model EngineAsset {
 }
 
 model ScriptVersion {
-  id                    String        @id @default(cuid())
-  authorId              String
-  modVersionId          String?
-  name                  String
-  language              String
-  entrypoint            String
-  sourceHash            String
-  bytecodeHash          String?
-  status                ContentStatus @default(DRAFT)
-  deterministic         Boolean       @default(true)
-  serverOnly            Boolean       @default(false)
-  executionBudgetMs     Int           @default(4)
-  memoryBudgetMb        Int           @default(128)
-  apiSurfaceVersion     String
-  securityCapabilities  String[]
-  createdAt             DateTime      @default(now())
-  updatedAt             DateTime      @updatedAt
-  author                User          @relation(fields: [authorId], references: [id], onDelete: Cascade)
-  modVersion            ModVersion?   @relation(fields: [modVersionId], references: [id], onDelete: SetNull)
+  id                   String        @id @default(cuid())
+  authorId             String
+  modVersionId         String?
+  name                 String
+  language             String
+  entrypoint           String
+  sourceHash           String
+  bytecodeHash         String?
+  status               ContentStatus @default(DRAFT)
+  deterministic        Boolean       @default(true)
+  serverOnly           Boolean       @default(false)
+  executionBudgetMs    Int           @default(4)
+  memoryBudgetMb       Int           @default(128)
+  apiSurfaceVersion    String
+  securityCapabilities String[]
+  createdAt            DateTime      @default(now())
+  updatedAt            DateTime      @updatedAt
+  author               User          @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  modVersion           ModVersion?   @relation(fields: [modVersionId], references: [id], onDelete: SetNull)
 
   @@index([authorId, status])
   @@index([modVersionId])
 }
 
 model MapRevision {
-  id                 String        @id @default(cuid())
-  realmId            String
-  revisionNumber     Int
-  status             ContentStatus @default(DRAFT)
-  navMeshVersion     String?
-  occlusionVersion   String?
-  lightingScenario   String?
-  weatherPreset      String?
-  spawnRules         Json
-  objectiveRules     Json
-  createdAt          DateTime      @default(now())
-  publishedAt        DateTime?
-  realm              Realm         @relation(fields: [realmId], references: [id], onDelete: Cascade)
+  id               String        @id @default(cuid())
+  realmId          String
+  revisionNumber   Int
+  status           ContentStatus @default(DRAFT)
+  navMeshVersion   String?
+  occlusionVersion String?
+  lightingScenario String?
+  weatherPreset    String?
+  spawnRules       Json
+  objectiveRules   Json
+  createdAt        DateTime      @default(now())
+  publishedAt      DateTime?
+  realm            Realm         @relation(fields: [realmId], references: [id], onDelete: Cascade)
 
   @@unique([realmId, revisionNumber])
+}
+
+model WorldPartitionCell {
+  id                String   @id @default(cuid())
+  realmId           String
+  cellKey           String
+  boundsMin         Json
+  boundsMax         Json
+  streamingPriority Int      @default(1)
+  navChunkHash      String?
+  hLODLevel         Int?
+  updatedAt         DateTime @updatedAt
+  createdAt         DateTime @default(now())
+  realm             Realm    @relation(fields: [realmId], references: [id], onDelete: Cascade)
+
+  @@unique([realmId, cellKey])
+  @@index([realmId, streamingPriority])
+}
+
+model ReplicationGraphRule {
+  id             String   @id @default(cuid())
+  realmId        String
+  actorClass     String
+  frequencyHz    Int
+  cullDistanceM  Float
+  relevancyGroup String
+  isDormancyCap  Boolean  @default(true)
+  metadata       Json?
+  createdAt      DateTime @default(now())
+  realm          Realm    @relation(fields: [realmId], references: [id], onDelete: Cascade)
+
+  @@index([realmId, actorClass])
 }
 
 model GameplayLoadout {
@@ -431,63 +542,146 @@ model GameplayLoadout {
   @@index([realmId, category])
 }
 
+model AbilityDefinition {
+  id                    String   @id @default(cuid())
+  realmId               String?
+  modVersionId          String?
+  key                   String
+  name                  String
+  cooldownMs            Int
+  staminaCost           Int?
+  supportsVRGestures    Boolean  @default(false)
+  predictedClientSide   Boolean  @default(true)
+  authorityRequired     Boolean  @default(true)
+  targetingSchema       Json?
+  metadata              Json?
+  createdAt             DateTime @default(now())
+
+  @@index([realmId, key])
+  @@index([modVersionId, key])
+}
+
+model AbilityLoadoutBinding {
+  id           String   @id @default(cuid())
+  userId       String
+  realmId      String
+  slotName     String
+  abilityKey   String
+  inputBinding String
+  updatedAt    DateTime @updatedAt
+  createdAt    DateTime @default(now())
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  realm        Realm    @relation(fields: [realmId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, realmId, slotName])
+  @@index([realmId, abilityKey])
+}
+
+model InventoryItemDefinition {
+  id                String          @id @default(cuid())
+  realmId           String
+  sku               String
+  displayName       String
+  rarity            InventoryRarity @default(COMMON)
+  stackSize         Int             @default(1)
+  tradable          Boolean         @default(false)
+  equippable        Boolean         @default(true)
+  gameplayModifiers Json?
+  createdAt         DateTime        @default(now())
+  realm             Realm           @relation(fields: [realmId], references: [id], onDelete: Cascade)
+  playerInventories PlayerInventory[]
+
+  @@unique([realmId, sku])
+  @@index([realmId, rarity])
+}
+
+model PlayerInventory {
+  userId            String
+  itemDefinitionId  String
+  quantity          Int      @default(0)
+  lastGrantedAt     DateTime?
+  user              User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  itemDefinition    InventoryItemDefinition @relation(fields: [itemDefinitionId], references: [id], onDelete: Cascade)
+
+  @@id([userId, itemDefinitionId])
+  @@index([itemDefinitionId, quantity])
+}
+
 model BlueprintAsset {
-  id                String      @id @default(cuid())
+  id                String     @id @default(cuid())
   modId             String
   authorId          String
   name              String
   graphJson         Json
   nodeCount         Int
-  deterministic     Boolean     @default(true)
+  deterministic     Boolean    @default(true)
   exposedProperties Json?
-  createdAt         DateTime    @default(now())
-  updatedAt         DateTime    @updatedAt
-  mod               ModPackage  @relation(fields: [modId], references: [id], onDelete: Cascade)
-  author            User        @relation("BlueprintAuthor", fields: [authorId], references: [id], onDelete: Cascade)
+  createdAt         DateTime   @default(now())
+  updatedAt         DateTime   @updatedAt
+  mod               ModPackage @relation(fields: [modId], references: [id], onDelete: Cascade)
+  author            User       @relation("BlueprintAuthor", fields: [authorId], references: [id], onDelete: Cascade)
 
   @@index([modId, updatedAt])
 }
 
 model QuestGraph {
-  id                String      @id @default(cuid())
-  modId             String
-  authorId          String
-  name              String
-  graphJson         Json
-  branchCount       Int
-  supportsCoop      Boolean     @default(true)
-  supportsVR        Boolean     @default(true)
-  rewardSchema      Json
-  createdAt         DateTime    @default(now())
-  updatedAt         DateTime    @updatedAt
-  mod               ModPackage  @relation(fields: [modId], references: [id], onDelete: Cascade)
-  author            User        @relation("QuestAuthor", fields: [authorId], references: [id], onDelete: Cascade)
+  id           String     @id @default(cuid())
+  modId        String
+  authorId     String
+  name         String
+  graphJson    Json
+  branchCount  Int
+  supportsCoop Boolean    @default(true)
+  supportsVR   Boolean    @default(true)
+  rewardSchema Json
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  mod          ModPackage @relation(fields: [modId], references: [id], onDelete: Cascade)
+  author       User       @relation("QuestAuthor", fields: [authorId], references: [id], onDelete: Cascade)
 
   @@index([modId, supportsVR])
 }
 
+model XRSceneProfile {
+  id                    String   @id @default(cuid())
+  realmId               String
+  profileName           String
+  targetRefreshHz       Int
+  fixedFoveationLevel   Int?
+  dynamicResolutionMin  Float?
+  dynamicResolutionMax  Float?
+  handTrackingSupported Boolean @default(true)
+  seatedModeSupported   Boolean @default(true)
+  standingModeSupported Boolean @default(true)
+  metadata              Json?
+  createdAt             DateTime @default(now())
+  realm                 Realm    @relation(fields: [realmId], references: [id], onDelete: Cascade)
+
+  @@unique([realmId, profileName])
+}
+
 model WorkloadSnapshot {
-  id                  String        @id @default(cuid())
-  lobbyId             String?
-  modVersionId        String?
-  userId              String?
-  workloadType        WorkloadType
-  frameTimeMsP50      Float?
-  frameTimeMsP95      Float?
-  frameTimeMsP99      Float?
-  cpuMs               Float?
-  gpuMs               Float?
-  memoryMb            Float?
-  vramMb              Float?
-  netInKbps           Float?
-  netOutKbps          Float?
-  droppedFrames       Int?
-  xrReprojectionPct   Float?
-  serverTickDriftMs   Float?
-  sampledAt           DateTime      @default(now())
-  lobby               Lobby?        @relation(fields: [lobbyId], references: [id], onDelete: Cascade)
-  modVersion          ModVersion?   @relation(fields: [modVersionId], references: [id], onDelete: Cascade)
-  user                User?         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  id                String       @id @default(cuid())
+  lobbyId           String?
+  modVersionId      String?
+  userId            String?
+  workloadType      WorkloadType
+  frameTimeMsP50    Float?
+  frameTimeMsP95    Float?
+  frameTimeMsP99    Float?
+  cpuMs             Float?
+  gpuMs             Float?
+  memoryMb          Float?
+  vramMb            Float?
+  netInKbps         Float?
+  netOutKbps        Float?
+  droppedFrames     Int?
+  xrReprojectionPct Float?
+  serverTickDriftMs Float?
+  sampledAt         DateTime     @default(now())
+  lobby             Lobby?       @relation(fields: [lobbyId], references: [id], onDelete: Cascade)
+  modVersion        ModVersion?  @relation(fields: [modVersionId], references: [id], onDelete: Cascade)
+  user              User?        @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([workloadType, sampledAt])
   @@index([lobbyId])
@@ -495,73 +689,73 @@ model WorkloadSnapshot {
 }
 
 model TelemetryEvent {
-  id            String   @id @default(cuid())
-  lobbyId       String?
-  userId        String?
-  eventName     String
-  eventVersion  Int      @default(1)
-  payload       Json
-  recordedAt    DateTime @default(now())
-  lobby         Lobby?   @relation(fields: [lobbyId], references: [id], onDelete: Cascade)
-  user          User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  id           String   @id @default(cuid())
+  lobbyId      String?
+  userId       String?
+  eventName    String
+  eventVersion Int      @default(1)
+  payload      Json
+  recordedAt   DateTime @default(now())
+  lobby        Lobby?   @relation(fields: [lobbyId], references: [id], onDelete: Cascade)
+  user         User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
 
   @@index([eventName, recordedAt])
   @@index([lobbyId, recordedAt])
 }
 
 model CrashReport {
-  id               String   @id @default(cuid())
-  userId           String?
-  buildVersion     String
-  platform         Platform
-  stackHash        String
-  stackTrace       String?
-  reproSteps       String?
-  happenedAt       DateTime
-  uploadedAt       DateTime @default(now())
-  user             User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  id           String   @id @default(cuid())
+  userId       String?
+  buildVersion String
+  platform     Platform
+  stackHash    String
+  stackTrace   String?
+  reproSteps   String?
+  happenedAt   DateTime
+  uploadedAt   DateTime @default(now())
+  user         User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
 
   @@index([buildVersion, platform])
   @@index([stackHash, uploadedAt])
 }
 
 model IssueTicket {
-  id               String       @id @default(cuid())
-  realmId           String?
-  title            String
-  description      String
-  status           TicketStatus @default(OPEN)
-  severity         Int          @default(2)
-  tags             String[]
-  reporterId       String
-  assigneeId       String?
-  sourceBuild      String?
-  sourceLobbyCode  String?
-  metadata         Json?
-  createdAt        DateTime     @default(now())
-  updatedAt        DateTime     @updatedAt
-  resolvedAt       DateTime?
-  realm            Realm?       @relation(fields: [realmId], references: [id], onDelete: SetNull)
-  reporter         User         @relation("IssueReporter", fields: [reporterId], references: [id], onDelete: Cascade)
-  assignee         User?        @relation("IssueAssignee", fields: [assigneeId], references: [id], onDelete: SetNull)
+  id              String       @id @default(cuid())
+  realmId         String?
+  title           String
+  description     String
+  status          TicketStatus @default(OPEN)
+  severity        Int          @default(2)
+  tags            String[]
+  reporterId      String
+  assigneeId      String?
+  sourceBuild     String?
+  sourceLobbyCode String?
+  metadata        Json?
+  createdAt       DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
+  resolvedAt      DateTime?
+  realm           Realm?       @relation(fields: [realmId], references: [id], onDelete: SetNull)
+  reporter        User         @relation("IssueReporter", fields: [reporterId], references: [id], onDelete: Cascade)
+  assignee        User?        @relation("IssueAssignee", fields: [assigneeId], references: [id], onDelete: SetNull)
 
   @@index([status, severity])
   @@index([reporterId, createdAt])
 }
 
 model ModerationAction {
-  id                 String                @id @default(cuid())
-  lobbyId            String?
-  actionType         ModerationActionType
-  reason             String
-  actorId            String
-  targetUserId       String
-  expiresAt          DateTime?
-  metadata           Json?
-  createdAt          DateTime              @default(now())
-  lobby              Lobby?                @relation(fields: [lobbyId], references: [id], onDelete: SetNull)
-  actor              User                  @relation("ActionBy", fields: [actorId], references: [id], onDelete: Cascade)
-  targetUser         User                  @relation("ActionTarget", fields: [targetUserId], references: [id], onDelete: Cascade)
+  id           String               @id @default(cuid())
+  lobbyId      String?
+  actionType   ModerationActionType
+  reason       String
+  actorId      String
+  targetUserId String
+  expiresAt    DateTime?
+  metadata     Json?
+  createdAt    DateTime             @default(now())
+  lobby        Lobby?               @relation(fields: [lobbyId], references: [id], onDelete: SetNull)
+  actor        User                 @relation("ActionBy", fields: [actorId], references: [id], onDelete: Cascade)
+  targetUser   User                 @relation("ActionTarget", fields: [targetUserId], references: [id], onDelete: Cascade)
 
   @@index([targetUserId, createdAt])
   @@index([actionType, expiresAt])
@@ -569,7 +763,7 @@ model ModerationAction {
 
 model ChatChannel {
   id             String       @id @default(cuid())
-  realmId         String?
+  realmId        String?
   lobbyId        String?
   name           String
   isVoiceLinked  Boolean      @default(false)
@@ -584,18 +778,70 @@ model ChatChannel {
 }
 
 model ChatMessage {
-  id            String      @id @default(cuid())
-  channelId     String
-  senderId      String?
-  body          String
-  language      String?
-  translatedTo  String?
-  createdAt     DateTime    @default(now())
-  editedAt      DateTime?
-  deletedAt     DateTime?
-  channel       ChatChannel @relation(fields: [channelId], references: [id], onDelete: Cascade)
-  sender        User?       @relation(fields: [senderId], references: [id], onDelete: SetNull)
+  id           String      @id @default(cuid())
+  channelId    String
+  senderId     String?
+  body         String
+  language     String?
+  translatedTo String?
+  createdAt    DateTime    @default(now())
+  editedAt     DateTime?
+  deletedAt    DateTime?
+  channel      ChatChannel @relation(fields: [channelId], references: [id], onDelete: Cascade)
+  sender       User?       @relation(fields: [senderId], references: [id], onDelete: SetNull)
 
   @@index([channelId, createdAt])
   @@index([senderId, createdAt])
+}
+
+model MatchReplay {
+  id               String   @id @default(cuid())
+  realmId          String
+  ownerUserId      String
+  lobbyJoinCode    String?
+  recordingUrl     String
+  durationSec      Int
+  cameraTrackMeta  Json?
+  timelineMeta     Json?
+  createdAt        DateTime @default(now())
+  realm            Realm    @relation(fields: [realmId], references: [id], onDelete: Cascade)
+  owner            User     @relation(fields: [ownerUserId], references: [id], onDelete: Cascade)
+
+  @@index([realmId, createdAt])
+  @@index([ownerUserId, createdAt])
+}
+
+model LeaderboardSeason {
+  id             String   @id @default(cuid())
+  realmId        String
+  seasonKey      String
+  title          String
+  startsAt       DateTime
+  endsAt         DateTime
+  rulesetJson    Json
+  createdAt      DateTime @default(now())
+  realm          Realm    @relation(fields: [realmId], references: [id], onDelete: Cascade)
+  entries        LeaderboardEntry[]
+
+  @@unique([realmId, seasonKey])
+  @@index([realmId, startsAt, endsAt])
+}
+
+model LeaderboardEntry {
+  seasonId      String
+  userId        String
+  lobbyId       String?
+  rating        Int
+  rank          Int?
+  wins          Int      @default(0)
+  losses        Int      @default(0)
+  scoreMeta     Json?
+  updatedAt     DateTime @updatedAt
+  season        LeaderboardSeason @relation(fields: [seasonId], references: [id], onDelete: Cascade)
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lobby         Lobby?   @relation(fields: [lobbyId], references: [id], onDelete: SetNull)
+
+  @@id([seasonId, userId])
+  @@index([seasonId, rating])
+  @@index([userId, updatedAt])
 }
