@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wendyverse.dev/schemas/world-definition.schema.json",
+  "title": "WendyVerse World Definition",
+  "type": "object",
+  "required": ["worldId", "name", "mode", "spawnPoints", "ruleset"],
+  "properties": {
+    "worldId": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]{8,64}$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 80
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["promod_arena", "battle_royale", "creative_survival", "hybrid"]
+    },
+    "maxPlayers": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 256,
+      "default": 32
+    },
+    "spawnPoints": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["x", "y", "z"],
+        "properties": {
+          "x": { "type": "number" },
+          "y": { "type": "number" },
+          "z": { "type": "number" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "ruleset": {
+      "type": "object",
+      "required": ["friendlyFire", "respawnMode"],
+      "properties": {
+        "friendlyFire": { "type": "boolean" },
+        "respawnMode": {
+          "type": "string",
+          "enum": ["instant", "wave", "round"]
+        },
+        "buildEnabled": { "type": "boolean", "default": true },
+        "lootTierProfile": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
