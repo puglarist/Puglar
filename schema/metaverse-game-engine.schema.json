@@ -1,0 +1,209 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://puglar.github.io/Puglar/schema/metaverse-game-engine.schema.json",
+  "title": "Metaverse Game Engine Capability Profile",
+  "description": "Schema describing game engine and runtime capabilities for metaverse deployment, including Meta Quest and GitHub Pages web delivery requirements.",
+  "type": "object",
+  "required": [
+    "profileName",
+    "engine",
+    "runtime",
+    "metaverseFeatures",
+    "deployment"
+  ],
+  "properties": {
+    "profileName": {
+      "type": "string",
+      "minLength": 3
+    },
+    "engine": {
+      "type": "object",
+      "required": ["name", "version", "renderPipeline"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "enum": ["three.js", "babylon.js", "unity-webgl", "unreal-pixel-streaming", "custom"]
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^[0-9]+(\\.[0-9]+){0,2}(-[A-Za-z0-9.-]+)?$"
+        },
+        "renderPipeline": {
+          "type": "string",
+          "enum": ["forward", "deferred", "hybrid"]
+        },
+        "shaderModel": {
+          "type": "string",
+          "enum": ["glsl-es3", "wgsl", "hlsl-transpiled"]
+        }
+      },
+      "additionalProperties": false
+    },
+    "runtime": {
+      "type": "object",
+      "required": ["targetDevices", "webXR", "networking"],
+      "properties": {
+        "targetDevices": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": ["meta-quest-2", "meta-quest-3", "meta-quest-pro", "desktop", "mobile"]
+          },
+          "uniqueItems": true
+        },
+        "webXR": {
+          "type": "object",
+          "required": ["immersiveVR", "handTracking", "controllerSupport"],
+          "properties": {
+            "immersiveVR": { "type": "boolean" },
+            "handTracking": { "type": "boolean" },
+            "controllerSupport": { "type": "boolean" },
+            "anchors": { "type": "boolean" },
+            "passthroughMixedReality": { "type": "boolean" }
+          },
+          "additionalProperties": false
+        },
+        "networking": {
+          "type": "object",
+          "required": ["protocol", "tickRateHz", "stateSync"],
+          "properties": {
+            "protocol": {
+              "type": "string",
+              "enum": ["websocket", "webrtc", "hybrid"]
+            },
+            "tickRateHz": {
+              "type": "integer",
+              "minimum": 10,
+              "maximum": 120
+            },
+            "stateSync": {
+              "type": "string",
+              "enum": ["authoritative-server", "lockstep", "eventual-consistency"]
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "metaverseFeatures": {
+      "type": "object",
+      "required": ["identity", "avatar", "worldStreaming", "economy"],
+      "properties": {
+        "identity": {
+          "type": "object",
+          "required": ["walletOptional", "federatedLogin"],
+          "properties": {
+            "walletOptional": { "type": "boolean" },
+            "federatedLogin": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["google", "meta", "github", "apple", "custom-oauth"]
+              },
+              "uniqueItems": true
+            }
+          },
+          "additionalProperties": false
+        },
+        "avatar": {
+          "type": "object",
+          "required": ["rigType", "fullBodyIK", "lipSync"],
+          "properties": {
+            "rigType": {
+              "type": "string",
+              "enum": ["humanoid", "quadruped", "custom"]
+            },
+            "fullBodyIK": { "type": "boolean" },
+            "lipSync": { "type": "boolean" }
+          },
+          "additionalProperties": false
+        },
+        "worldStreaming": {
+          "type": "object",
+          "required": ["chunkedLoading", "maxConcurrentUsers"],
+          "properties": {
+            "chunkedLoading": { "type": "boolean" },
+            "maxConcurrentUsers": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "instancingModel": {
+              "type": "string",
+              "enum": ["single-shard", "multi-shard", "session-based"]
+            }
+          },
+          "additionalProperties": false
+        },
+        "economy": {
+          "type": "object",
+          "required": ["supportsIAP", "tokenizedAssets"],
+          "properties": {
+            "supportsIAP": { "type": "boolean" },
+            "tokenizedAssets": { "type": "boolean" },
+            "marketplace": {
+              "type": "string",
+              "enum": ["none", "first-party", "third-party"]
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "deployment": {
+      "type": "object",
+      "required": ["platform", "https", "assetCompression", "serviceWorker"],
+      "properties": {
+        "platform": {
+          "type": "string",
+          "enum": ["github-pages", "cloudflare-pages", "self-hosted"]
+        },
+        "https": { "type": "boolean", "const": true },
+        "assetCompression": {
+          "type": "string",
+          "enum": ["gzip", "brotli", "both"]
+        },
+        "serviceWorker": { "type": "boolean" },
+        "crossOriginIsolation": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "runtime": {
+            "properties": {
+              "targetDevices": {
+                "contains": {
+                  "enum": ["meta-quest-2", "meta-quest-3", "meta-quest-pro"]
+                }
+              }
+            },
+            "required": ["targetDevices"]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "runtime": {
+            "properties": {
+              "webXR": {
+                "properties": {
+                  "immersiveVR": { "const": true },
+                  "controllerSupport": { "const": true }
+                },
+                "required": ["immersiveVR", "controllerSupport"]
+              }
+            },
+            "required": ["webXR"]
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": false
+}
