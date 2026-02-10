@@ -15,6 +15,7 @@ import hashlib
 import json
 import re
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Iterable
 
@@ -27,6 +28,7 @@ class Asset:
     path: Path
     size: int
     suffix: str
+    modified_ts: float
 
     @property
     def stem(self) -> str:
@@ -39,7 +41,14 @@ def discover_assets(root: Path = ROOT) -> list[Asset]:
         if not path.is_file() or path.suffix.lower() not in ASSET_EXTENSIONS:
             continue
         stat = path.stat()
-        assets.append(Asset(path=path, size=stat.st_size, suffix=path.suffix.lower()))
+        assets.append(
+            Asset(
+                path=path,
+                size=stat.st_size,
+                suffix=path.suffix.lower(),
+                modified_ts=stat.st_mtime,
+            )
+        )
     return sorted(assets, key=lambda item: item.path.name.lower())
 
 
@@ -60,6 +69,9 @@ def command_inventory(args: argparse.Namespace) -> int:
             "type": asset.suffix.removeprefix("."),
             "size_bytes": asset.size,
             "size_mb": round(asset.size / (1024 * 1024), 3),
+            "modified_utc": datetime.fromtimestamp(asset.modified_ts, tz=timezone.utc)
+            .replace(microsecond=0)
+            .isoformat(),
         }
         for asset in assets
     ]
@@ -71,7 +83,32 @@ def command_inventory(args: argparse.Namespace) -> int:
         print(f"Assets: {len(payload)}")
         print(f"Total size: {round(total_bytes / (1024 * 1024), 2)} MB")
         for item in payload:
-            print(f"- {item['name']} ({item['size_mb']} MB)")
+            print(f"- {item['name']} ({item['size_mb']} MB, updated {item['modified_utc']})")
+    return 0
+
+
+def command_summary(_: argparse.Namespace) -> int:
+    assets = discover_assets()
+    by_ext: dict[str, list[Asset]] = {}
+    for asset in assets:
+        by_ext.setdefault(asset.suffix, []).append(asset)
+
+    print(f"Asset count: {len(assets)}")
+    for ext in sorted(by_ext):
+        members = by_ext[ext]
+        total_size = sum(item.size for item in members)
+        print(
+            f"- {ext}: {len(members)} file(s), "
+            f"{round(total_size / (1024 * 1024), 3)} MB total"
+        )
+
+    if assets:
+        newest = max(assets, key=lambda item: item.modified_ts)
+        oldest = min(assets, key=lambda item: item.modified_ts)
+        newest_dt = datetime.fromtimestamp(newest.modified_ts, tz=timezone.utc).replace(microsecond=0)
+        oldest_dt = datetime.fromtimestamp(oldest.modified_ts, tz=timezone.utc).replace(microsecond=0)
+        print(f"Newest: {newest.path.name} ({newest_dt.isoformat()})")
+        print(f"Oldest: {oldest.path.name} ({oldest_dt.isoformat()})")
     return 0
 
 
@@ -103,11 +140,7 @@ def command_duplicates(_: argparse.Namespace) -> int:
 def canonical_family_name(filename: str) -> str:
     normalized = filename.lower()
     normalized = re.sub(r"\s+\d+(?=\.pdf$)", "", normalized)
-    normalized = normalized.replace("_v1", "")
-    normalized = normalized.replace("_v2", "")
-    normalized = normalized.replace("_v3", "")
-    normalized = normalized.replace("_v4", "")
-    normalized = normalized.replace("_v5", "")
+    normalized = re.sub(r"_v\d+", "", normalized)
     normalized = normalized.replace(" 2", "")
     normalized = re.sub(r"\s+", " ", normalized).strip()
     return normalized
@@ -177,6 +210,9 @@ def build_parser() -> argparse.ArgumentParser:
 
     duplicates = subparsers.add_parser("duplicates", help="Find duplicate binaries by digest.")
     duplicates.set_defaults(func=command_duplicates)
+
+    summary = subparsers.add_parser("summary", help="Show quick counts, types, and age range.")
+    summary.set_defaults(func=command_summary)
 
     check = subparsers.add_parser("check", help="Run lightweight integrity checks.")
     check.add_argument("--strict", action="store_true", help="Treat warnings as failures.")
