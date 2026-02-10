@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Puglar WebXR Metaverse</title>
+    <meta
+      name="description"
+      content="WebXR hand-tracking metaverse starter optimized for GitHub Pages and Meta Quest browser."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="hud" aria-live="polite">
+      <h1>Puglar Metaverse</h1>
+      <p>
+        Open on Meta Quest Browser, allow XR permissions, then press
+        <strong>Enter VR</strong>.
+      </p>
+      <button id="enter-xr" type="button">Enter VR</button>
+      <p id="status">Initializing scene…</p>
+      <details>
+        <summary>Troubleshooting</summary>
+        <ul>
+          <li>GitHub Pages site must be served over HTTPS (default on github.io).</li>
+          <li>Use Meta Quest Browser with WebXR + hand tracking enabled.</li>
+          <li>If hands are not detected, open Quest quick settings and re-enable hand tracking.</li>
+        </ul>
+      </details>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
