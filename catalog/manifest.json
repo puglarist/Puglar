@@ -1,0 +1,26 @@
+{
+  "generated_for": "Puglar doctrine asset indexing",
+  "assets": [
+    {"filename": "Puglar_AEN_Attention_Gorilla_Rest_v2_Cards.pdf", "type": "pdf", "category": "cards", "version": "v2", "notes": "Attention/Gorilla Rest cards."},
+    {"filename": "Puglar_Command_Stances_Winter_Rain_Cards.pdf", "type": "pdf", "category": "cards", "version": null, "notes": "Command stances seasonal cards."},
+    {"filename": "Puglar_Full_Doctrine_Archive_v2.zip", "type": "zip", "category": "archive", "version": "v2", "notes": "Doctrine archive bundle."},
+    {"filename": "Puglar_Full_Doctrine_Archive_v5.zip", "type": "zip", "category": "archive", "version": "v5", "notes": "Doctrine archive bundle."},
+    {"filename": "Puglar_Handbook.pdf", "type": "pdf", "category": "handbook", "version": null, "notes": "Primary handbook."},
+    {"filename": "Puglar_Handbook_v2_Language_Guide.pdf", "type": "pdf", "category": "handbook", "version": "v2", "notes": "Language guide handbook."},
+    {"filename": "Puglar_Iron_Cross_5_Year_Roadmap_Cards.pdf", "type": "pdf", "category": "cards", "version": null, "notes": "Roadmap card set."},
+    {"filename": "Puglar_Iron_Cross_Illustrated_Angle_Plates.pdf", "type": "pdf", "category": "reference", "version": null, "notes": "Illustrated angle plates."},
+    {"filename": "Puglar_Lamination_Cut_Guides.pdf", "type": "pdf", "category": "reference", "version": null, "notes": "Lamination and cut guides."},
+    {"filename": "Puglar_Micro_Command_Cards_Wallet.pdf", "type": "pdf", "category": "cards", "version": null, "notes": "Wallet-sized command cards."},
+    {"filename": "Puglar_Omnibus_Final_v1.pdf", "type": "pdf", "category": "handbook", "version": "v1", "notes": "Omnibus final edition."},
+    {"filename": "Puglar_Physical_Doctrine_Workouts.pdf", "type": "pdf", "category": "training", "version": null, "notes": "Physical workout doctrine."},
+    {"filename": "Puglar_Pocket_Drill_Cards.pdf", "type": "pdf", "category": "cards", "version": null, "notes": "Pocket drill cards."},
+    {"filename": "Puglar_Pocket_Drill_Cards 2.pdf", "type": "pdf", "category": "cards", "version": null, "notes": "Alternate/duplicate pocket drill cards file."},
+    {"filename": "Puglar_Ranger_Awareness_Manual_v4.pdf", "type": "pdf", "category": "manual", "version": "v4", "notes": "Ranger awareness manual."},
+    {"filename": "Puglar_Sacred_Core_Scroll.pdf", "type": "pdf", "category": "reference", "version": null, "notes": "Sacred core scroll."},
+    {"filename": "Puglar_Seasonal_Drill_Cards.pdf", "type": "pdf", "category": "cards", "version": null, "notes": "Seasonal drill cards."},
+    {"filename": "Puglar_TreeWebs_Handbook_v2_Climb_and_Shade.pdf", "type": "pdf", "category": "handbook", "version": "v2", "notes": "TreeWebs handbook."},
+    {"filename": "Puglar_Waterproof_Field_Cards.pdf", "type": "pdf", "category": "cards", "version": null, "notes": "Waterproof field cards."},
+    {"filename": "Puglar_Winter_Summer_Micro_Cards.pdf", "type": "pdf", "category": "cards", "version": null, "notes": "Winter/Summer micro cards."},
+    {"filename": "Puglar_Youth_Training_Cards.pdf", "type": "pdf", "category": "training", "version": null, "notes": "Youth training cards."}
+  ]
+}
