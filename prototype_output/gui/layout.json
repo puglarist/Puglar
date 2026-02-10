@@ -1,0 +1,76 @@
+{
+  "theme": {
+    "background": "#15181f",
+    "panel": "#1f2430",
+    "accent": "#9bc53d",
+    "text": "#f5f7fa"
+  },
+  "screens": [
+    {
+      "name": "world_map",
+      "panels": [
+        {
+          "id": "map_canvas",
+          "anchor": "center",
+          "size": [
+            0.72,
+            0.82
+          ]
+        },
+        {
+          "id": "vendors_panel",
+          "anchor": "left",
+          "size": [
+            0.22,
+            0.7
+          ]
+        },
+        {
+          "id": "resource_filter",
+          "anchor": "right",
+          "size": [
+            0.06,
+            0.6
+          ]
+        }
+      ]
+    },
+    {
+      "name": "server_admin",
+      "panels": [
+        {
+          "id": "players_list",
+          "anchor": "left",
+          "size": [
+            0.24,
+            0.8
+          ]
+        },
+        {
+          "id": "server_info",
+          "anchor": "center",
+          "size": [
+            0.24,
+            0.8
+          ]
+        },
+        {
+          "id": "cvars_editor",
+          "anchor": "center_right",
+          "size": [
+            0.24,
+            0.8
+          ]
+        },
+        {
+          "id": "usercontent_gallery",
+          "anchor": "right",
+          "size": [
+            0.24,
+            0.8
+          ]
+        }
+      ]
+    }
+  ]
+}
