@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puglar Metaverse Stream Hub</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-REPLACE_WITH_YOUR_ID" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Puglar Metaverse Streaming Hub</h1>
+      <p>MTV style programming with Hulu/Netflix/Disney+ inspired browsing and monetization slots.</p>
+    </header>
+
+    <main>
+      <section class="card" id="roll-status">
+        <h2>ROLL SDK Connection</h2>
+        <p id="sdk-connection">Connecting...</p>
+        <code id="sdk-network"></code>
+      </section>
+
+      <section class="card">
+        <h2>MTV Movie Channel Logic</h2>
+        <div class="channel-grid">
+          <article>
+            <h3>Now Playing</h3>
+            <ul id="now-playing"></ul>
+          </article>
+          <article>
+            <h3>Trending Playlist</h3>
+            <ul id="trending-list"></ul>
+          </article>
+          <article>
+            <h3>Genre Rails (OTT style)</h3>
+            <ul id="genre-rails"></ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Upload Movies & Videos</h2>
+        <form id="upload-form">
+          <label>
+            Title
+            <input type="text" id="video-title" placeholder="Example: Night Ride in Neo-City" required />
+          </label>
+          <label>
+            Channel
+            <select id="video-channel">
+              <option>MTV Movie Channel</option>
+              <option>Hulu-Style Originals</option>
+              <option>Netflix-Style Premieres</option>
+              <option>Disney+-Style Family</option>
+            </select>
+          </label>
+          <label>
+            Video file
+            <input type="file" id="video-file" accept="video/*" required />
+          </label>
+          <button type="submit">Upload</button>
+        </form>
+        <p id="upload-feedback"></p>
+        <ul id="uploaded-videos"></ul>
+      </section>
+
+      <section class="card">
+        <h2>AdSense Placements</h2>
+        <p>Replace publisher/slot IDs before production release.</p>
+        <div class="ads-grid">
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-REPLACE_WITH_YOUR_ID" data-ad-slot="1111111111" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-REPLACE_WITH_YOUR_ID" data-ad-slot="2222222222" data-ad-format="rectangle"></ins>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>Prototype stack for metaverse streaming operations.</small>
+    </footer>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>
