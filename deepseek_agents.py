@@ -5,6 +5,10 @@ Usage:
   export DEEPSEEK_API_KEY=...
   python deepseek_agents.py \
     --task "Build go-to-market plan" \
+    --preset execution
+
+  python deepseek_agents.py \
+    --task "Build go-to-market plan" \
     --agent "Strategist:Plan channels and positioning" \
     --agent "Analyst:Estimate costs and ROI" \
     --agent "Executor:Define weekly actions"
@@ -24,6 +28,25 @@ from urllib import error, request
 
 DEFAULT_BASE_URL = "https://api.deepseek.com"
 DEFAULT_MODEL = "deepseek-chat"
+
+PRESET_AGENTS: dict[str, list[str]] = {
+    "execution": [
+        "Planner:Create a phased execution plan with priorities and dependencies.",
+        "Researcher:Gather assumptions, unknowns, and validation questions.",
+        "Implementer:Convert strategy into concrete daily/weekly actions.",
+        "Critic:Stress-test the plan and identify weak points.",
+        "Risk Officer:Map risks, early warning indicators, and mitigations.",
+        "Metrics Lead:Define KPIs, baselines, and review cadence.",
+    ],
+    "product": [
+        "PM:Define product goals, scope, and milestone sequencing.",
+        "UX:Outline user journeys, friction points, and UX requirements.",
+        "Engineer:Propose architecture and implementation milestones.",
+        "QA:Create test strategy and release quality gates.",
+        "Security:Highlight security/privacy risks and controls.",
+        "Growth:Define adoption loop, activation, and retention levers.",
+    ],
+}
 
 
 @dataclass(frozen=True)
@@ -140,9 +163,7 @@ def synthesize(
     task: str,
     agent_outputs: list[tuple[str, str]],
 ) -> str:
-    compiled = "\n\n".join(
-        f"## {name}\n{text}" for name, text in agent_outputs
-    )
+    compiled = "\n\n".join(f"## {name}\n{text}" for name, text in agent_outputs)
     system_prompt = (
         "You are a synthesis lead. Merge multiple specialist outputs into one coherent "
         "plan with clear priorities, sequencing, and trade-offs."
@@ -167,6 +188,14 @@ def synthesize(
     )
 
 
+def build_agents(agent_args: list[str], preset: str | None) -> list[AgentSpec]:
+    raw_agents: list[str] = []
+    if preset:
+        raw_agents.extend(PRESET_AGENTS[preset])
+    raw_agents.extend(agent_args)
+    return [parse_agent(raw) for raw in raw_agents]
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Run parallel DeepSeek agents and synthesize one final result."
@@ -178,19 +207,35 @@ def main() -> int:
         default=[],
         help="Agent spec in 'Name:Role instructions' format. Can be repeated.",
     )
+    parser.add_argument(
+        "--preset",
+        choices=sorted(PRESET_AGENTS.keys()),
+        help="Predefined multi-agent pack to use as a base.",
+    )
+    parser.add_argument(
+        "--list-presets",
+        action="store_true",
+        help="List built-in presets and exit.",
+    )
     args = parser.parse_args()
 
-    if len(args.agent) < 2:
-        print(
-            "Please provide at least 2 --agent values for parallelization.",
-            file=sys.stderr,
-        )
-        return 2
+    if args.list_presets:
+        print("Available presets:")
+        for name, preset_agents in PRESET_AGENTS.items():
+            print(f"- {name} ({len(preset_agents)} agents)")
+        return 0
 
     try:
-        agents = [parse_agent(a) for a in args.agent]
+        agents = build_agents(args.agent, args.preset)
     except ValueError as exc:
         print(str(exc), file=sys.stderr)
+        return 2
+
+    if len(agents) < 2:
+        print(
+            "Please provide at least 2 total agents (via --preset and/or --agent).",
+            file=sys.stderr,
+        )
         return 2
 
     api_key = os.getenv("DEEPSEEK_API_KEY")
