@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puglar Tactical HUD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scene">
+      <div class="vignette"></div>
+      <header class="hud-top">
+        <div class="hud-pill">23°C · 11:08</div>
+        <div class="hud-pill">🪙 12,780</div>
+        <div class="hud-pill">💳 23,590,780</div>
+      </header>
+
+      <main class="overlay-grid">
+        <section class="left-panel panel">
+          <h1>IVAN GUZYUK</h1>
+          <div class="rings">
+            <div><span>⚡</span><p>86%</p></div>
+            <div><span>💧</span><p>71%</p></div>
+            <div><span>🧠</span><p>95%</p></div>
+            <div><span>🟢</span><p>24%</p></div>
+          </div>
+
+          <h2>Quick Access</h2>
+          <div class="quick-grid">
+            <div class="slot orange">AK</div>
+            <div class="slot pink">SMG</div>
+            <div class="slot blue">KIT</div>
+            <div class="slot"></div>
+            <div class="slot">💻</div>
+            <div class="slot">🔪</div>
+            <div class="slot">💣</div>
+            <div class="slot"></div>
+            <div class="slot"></div>
+          </div>
+
+          <h2>Stats</h2>
+          <div class="stats">
+            <label>Strength <span style="--v:74%"></span></label>
+            <label>Stamina <span style="--v:89%"></span></label>
+            <label>Stealth <span style="--v:68%"></span></label>
+            <label>Heat <span style="--v:93%"></span></label>
+          </div>
+        </section>
+
+        <section class="center-panel panel">
+          <nav class="tabs">
+            <button class="active">Inventory</button>
+            <button>Tasks</button>
+            <button>Community</button>
+            <button>Rewards</button>
+          </nav>
+          <div class="core-layout">
+            <div class="character">
+              <div class="silhouette"></div>
+            </div>
+            <div class="inventory-grid">
+              <div class="slot dark">⌚</div>
+              <div class="slot dark">📒</div>
+              <div class="slot dark">🔗</div>
+              <div class="slot dark">🎯</div>
+              <div class="slot violet">🧵</div>
+              <div class="slot dark">🔫</div>
+              <div class="slot dark">📿</div>
+              <div class="slot dark">💻</div>
+              <div class="slot dark">🦺</div>
+              <div class="slot violet">🧣</div>
+              <div class="slot orange">AK</div>
+              <div class="slot violet">🧱</div>
+              <div class="slot dark">🧢</div>
+              <div class="slot dark">🧤</div>
+              <div class="slot dark">👟</div>
+              <div class="slot dark">💧</div>
+              <div class="slot dark">🥫</div>
+              <div class="slot dark">🎧</div>
+              <div class="slot blue">KIT</div>
+              <div class="slot dark">📻</div>
+              <div class="slot dark">🧻</div>
+              <div class="slot"></div>
+              <div class="slot"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="right-panel panel">
+          <div class="money-boxes">
+            <div class="money green">$ 12,780</div>
+            <div class="money blue">$ 23,590,780</div>
+          </div>
+          <ul class="actions">
+            <li>Sell</li>
+            <li>Buy</li>
+            <li>Give to Friend</li>
+            <li>Give to Team</li>
+            <li>Drop</li>
+          </ul>
+          <div class="history">
+            <h3>Purchase & Sale History</h3>
+            <p><b>Gold Bars</b><span>+39000</span></p>
+            <p><b>First Aid Kit</b><span>-18000</span></p>
+            <p><b>Laptop</b><span>+4000</span></p>
+            <p><b>AK-47</b><span>-4340</span></p>
+            <p><b>Rolex Watch</b><span>+4000</span></p>
+          </div>
+        </section>
+      </main>
+
+      <aside class="phone">
+        <div class="phone-header">Tuesday · 66°F</div>
+        <div class="apps">
+          <span>✉️</span><span>💬</span><span>📰</span><span>📷</span>
+          <span>☁️</span><span>🗺️</span><span>⛅</span><span>🔔</span>
+          <span>❤️</span><span>👽</span><span>📈</span><span>🏦</span>
+          <span>📞</span><span>🌐</span><span>🛍️</span><span>⚙️</span>
+        </div>
+      </aside>
+
+      <footer class="mission">Escape the police then deliver the cars with <span>Ciro</span> to the warehouse.</footer>
+    </div>
+  </body>
+</html>
