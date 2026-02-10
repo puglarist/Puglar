@@ -18,7 +18,8 @@
           "name": "z",
           "type": "f32"
         }
-      ]
+      ],
+      "routes": []
     },
     {
       "kind": "type",
@@ -32,7 +33,8 @@
           "name": "qty",
           "type": "u16"
         }
-      ]
+      ],
+      "routes": []
     },
     {
       "kind": "entity",
@@ -62,7 +64,8 @@
           "name": "inventory",
           "type": "list<ItemRef>"
         }
-      ]
+      ],
+      "routes": []
     },
     {
       "kind": "entity",
@@ -80,7 +83,8 @@
           "name": "axisY",
           "type": "f32"
         }
-      ]
+      ],
+      "routes": []
     },
     {
       "kind": "system",
@@ -88,17 +92,18 @@
       "fields": [
         {
           "name": "reads",
-          "type": "Player.position,"
+          "type": "Player.position, Input.axisX, Input.axisY"
         },
         {
           "name": "writes",
-          "type": "Player.position,"
+          "type": "Player.position, Player.stamina"
         },
         {
           "name": "tick",
           "type": "fixed(60)"
         }
-      ]
+      ],
+      "routes": []
     },
     {
       "kind": "storage",
@@ -116,12 +121,25 @@
           "name": "cache",
           "type": "redis(ttl=30s)"
         }
-      ]
+      ],
+      "routes": []
     },
     {
       "kind": "api",
       "name": "PlayerAPI",
-      "fields": []
+      "fields": [],
+      "routes": [
+        {
+          "method": "GET",
+          "path": "/players/:id",
+          "result": "Player"
+        },
+        {
+          "method": "POST",
+          "path": "/players",
+          "result": "Player"
+        }
+      ]
     }
   ]
 }
