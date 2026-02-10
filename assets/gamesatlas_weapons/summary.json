@@ -1,0 +1,59 @@
+{
+  "total_weapons": 164,
+  "games": {
+    "cod-black-ops-6": 67,
+    "cod-black-ops-7": 37,
+    "cod-modern-warfare-3": 60
+  },
+  "categories": {
+    "Assault Rifles": 31,
+    "Handguns": 14,
+    "LMGs": 15,
+    "Launchers": 7,
+    "Marksman Rifles": 14,
+    "Melee Weapons": 21,
+    "SMGs": 30,
+    "Shotguns": 10,
+    "Sniper Rifles": 14,
+    "Special Weapons": 3,
+    "Battle Rifles": 5
+  },
+  "game_category_breakdown": {
+    "cod-black-ops-6": {
+      "Assault Rifles": 14,
+      "Handguns": 7,
+      "LMGs": 5,
+      "Launchers": 2,
+      "Marksman Rifles": 6,
+      "Melee Weapons": 12,
+      "SMGs": 11,
+      "Shotguns": 3,
+      "Sniper Rifles": 5,
+      "Special Weapons": 2
+    },
+    "cod-black-ops-7": {
+      "Assault Rifles": 7,
+      "Handguns": 3,
+      "LMGs": 3,
+      "Launchers": 2,
+      "Marksman Rifles": 3,
+      "Melee Weapons": 3,
+      "SMGs": 8,
+      "Shotguns": 3,
+      "Sniper Rifles": 4,
+      "Special Weapons": 1
+    },
+    "cod-modern-warfare-3": {
+      "Assault Rifles": 10,
+      "Battle Rifles": 5,
+      "Handguns": 4,
+      "LMGs": 7,
+      "Launchers": 3,
+      "Marksman Rifles": 5,
+      "Melee Weapons": 6,
+      "SMGs": 11,
+      "Shotguns": 4,
+      "Sniper Rifles": 5
+    }
+  }
+}
