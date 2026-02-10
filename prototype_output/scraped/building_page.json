@@ -1,0 +1,19 @@
+{
+  "source_url": "https://rust.fandom.com/wiki/Building",
+  "notes": [
+    "Only public text structure is extracted.",
+    "No game textures, models, or copyrighted UI resources are copied."
+  ],
+  "warnings": [
+    "Fetch failed for source URL: <urlopen error Tunnel connection failed: 403 Forbidden>"
+  ],
+  "sections": {
+    "Overview": [
+      "Network-restricted fallback mode. Supply a local HTML snapshot for deterministic extraction.",
+      "Use --url file:///absolute/path/to/Building.html to parse saved source content."
+    ],
+    "Building Tiers": [
+      "Twig -> Wood -> Stone -> Metal -> Armored progression template for prototype balancing."
+    ]
+  }
+}

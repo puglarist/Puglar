@@ -1,0 +1,83 @@
+{
+  "resources": {
+    "wood": {
+      "stack": 1000,
+      "gather_rate": 15
+    },
+    "stone": {
+      "stack": 1000,
+      "gather_rate": 12
+    },
+    "metal_fragments": {
+      "stack": 1000,
+      "gather_rate": 6
+    },
+    "high_quality_metal": {
+      "stack": 100,
+      "gather_rate": 1
+    }
+  },
+  "building_tiers": [
+    {
+      "name": "twig",
+      "hp_multiplier": 0.3,
+      "upkeep": 1.0
+    },
+    {
+      "name": "wood",
+      "hp_multiplier": 0.8,
+      "upkeep": 1.2
+    },
+    {
+      "name": "stone",
+      "hp_multiplier": 1.4,
+      "upkeep": 1.5
+    },
+    {
+      "name": "metal",
+      "hp_multiplier": 2.0,
+      "upkeep": 1.9
+    },
+    {
+      "name": "armored",
+      "hp_multiplier": 2.8,
+      "upkeep": 2.4
+    }
+  ],
+  "state_machine": {
+    "states": [
+      "spawn",
+      "gather",
+      "build",
+      "raid",
+      "defend",
+      "respawn"
+    ],
+    "transitions": [
+      [
+        "spawn",
+        "gather"
+      ],
+      [
+        "gather",
+        "build"
+      ],
+      [
+        "build",
+        "defend"
+      ],
+      [
+        "defend",
+        "raid"
+      ],
+      [
+        "raid",
+        "respawn"
+      ],
+      [
+        "respawn",
+        "gather"
+      ]
+    ]
+  }
+}

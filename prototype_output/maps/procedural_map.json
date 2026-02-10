@@ -1,0 +1,4056 @@
+{
+  "seed": 42,
+  "size": {
+    "width": 24,
+    "height": 24
+  },
+  "legend": {
+    "biomes": [
+      "snow",
+      "forest",
+      "desert",
+      "temperate",
+      "coast"
+    ],
+    "pois": [
+      "outpost",
+      "harbor",
+      "monument",
+      "quarry"
+    ]
+  },
+  "tiles": [
+    {
+      "x": 0,
+      "y": 0,
+      "biome": "snow",
+      "elevation": 0.332,
+      "poi": null
+    },
+    {
+      "x": 1,
+      "y": 0,
+      "biome": "snow",
+      "elevation": 0.48,
+      "poi": null
+    },
+    {
+      "x": 2,
+      "y": 0,
+      "biome": "snow",
+      "elevation": 0.49,
+      "poi": null
+    },
+    {
+      "x": 3,
+      "y": 0,
+      "biome": "snow",
+      "elevation": 0.124,
+      "poi": null
+    },
+    {
+      "x": 4,
+      "y": 0,
+      "biome": "snow",
+      "elevation": 0.113,
+      "poi": null
+    },
+    {
+      "x": 5,
+      "y": 0,
+      "biome": "snow",
+      "elevation": 0.383,
+      "poi": null
+    },
+    {
+      "x": 6,
+      "y": 0,
+      "biome": "snow",
+      "elevation": 0.408,
+      "poi": null
+    },
+    {
+      "x": 7,
+      "y": 0,
+      "biome": "snow",
+      "elevation": 0.519,
+      "poi": null
+    },
+    {
+      "x": 8,
+      "y": 0,
+      "biome": "snow",
+      "elevation": 0.647,
+      "poi": null
+    },
+    {
+      "x": 9,
+      "y": 0,
+      "biome": "snow",
+      "elevation": 0.472,
+      "poi": null
+    },
+    {
+      "x": 10,
+      "y": 0,
+      "biome": "snow",
+      "elevation": 0.768,
+      "poi": null
+    },
+    {
+      "x": 11,
+      "y": 0,
+      "biome": "snow",
+      "elevation": 0.676,
+      "poi": null
+    },
+    {
+      "x": 12,
+      "y": 0,
+      "biome": "snow",
+      "elevation": 0.724,
+      "poi": null
+    },
+    {
+      "x": 13,
+      "y": 0,
+      "biome": "snow",
+      "elevation": 0.641,
+      "poi": null
+    },
+    {
+      "x": 14,
+      "y": 0,
+      "biome": "snow",
+      "elevation": 0.259,
+      "poi": null
+    },
+    {
+      "x": 15,
+      "y": 0,
+      "biome": "snow",
+      "elevation": 0.167,
+      "poi": null
+    },
+    {
+      "x": 16,
+      "y": 0,
+      "biome": "snow",
+      "elevation": 0.5,
+      "poi": null
+    },
+    {
+      "x": 17,
+      "y": 0,
+      "biome": "snow",
+      "elevation": 0.238,
+      "poi": "quarry"
+    },
+    {
+      "x": 18,
+      "y": 0,
+      "biome": "snow",
+      "elevation": 0.353,
+      "poi": null
+    },
+    {
+      "x": 19,
+      "y": 0,
+      "biome": "snow",
+      "elevation": 0.354,
+      "poi": null
+    },
+    {
+      "x": 20,
+      "y": 0,
+      "biome": "snow",
+      "elevation": 0.807,
+      "poi": null
+    },
+    {
+      "x": 21,
+      "y": 0,
+      "biome": "snow",
+      "elevation": 0.546,
+      "poi": null
+    },
+    {
+      "x": 22,
+      "y": 0,
+      "biome": "snow",
+      "elevation": 0.813,
+      "poi": null
+    },
+    {
+      "x": 23,
+      "y": 0,
+      "biome": "snow",
+      "elevation": 0.49,
+      "poi": null
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "biome": "snow",
+      "elevation": 0.465,
+      "poi": null
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "biome": "snow",
+      "elevation": 0.764,
+      "poi": null
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "biome": "snow",
+      "elevation": 0.442,
+      "poi": null
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "biome": "snow",
+      "elevation": 0.588,
+      "poi": null
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "biome": "snow",
+      "elevation": 0.68,
+      "poi": null
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "biome": "snow",
+      "elevation": 0.625,
+      "poi": null
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "biome": "snow",
+      "elevation": 0.156,
+      "poi": null
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "biome": "snow",
+      "elevation": 0.491,
+      "poi": null
+    },
+    {
+      "x": 8,
+      "y": 1,
+      "biome": "snow",
+      "elevation": 0.36,
+      "poi": null
+    },
+    {
+      "x": 9,
+      "y": 1,
+      "biome": "snow",
+      "elevation": 0.811,
+      "poi": null
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "biome": "snow",
+      "elevation": 0.818,
+      "poi": null
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "biome": "snow",
+      "elevation": 0.317,
+      "poi": null
+    },
+    {
+      "x": 12,
+      "y": 1,
+      "biome": "snow",
+      "elevation": 0.363,
+      "poi": null
+    },
+    {
+      "x": 13,
+      "y": 1,
+      "biome": "snow",
+      "elevation": 0.867,
+      "poi": null
+    },
+    {
+      "x": 14,
+      "y": 1,
+      "biome": "snow",
+      "elevation": 0.366,
+      "poi": null
+    },
+    {
+      "x": 15,
+      "y": 1,
+      "biome": "snow",
+      "elevation": 0.353,
+      "poi": null
+    },
+    {
+      "x": 16,
+      "y": 1,
+      "biome": "snow",
+      "elevation": 0.558,
+      "poi": null
+    },
+    {
+      "x": 17,
+      "y": 1,
+      "biome": "snow",
+      "elevation": 0.544,
+      "poi": null
+    },
+    {
+      "x": 18,
+      "y": 1,
+      "biome": "snow",
+      "elevation": 0.674,
+      "poi": null
+    },
+    {
+      "x": 19,
+      "y": 1,
+      "biome": "snow",
+      "elevation": 0.24,
+      "poi": null
+    },
+    {
+      "x": 20,
+      "y": 1,
+      "biome": "snow",
+      "elevation": 0.405,
+      "poi": null
+    },
+    {
+      "x": 21,
+      "y": 1,
+      "biome": "snow",
+      "elevation": 0.755,
+      "poi": null
+    },
+    {
+      "x": 22,
+      "y": 1,
+      "biome": "snow",
+      "elevation": 0.803,
+      "poi": null
+    },
+    {
+      "x": 23,
+      "y": 1,
+      "biome": "snow",
+      "elevation": 0.567,
+      "poi": "harbor"
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "biome": "snow",
+      "elevation": 0.723,
+      "poi": null
+    },
+    {
+      "x": 1,
+      "y": 2,
+      "biome": "snow",
+      "elevation": 0.535,
+      "poi": null
+    },
+    {
+      "x": 2,
+      "y": 2,
+      "biome": "snow",
+      "elevation": 0.676,
+      "poi": null
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "biome": "snow",
+      "elevation": 0.043,
+      "poi": null
+    },
+    {
+      "x": 4,
+      "y": 2,
+      "biome": "snow",
+      "elevation": 0.298,
+      "poi": null
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "biome": "snow",
+      "elevation": 0.063,
+      "poi": null
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "biome": "snow",
+      "elevation": 0.422,
+      "poi": null
+    },
+    {
+      "x": 7,
+      "y": 2,
+      "biome": "snow",
+      "elevation": 0.512,
+      "poi": null
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "biome": "snow",
+      "elevation": 0.729,
+      "poi": null
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "biome": "snow",
+      "elevation": 0.44,
+      "poi": null
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "biome": "snow",
+      "elevation": 0.507,
+      "poi": null
+    },
+    {
+      "x": 11,
+      "y": 2,
+      "biome": "snow",
+      "elevation": 0.459,
+      "poi": null
+    },
+    {
+      "x": 12,
+      "y": 2,
+      "biome": "snow",
+      "elevation": 0.353,
+      "poi": null
+    },
+    {
+      "x": 13,
+      "y": 2,
+      "biome": "snow",
+      "elevation": 0.455,
+      "poi": null
+    },
+    {
+      "x": 14,
+      "y": 2,
+      "biome": "snow",
+      "elevation": 0.338,
+      "poi": null
+    },
+    {
+      "x": 15,
+      "y": 2,
+      "biome": "snow",
+      "elevation": 0.669,
+      "poi": null
+    },
+    {
+      "x": 16,
+      "y": 2,
+      "biome": "snow",
+      "elevation": 0.832,
+      "poi": null
+    },
+    {
+      "x": 17,
+      "y": 2,
+      "biome": "snow",
+      "elevation": 0.596,
+      "poi": null
+    },
+    {
+      "x": 18,
+      "y": 2,
+      "biome": "snow",
+      "elevation": 0.423,
+      "poi": null
+    },
+    {
+      "x": 19,
+      "y": 2,
+      "biome": "snow",
+      "elevation": 0.444,
+      "poi": null
+    },
+    {
+      "x": 20,
+      "y": 2,
+      "biome": "snow",
+      "elevation": 0.534,
+      "poi": null
+    },
+    {
+      "x": 21,
+      "y": 2,
+      "biome": "snow",
+      "elevation": 0.658,
+      "poi": null
+    },
+    {
+      "x": 22,
+      "y": 2,
+      "biome": "snow",
+      "elevation": 0.491,
+      "poi": null
+    },
+    {
+      "x": 23,
+      "y": 2,
+      "biome": "snow",
+      "elevation": 0.723,
+      "poi": null
+    },
+    {
+      "x": 0,
+      "y": 3,
+      "biome": "snow",
+      "elevation": 0.204,
+      "poi": null
+    },
+    {
+      "x": 1,
+      "y": 3,
+      "biome": "snow",
+      "elevation": 0.398,
+      "poi": null
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "biome": "snow",
+      "elevation": 0.263,
+      "poi": null
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "biome": "snow",
+      "elevation": 0.294,
+      "poi": null
+    },
+    {
+      "x": 4,
+      "y": 3,
+      "biome": "snow",
+      "elevation": 0.46,
+      "poi": null
+    },
+    {
+      "x": 5,
+      "y": 3,
+      "biome": "snow",
+      "elevation": 0.633,
+      "poi": "harbor"
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "biome": "snow",
+      "elevation": 0.42,
+      "poi": null
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "biome": "snow",
+      "elevation": 0.501,
+      "poi": null
+    },
+    {
+      "x": 8,
+      "y": 3,
+      "biome": "snow",
+      "elevation": 0.569,
+      "poi": null
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "biome": "snow",
+      "elevation": 0.317,
+      "poi": null
+    },
+    {
+      "x": 10,
+      "y": 3,
+      "biome": "snow",
+      "elevation": 0.308,
+      "poi": null
+    },
+    {
+      "x": 11,
+      "y": 3,
+      "biome": "snow",
+      "elevation": 0.265,
+      "poi": null
+    },
+    {
+      "x": 12,
+      "y": 3,
+      "biome": "snow",
+      "elevation": 0.143,
+      "poi": null
+    },
+    {
+      "x": 13,
+      "y": 3,
+      "biome": "snow",
+      "elevation": 0.907,
+      "poi": null
+    },
+    {
+      "x": 14,
+      "y": 3,
+      "biome": "snow",
+      "elevation": 0.264,
+      "poi": null
+    },
+    {
+      "x": 15,
+      "y": 3,
+      "biome": "snow",
+      "elevation": 0.658,
+      "poi": "quarry"
+    },
+    {
+      "x": 16,
+      "y": 3,
+      "biome": "snow",
+      "elevation": 0.598,
+      "poi": null
+    },
+    {
+      "x": 17,
+      "y": 3,
+      "biome": "snow",
+      "elevation": 0.518,
+      "poi": null
+    },
+    {
+      "x": 18,
+      "y": 3,
+      "biome": "snow",
+      "elevation": 0.577,
+      "poi": null
+    },
+    {
+      "x": 19,
+      "y": 3,
+      "biome": "snow",
+      "elevation": 0.219,
+      "poi": null
+    },
+    {
+      "x": 20,
+      "y": 3,
+      "biome": "snow",
+      "elevation": 0.515,
+      "poi": null
+    },
+    {
+      "x": 21,
+      "y": 3,
+      "biome": "snow",
+      "elevation": 0.378,
+      "poi": null
+    },
+    {
+      "x": 22,
+      "y": 3,
+      "biome": "snow",
+      "elevation": 0.343,
+      "poi": null
+    },
+    {
+      "x": 23,
+      "y": 3,
+      "biome": "snow",
+      "elevation": 0.189,
+      "poi": null
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "biome": "snow",
+      "elevation": 0.571,
+      "poi": null
+    },
+    {
+      "x": 1,
+      "y": 4,
+      "biome": "snow",
+      "elevation": 0.633,
+      "poi": null
+    },
+    {
+      "x": 2,
+      "y": 4,
+      "biome": "snow",
+      "elevation": 0.818,
+      "poi": null
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "biome": "snow",
+      "elevation": 0.203,
+      "poi": null
+    },
+    {
+      "x": 4,
+      "y": 4,
+      "biome": "snow",
+      "elevation": 0.236,
+      "poi": null
+    },
+    {
+      "x": 5,
+      "y": 4,
+      "biome": "snow",
+      "elevation": 0.953,
+      "poi": null
+    },
+    {
+      "x": 6,
+      "y": 4,
+      "biome": "snow",
+      "elevation": 0.52,
+      "poi": null
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "biome": "snow",
+      "elevation": 0.457,
+      "poi": null
+    },
+    {
+      "x": 8,
+      "y": 4,
+      "biome": "snow",
+      "elevation": 0.862,
+      "poi": null
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "biome": "snow",
+      "elevation": 0.92,
+      "poi": null
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "biome": "snow",
+      "elevation": 0.453,
+      "poi": null
+    },
+    {
+      "x": 11,
+      "y": 4,
+      "biome": "snow",
+      "elevation": 0.632,
+      "poi": null
+    },
+    {
+      "x": 12,
+      "y": 4,
+      "biome": "snow",
+      "elevation": 0.837,
+      "poi": null
+    },
+    {
+      "x": 13,
+      "y": 4,
+      "biome": "snow",
+      "elevation": 0.448,
+      "poi": null
+    },
+    {
+      "x": 14,
+      "y": 4,
+      "biome": "snow",
+      "elevation": 0.541,
+      "poi": null
+    },
+    {
+      "x": 15,
+      "y": 4,
+      "biome": "snow",
+      "elevation": 0.383,
+      "poi": null
+    },
+    {
+      "x": 16,
+      "y": 4,
+      "biome": "snow",
+      "elevation": 0.126,
+      "poi": null
+    },
+    {
+      "x": 17,
+      "y": 4,
+      "biome": "snow",
+      "elevation": 0.596,
+      "poi": null
+    },
+    {
+      "x": 18,
+      "y": 4,
+      "biome": "snow",
+      "elevation": 0.43,
+      "poi": null
+    },
+    {
+      "x": 19,
+      "y": 4,
+      "biome": "snow",
+      "elevation": 0.587,
+      "poi": null
+    },
+    {
+      "x": 20,
+      "y": 4,
+      "biome": "snow",
+      "elevation": 0.569,
+      "poi": null
+    },
+    {
+      "x": 21,
+      "y": 4,
+      "biome": "snow",
+      "elevation": 0.511,
+      "poi": null
+    },
+    {
+      "x": 22,
+      "y": 4,
+      "biome": "snow",
+      "elevation": 0.566,
+      "poi": null
+    },
+    {
+      "x": 23,
+      "y": 4,
+      "biome": "snow",
+      "elevation": 0.55,
+      "poi": null
+    },
+    {
+      "x": 0,
+      "y": 5,
+      "biome": "snow",
+      "elevation": 0.117,
+      "poi": null
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "biome": "desert",
+      "elevation": 0.663,
+      "poi": null
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "biome": "coast",
+      "elevation": 0.839,
+      "poi": null
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "biome": "desert",
+      "elevation": 0.69,
+      "poi": "harbor"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "biome": "forest",
+      "elevation": 0.581,
+      "poi": null
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "biome": "forest",
+      "elevation": 0.305,
+      "poi": null
+    },
+    {
+      "x": 6,
+      "y": 5,
+      "biome": "desert",
+      "elevation": 0.349,
+      "poi": null
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "biome": "desert",
+      "elevation": 0.68,
+      "poi": null
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "biome": "coast",
+      "elevation": 0.759,
+      "poi": null
+    },
+    {
+      "x": 9,
+      "y": 5,
+      "biome": "desert",
+      "elevation": 0.274,
+      "poi": null
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "biome": "desert",
+      "elevation": 0.505,
+      "poi": null
+    },
+    {
+      "x": 11,
+      "y": 5,
+      "biome": "desert",
+      "elevation": 0.454,
+      "poi": null
+    },
+    {
+      "x": 12,
+      "y": 5,
+      "biome": "desert",
+      "elevation": 0.687,
+      "poi": null
+    },
+    {
+      "x": 13,
+      "y": 5,
+      "biome": "snow",
+      "elevation": 0.127,
+      "poi": null
+    },
+    {
+      "x": 14,
+      "y": 5,
+      "biome": "temperate",
+      "elevation": 0.484,
+      "poi": null
+    },
+    {
+      "x": 15,
+      "y": 5,
+      "biome": "temperate",
+      "elevation": 0.712,
+      "poi": null
+    },
+    {
+      "x": 16,
+      "y": 5,
+      "biome": "snow",
+      "elevation": 0.112,
+      "poi": null
+    },
+    {
+      "x": 17,
+      "y": 5,
+      "biome": "desert",
+      "elevation": 0.662,
+      "poi": null
+    },
+    {
+      "x": 18,
+      "y": 5,
+      "biome": "desert",
+      "elevation": 0.522,
+      "poi": null
+    },
+    {
+      "x": 19,
+      "y": 5,
+      "biome": "temperate",
+      "elevation": 0.595,
+      "poi": null
+    },
+    {
+      "x": 20,
+      "y": 5,
+      "biome": "temperate",
+      "elevation": 0.331,
+      "poi": null
+    },
+    {
+      "x": 21,
+      "y": 5,
+      "biome": "temperate",
+      "elevation": 0.438,
+      "poi": null
+    },
+    {
+      "x": 22,
+      "y": 5,
+      "biome": "snow",
+      "elevation": 0.567,
+      "poi": null
+    },
+    {
+      "x": 23,
+      "y": 5,
+      "biome": "snow",
+      "elevation": 0.15,
+      "poi": null
+    },
+    {
+      "x": 0,
+      "y": 6,
+      "biome": "desert",
+      "elevation": 0.629,
+      "poi": null
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "biome": "coast",
+      "elevation": 0.792,
+      "poi": "outpost"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "biome": "temperate",
+      "elevation": 0.666,
+      "poi": null
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "biome": "coast",
+      "elevation": 0.689,
+      "poi": null
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "biome": "temperate",
+      "elevation": 0.609,
+      "poi": null
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "biome": "forest",
+      "elevation": 0.442,
+      "poi": null
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "biome": "desert",
+      "elevation": 0.574,
+      "poi": null
+    },
+    {
+      "x": 7,
+      "y": 6,
+      "biome": "snow",
+      "elevation": 0.182,
+      "poi": null
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "biome": "forest",
+      "elevation": 0.43,
+      "poi": null
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "biome": "forest",
+      "elevation": 0.463,
+      "poi": null
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "biome": "snow",
+      "elevation": 0.236,
+      "poi": null
+    },
+    {
+      "x": 11,
+      "y": 6,
+      "biome": "desert",
+      "elevation": 0.311,
+      "poi": null
+    },
+    {
+      "x": 12,
+      "y": 6,
+      "biome": "coast",
+      "elevation": 0.744,
+      "poi": null
+    },
+    {
+      "x": 13,
+      "y": 6,
+      "biome": "coast",
+      "elevation": 0.811,
+      "poi": null
+    },
+    {
+      "x": 14,
+      "y": 6,
+      "biome": "snow",
+      "elevation": 0.179,
+      "poi": null
+    },
+    {
+      "x": 15,
+      "y": 6,
+      "biome": "coast",
+      "elevation": 0.903,
+      "poi": null
+    },
+    {
+      "x": 16,
+      "y": 6,
+      "biome": "temperate",
+      "elevation": 0.647,
+      "poi": null
+    },
+    {
+      "x": 17,
+      "y": 6,
+      "biome": "forest",
+      "elevation": 0.22,
+      "poi": null
+    },
+    {
+      "x": 18,
+      "y": 6,
+      "biome": "snow",
+      "elevation": 0.183,
+      "poi": null
+    },
+    {
+      "x": 19,
+      "y": 6,
+      "biome": "desert",
+      "elevation": 0.285,
+      "poi": null
+    },
+    {
+      "x": 20,
+      "y": 6,
+      "biome": "snow",
+      "elevation": 0.375,
+      "poi": null
+    },
+    {
+      "x": 21,
+      "y": 6,
+      "biome": "forest",
+      "elevation": 0.479,
+      "poi": null
+    },
+    {
+      "x": 22,
+      "y": 6,
+      "biome": "temperate",
+      "elevation": 0.389,
+      "poi": null
+    },
+    {
+      "x": 23,
+      "y": 6,
+      "biome": "snow",
+      "elevation": 0.215,
+      "poi": null
+    },
+    {
+      "x": 0,
+      "y": 7,
+      "biome": "forest",
+      "elevation": 0.544,
+      "poi": null
+    },
+    {
+      "x": 1,
+      "y": 7,
+      "biome": "temperate",
+      "elevation": 0.792,
+      "poi": null
+    },
+    {
+      "x": 2,
+      "y": 7,
+      "biome": "snow",
+      "elevation": 0.051,
+      "poi": null
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "biome": "coast",
+      "elevation": 0.675,
+      "poi": null
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "biome": "temperate",
+      "elevation": 0.716,
+      "poi": null
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "biome": "coast",
+      "elevation": 0.574,
+      "poi": null
+    },
+    {
+      "x": 6,
+      "y": 7,
+      "biome": "snow",
+      "elevation": 0.139,
+      "poi": null
+    },
+    {
+      "x": 7,
+      "y": 7,
+      "biome": "desert",
+      "elevation": 0.391,
+      "poi": null
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "biome": "temperate",
+      "elevation": 0.467,
+      "poi": null
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "biome": "temperate",
+      "elevation": 0.431,
+      "poi": null
+    },
+    {
+      "x": 10,
+      "y": 7,
+      "biome": "coast",
+      "elevation": 0.536,
+      "poi": null
+    },
+    {
+      "x": 11,
+      "y": 7,
+      "biome": "forest",
+      "elevation": 0.495,
+      "poi": "outpost"
+    },
+    {
+      "x": 12,
+      "y": 7,
+      "biome": "coast",
+      "elevation": 0.57,
+      "poi": null
+    },
+    {
+      "x": 13,
+      "y": 7,
+      "biome": "coast",
+      "elevation": 0.537,
+      "poi": null
+    },
+    {
+      "x": 14,
+      "y": 7,
+      "biome": "forest",
+      "elevation": 0.493,
+      "poi": null
+    },
+    {
+      "x": 15,
+      "y": 7,
+      "biome": "temperate",
+      "elevation": 0.681,
+      "poi": null
+    },
+    {
+      "x": 16,
+      "y": 7,
+      "biome": "desert",
+      "elevation": 0.597,
+      "poi": null
+    },
+    {
+      "x": 17,
+      "y": 7,
+      "biome": "temperate",
+      "elevation": 0.33,
+      "poi": null
+    },
+    {
+      "x": 18,
+      "y": 7,
+      "biome": "desert",
+      "elevation": 0.462,
+      "poi": null
+    },
+    {
+      "x": 19,
+      "y": 7,
+      "biome": "coast",
+      "elevation": 0.676,
+      "poi": null
+    },
+    {
+      "x": 20,
+      "y": 7,
+      "biome": "snow",
+      "elevation": 0.349,
+      "poi": null
+    },
+    {
+      "x": 21,
+      "y": 7,
+      "biome": "temperate",
+      "elevation": 0.768,
+      "poi": null
+    },
+    {
+      "x": 22,
+      "y": 7,
+      "biome": "desert",
+      "elevation": 0.645,
+      "poi": null
+    },
+    {
+      "x": 23,
+      "y": 7,
+      "biome": "forest",
+      "elevation": 0.284,
+      "poi": null
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "biome": "coast",
+      "elevation": 0.563,
+      "poi": null
+    },
+    {
+      "x": 1,
+      "y": 8,
+      "biome": "temperate",
+      "elevation": 0.495,
+      "poi": null
+    },
+    {
+      "x": 2,
+      "y": 8,
+      "biome": "coast",
+      "elevation": 0.516,
+      "poi": null
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "biome": "temperate",
+      "elevation": 0.569,
+      "poi": null
+    },
+    {
+      "x": 4,
+      "y": 8,
+      "biome": "temperate",
+      "elevation": 0.489,
+      "poi": null
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "biome": "coast",
+      "elevation": 0.517,
+      "poi": null
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "biome": "desert",
+      "elevation": 0.623,
+      "poi": null
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "biome": "temperate",
+      "elevation": 0.568,
+      "poi": null
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "biome": "snow",
+      "elevation": 0.157,
+      "poi": null
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "biome": "forest",
+      "elevation": 0.444,
+      "poi": null
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "biome": "desert",
+      "elevation": 0.478,
+      "poi": null
+    },
+    {
+      "x": 11,
+      "y": 8,
+      "biome": "forest",
+      "elevation": 0.517,
+      "poi": null
+    },
+    {
+      "x": 12,
+      "y": 8,
+      "biome": "forest",
+      "elevation": 0.186,
+      "poi": null
+    },
+    {
+      "x": 13,
+      "y": 8,
+      "biome": "snow",
+      "elevation": 0.328,
+      "poi": null
+    },
+    {
+      "x": 14,
+      "y": 8,
+      "biome": "snow",
+      "elevation": 0.201,
+      "poi": null
+    },
+    {
+      "x": 15,
+      "y": 8,
+      "biome": "temperate",
+      "elevation": 0.851,
+      "poi": null
+    },
+    {
+      "x": 16,
+      "y": 8,
+      "biome": "forest",
+      "elevation": 0.192,
+      "poi": null
+    },
+    {
+      "x": 17,
+      "y": 8,
+      "biome": "forest",
+      "elevation": 0.203,
+      "poi": null
+    },
+    {
+      "x": 18,
+      "y": 8,
+      "biome": "desert",
+      "elevation": 0.404,
+      "poi": "harbor"
+    },
+    {
+      "x": 19,
+      "y": 8,
+      "biome": "forest",
+      "elevation": 0.618,
+      "poi": null
+    },
+    {
+      "x": 20,
+      "y": 8,
+      "biome": "temperate",
+      "elevation": 0.428,
+      "poi": null
+    },
+    {
+      "x": 21,
+      "y": 8,
+      "biome": "forest",
+      "elevation": 0.382,
+      "poi": null
+    },
+    {
+      "x": 22,
+      "y": 8,
+      "biome": "coast",
+      "elevation": 0.609,
+      "poi": null
+    },
+    {
+      "x": 23,
+      "y": 8,
+      "biome": "snow",
+      "elevation": 0.09,
+      "poi": null
+    },
+    {
+      "x": 0,
+      "y": 9,
+      "biome": "desert",
+      "elevation": 0.632,
+      "poi": null
+    },
+    {
+      "x": 1,
+      "y": 9,
+      "biome": "coast",
+      "elevation": 0.88,
+      "poi": null
+    },
+    {
+      "x": 2,
+      "y": 9,
+      "biome": "forest",
+      "elevation": 0.403,
+      "poi": null
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "biome": "desert",
+      "elevation": 0.607,
+      "poi": null
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "biome": "forest",
+      "elevation": 0.644,
+      "poi": null
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "biome": "desert",
+      "elevation": 0.509,
+      "poi": null
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "biome": "snow",
+      "elevation": 0.51,
+      "poi": null
+    },
+    {
+      "x": 7,
+      "y": 9,
+      "biome": "temperate",
+      "elevation": 0.694,
+      "poi": null
+    },
+    {
+      "x": 8,
+      "y": 9,
+      "biome": "snow",
+      "elevation": 0.161,
+      "poi": null
+    },
+    {
+      "x": 9,
+      "y": 9,
+      "biome": "snow",
+      "elevation": 0.283,
+      "poi": null
+    },
+    {
+      "x": 10,
+      "y": 9,
+      "biome": "desert",
+      "elevation": 0.251,
+      "poi": null
+    },
+    {
+      "x": 11,
+      "y": 9,
+      "biome": "forest",
+      "elevation": 0.571,
+      "poi": null
+    },
+    {
+      "x": 12,
+      "y": 9,
+      "biome": "forest",
+      "elevation": 0.249,
+      "poi": null
+    },
+    {
+      "x": 13,
+      "y": 9,
+      "biome": "desert",
+      "elevation": 0.697,
+      "poi": null
+    },
+    {
+      "x": 14,
+      "y": 9,
+      "biome": "snow",
+      "elevation": 0.17,
+      "poi": null
+    },
+    {
+      "x": 15,
+      "y": 9,
+      "biome": "forest",
+      "elevation": 0.204,
+      "poi": null
+    },
+    {
+      "x": 16,
+      "y": 9,
+      "biome": "temperate",
+      "elevation": 0.694,
+      "poi": null
+    },
+    {
+      "x": 17,
+      "y": 9,
+      "biome": "coast",
+      "elevation": 0.68,
+      "poi": null
+    },
+    {
+      "x": 18,
+      "y": 9,
+      "biome": "forest",
+      "elevation": 0.353,
+      "poi": null
+    },
+    {
+      "x": 19,
+      "y": 9,
+      "biome": "desert",
+      "elevation": 0.489,
+      "poi": null
+    },
+    {
+      "x": 20,
+      "y": 9,
+      "biome": "coast",
+      "elevation": 0.812,
+      "poi": null
+    },
+    {
+      "x": 21,
+      "y": 9,
+      "biome": "snow",
+      "elevation": 0.127,
+      "poi": null
+    },
+    {
+      "x": 22,
+      "y": 9,
+      "biome": "coast",
+      "elevation": 0.724,
+      "poi": null
+    },
+    {
+      "x": 23,
+      "y": 9,
+      "biome": "temperate",
+      "elevation": 0.793,
+      "poi": null
+    },
+    {
+      "x": 0,
+      "y": 10,
+      "biome": "temperate",
+      "elevation": 0.469,
+      "poi": null
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "biome": "desert",
+      "elevation": 0.36,
+      "poi": "outpost"
+    },
+    {
+      "x": 2,
+      "y": 10,
+      "biome": "temperate",
+      "elevation": 0.563,
+      "poi": null
+    },
+    {
+      "x": 3,
+      "y": 10,
+      "biome": "forest",
+      "elevation": 0.341,
+      "poi": null
+    },
+    {
+      "x": 4,
+      "y": 10,
+      "biome": "coast",
+      "elevation": 0.594,
+      "poi": null
+    },
+    {
+      "x": 5,
+      "y": 10,
+      "biome": "forest",
+      "elevation": 0.617,
+      "poi": null
+    },
+    {
+      "x": 6,
+      "y": 10,
+      "biome": "desert",
+      "elevation": 0.502,
+      "poi": null
+    },
+    {
+      "x": 7,
+      "y": 10,
+      "biome": "forest",
+      "elevation": 0.647,
+      "poi": null
+    },
+    {
+      "x": 8,
+      "y": 10,
+      "biome": "desert",
+      "elevation": 0.751,
+      "poi": null
+    },
+    {
+      "x": 9,
+      "y": 10,
+      "biome": "desert",
+      "elevation": 0.478,
+      "poi": null
+    },
+    {
+      "x": 10,
+      "y": 10,
+      "biome": "forest",
+      "elevation": 0.559,
+      "poi": null
+    },
+    {
+      "x": 11,
+      "y": 10,
+      "biome": "temperate",
+      "elevation": 0.482,
+      "poi": null
+    },
+    {
+      "x": 12,
+      "y": 10,
+      "biome": "coast",
+      "elevation": 0.683,
+      "poi": null
+    },
+    {
+      "x": 13,
+      "y": 10,
+      "biome": "snow",
+      "elevation": 0.547,
+      "poi": null
+    },
+    {
+      "x": 14,
+      "y": 10,
+      "biome": "forest",
+      "elevation": 0.199,
+      "poi": null
+    },
+    {
+      "x": 15,
+      "y": 10,
+      "biome": "desert",
+      "elevation": 0.323,
+      "poi": null
+    },
+    {
+      "x": 16,
+      "y": 10,
+      "biome": "desert",
+      "elevation": 0.289,
+      "poi": null
+    },
+    {
+      "x": 17,
+      "y": 10,
+      "biome": "desert",
+      "elevation": 0.607,
+      "poi": null
+    },
+    {
+      "x": 18,
+      "y": 10,
+      "biome": "forest",
+      "elevation": 0.554,
+      "poi": null
+    },
+    {
+      "x": 19,
+      "y": 10,
+      "biome": "desert",
+      "elevation": 0.301,
+      "poi": null
+    },
+    {
+      "x": 20,
+      "y": 10,
+      "biome": "desert",
+      "elevation": 0.673,
+      "poi": null
+    },
+    {
+      "x": 21,
+      "y": 10,
+      "biome": "snow",
+      "elevation": 0.421,
+      "poi": null
+    },
+    {
+      "x": 22,
+      "y": 10,
+      "biome": "forest",
+      "elevation": 0.564,
+      "poi": null
+    },
+    {
+      "x": 23,
+      "y": 10,
+      "biome": "snow",
+      "elevation": 0.364,
+      "poi": null
+    },
+    {
+      "x": 0,
+      "y": 11,
+      "biome": "desert",
+      "elevation": 0.62,
+      "poi": null
+    },
+    {
+      "x": 1,
+      "y": 11,
+      "biome": "desert",
+      "elevation": 0.465,
+      "poi": null
+    },
+    {
+      "x": 2,
+      "y": 11,
+      "biome": "temperate",
+      "elevation": 0.57,
+      "poi": "monument"
+    },
+    {
+      "x": 3,
+      "y": 11,
+      "biome": "snow",
+      "elevation": 0.443,
+      "poi": null
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "biome": "forest",
+      "elevation": 0.505,
+      "poi": null
+    },
+    {
+      "x": 5,
+      "y": 11,
+      "biome": "temperate",
+      "elevation": 0.725,
+      "poi": null
+    },
+    {
+      "x": 6,
+      "y": 11,
+      "biome": "forest",
+      "elevation": 0.525,
+      "poi": null
+    },
+    {
+      "x": 7,
+      "y": 11,
+      "biome": "coast",
+      "elevation": 0.738,
+      "poi": null
+    },
+    {
+      "x": 8,
+      "y": 11,
+      "biome": "desert",
+      "elevation": 0.546,
+      "poi": null
+    },
+    {
+      "x": 9,
+      "y": 11,
+      "biome": "coast",
+      "elevation": 0.657,
+      "poi": null
+    },
+    {
+      "x": 10,
+      "y": 11,
+      "biome": "desert",
+      "elevation": 0.59,
+      "poi": null
+    },
+    {
+      "x": 11,
+      "y": 11,
+      "biome": "temperate",
+      "elevation": 0.405,
+      "poi": null
+    },
+    {
+      "x": 12,
+      "y": 11,
+      "biome": "coast",
+      "elevation": 0.654,
+      "poi": null
+    },
+    {
+      "x": 13,
+      "y": 11,
+      "biome": "temperate",
+      "elevation": 0.751,
+      "poi": null
+    },
+    {
+      "x": 14,
+      "y": 11,
+      "biome": "coast",
+      "elevation": 0.62,
+      "poi": null
+    },
+    {
+      "x": 15,
+      "y": 11,
+      "biome": "temperate",
+      "elevation": 0.739,
+      "poi": null
+    },
+    {
+      "x": 16,
+      "y": 11,
+      "biome": "snow",
+      "elevation": 0.052,
+      "poi": null
+    },
+    {
+      "x": 17,
+      "y": 11,
+      "biome": "coast",
+      "elevation": 0.959,
+      "poi": null
+    },
+    {
+      "x": 18,
+      "y": 11,
+      "biome": "desert",
+      "elevation": 0.266,
+      "poi": null
+    },
+    {
+      "x": 19,
+      "y": 11,
+      "biome": "coast",
+      "elevation": 0.658,
+      "poi": null
+    },
+    {
+      "x": 20,
+      "y": 11,
+      "biome": "coast",
+      "elevation": 0.475,
+      "poi": null
+    },
+    {
+      "x": 21,
+      "y": 11,
+      "biome": "forest",
+      "elevation": 0.334,
+      "poi": null
+    },
+    {
+      "x": 22,
+      "y": 11,
+      "biome": "desert",
+      "elevation": 0.549,
+      "poi": null
+    },
+    {
+      "x": 23,
+      "y": 11,
+      "biome": "snow",
+      "elevation": 0.124,
+      "poi": null
+    },
+    {
+      "x": 0,
+      "y": 12,
+      "biome": "temperate",
+      "elevation": 0.43,
+      "poi": null
+    },
+    {
+      "x": 1,
+      "y": 12,
+      "biome": "snow",
+      "elevation": 0.302,
+      "poi": null
+    },
+    {
+      "x": 2,
+      "y": 12,
+      "biome": "forest",
+      "elevation": 0.132,
+      "poi": null
+    },
+    {
+      "x": 3,
+      "y": 12,
+      "biome": "coast",
+      "elevation": 0.789,
+      "poi": null
+    },
+    {
+      "x": 4,
+      "y": 12,
+      "biome": "desert",
+      "elevation": 0.394,
+      "poi": null
+    },
+    {
+      "x": 5,
+      "y": 12,
+      "biome": "temperate",
+      "elevation": 0.532,
+      "poi": null
+    },
+    {
+      "x": 6,
+      "y": 12,
+      "biome": "coast",
+      "elevation": 0.522,
+      "poi": null
+    },
+    {
+      "x": 7,
+      "y": 12,
+      "biome": "desert",
+      "elevation": 0.36,
+      "poi": null
+    },
+    {
+      "x": 8,
+      "y": 12,
+      "biome": "desert",
+      "elevation": 0.784,
+      "poi": null
+    },
+    {
+      "x": 9,
+      "y": 12,
+      "biome": "coast",
+      "elevation": 0.818,
+      "poi": null
+    },
+    {
+      "x": 10,
+      "y": 12,
+      "biome": "desert",
+      "elevation": 0.626,
+      "poi": null
+    },
+    {
+      "x": 11,
+      "y": 12,
+      "biome": "snow",
+      "elevation": 0.328,
+      "poi": null
+    },
+    {
+      "x": 12,
+      "y": 12,
+      "biome": "coast",
+      "elevation": 0.595,
+      "poi": null
+    },
+    {
+      "x": 13,
+      "y": 12,
+      "biome": "temperate",
+      "elevation": 0.48,
+      "poi": null
+    },
+    {
+      "x": 14,
+      "y": 12,
+      "biome": "temperate",
+      "elevation": 0.649,
+      "poi": null
+    },
+    {
+      "x": 15,
+      "y": 12,
+      "biome": "temperate",
+      "elevation": 0.749,
+      "poi": null
+    },
+    {
+      "x": 16,
+      "y": 12,
+      "biome": "coast",
+      "elevation": 0.775,
+      "poi": null
+    },
+    {
+      "x": 17,
+      "y": 12,
+      "biome": "desert",
+      "elevation": 0.51,
+      "poi": null
+    },
+    {
+      "x": 18,
+      "y": 12,
+      "biome": "snow",
+      "elevation": 0.193,
+      "poi": null
+    },
+    {
+      "x": 19,
+      "y": 12,
+      "biome": "snow",
+      "elevation": 0.154,
+      "poi": null
+    },
+    {
+      "x": 20,
+      "y": 12,
+      "biome": "coast",
+      "elevation": 0.751,
+      "poi": null
+    },
+    {
+      "x": 21,
+      "y": 12,
+      "biome": "coast",
+      "elevation": 0.544,
+      "poi": null
+    },
+    {
+      "x": 22,
+      "y": 12,
+      "biome": "desert",
+      "elevation": 0.644,
+      "poi": null
+    },
+    {
+      "x": 23,
+      "y": 12,
+      "biome": "forest",
+      "elevation": 0.227,
+      "poi": null
+    },
+    {
+      "x": 0,
+      "y": 13,
+      "biome": "temperate",
+      "elevation": 0.49,
+      "poi": null
+    },
+    {
+      "x": 1,
+      "y": 13,
+      "biome": "temperate",
+      "elevation": 0.536,
+      "poi": null
+    },
+    {
+      "x": 2,
+      "y": 13,
+      "biome": "desert",
+      "elevation": 0.324,
+      "poi": null
+    },
+    {
+      "x": 3,
+      "y": 13,
+      "biome": "forest",
+      "elevation": 0.194,
+      "poi": null
+    },
+    {
+      "x": 4,
+      "y": 13,
+      "biome": "temperate",
+      "elevation": 0.506,
+      "poi": null
+    },
+    {
+      "x": 5,
+      "y": 13,
+      "biome": "temperate",
+      "elevation": 0.505,
+      "poi": null
+    },
+    {
+      "x": 6,
+      "y": 13,
+      "biome": "desert",
+      "elevation": 0.546,
+      "poi": null
+    },
+    {
+      "x": 7,
+      "y": 13,
+      "biome": "coast",
+      "elevation": 0.568,
+      "poi": null
+    },
+    {
+      "x": 8,
+      "y": 13,
+      "biome": "coast",
+      "elevation": 0.867,
+      "poi": null
+    },
+    {
+      "x": 9,
+      "y": 13,
+      "biome": "desert",
+      "elevation": 0.274,
+      "poi": null
+    },
+    {
+      "x": 10,
+      "y": 13,
+      "biome": "coast",
+      "elevation": 0.556,
+      "poi": null
+    },
+    {
+      "x": 11,
+      "y": 13,
+      "biome": "desert",
+      "elevation": 0.463,
+      "poi": null
+    },
+    {
+      "x": 12,
+      "y": 13,
+      "biome": "coast",
+      "elevation": 0.823,
+      "poi": null
+    },
+    {
+      "x": 13,
+      "y": 13,
+      "biome": "desert",
+      "elevation": 0.657,
+      "poi": null
+    },
+    {
+      "x": 14,
+      "y": 13,
+      "biome": "temperate",
+      "elevation": 0.744,
+      "poi": null
+    },
+    {
+      "x": 15,
+      "y": 13,
+      "biome": "coast",
+      "elevation": 0.609,
+      "poi": null
+    },
+    {
+      "x": 16,
+      "y": 13,
+      "biome": "forest",
+      "elevation": 0.331,
+      "poi": null
+    },
+    {
+      "x": 17,
+      "y": 13,
+      "biome": "forest",
+      "elevation": 0.672,
+      "poi": null
+    },
+    {
+      "x": 18,
+      "y": 13,
+      "biome": "coast",
+      "elevation": 0.773,
+      "poi": null
+    },
+    {
+      "x": 19,
+      "y": 13,
+      "biome": "forest",
+      "elevation": 0.622,
+      "poi": "monument"
+    },
+    {
+      "x": 20,
+      "y": 13,
+      "biome": "desert",
+      "elevation": 0.559,
+      "poi": null
+    },
+    {
+      "x": 21,
+      "y": 13,
+      "biome": "desert",
+      "elevation": 0.309,
+      "poi": null
+    },
+    {
+      "x": 22,
+      "y": 13,
+      "biome": "forest",
+      "elevation": 0.185,
+      "poi": null
+    },
+    {
+      "x": 23,
+      "y": 13,
+      "biome": "snow",
+      "elevation": 0.417,
+      "poi": null
+    },
+    {
+      "x": 0,
+      "y": 14,
+      "biome": "forest",
+      "elevation": 0.543,
+      "poi": null
+    },
+    {
+      "x": 1,
+      "y": 14,
+      "biome": "snow",
+      "elevation": 0.524,
+      "poi": null
+    },
+    {
+      "x": 2,
+      "y": 14,
+      "biome": "coast",
+      "elevation": 0.502,
+      "poi": null
+    },
+    {
+      "x": 3,
+      "y": 14,
+      "biome": "forest",
+      "elevation": 0.213,
+      "poi": null
+    },
+    {
+      "x": 4,
+      "y": 14,
+      "biome": "snow",
+      "elevation": 0.02,
+      "poi": null
+    },
+    {
+      "x": 5,
+      "y": 14,
+      "biome": "forest",
+      "elevation": 0.281,
+      "poi": null
+    },
+    {
+      "x": 6,
+      "y": 14,
+      "biome": "snow",
+      "elevation": 0.397,
+      "poi": null
+    },
+    {
+      "x": 7,
+      "y": 14,
+      "biome": "temperate",
+      "elevation": 0.611,
+      "poi": null
+    },
+    {
+      "x": 8,
+      "y": 14,
+      "biome": "desert",
+      "elevation": 0.311,
+      "poi": null
+    },
+    {
+      "x": 9,
+      "y": 14,
+      "biome": "coast",
+      "elevation": 0.494,
+      "poi": null
+    },
+    {
+      "x": 10,
+      "y": 14,
+      "biome": "coast",
+      "elevation": 0.694,
+      "poi": null
+    },
+    {
+      "x": 11,
+      "y": 14,
+      "biome": "coast",
+      "elevation": 0.512,
+      "poi": null
+    },
+    {
+      "x": 12,
+      "y": 14,
+      "biome": "desert",
+      "elevation": 0.544,
+      "poi": null
+    },
+    {
+      "x": 13,
+      "y": 14,
+      "biome": "coast",
+      "elevation": 0.492,
+      "poi": null
+    },
+    {
+      "x": 14,
+      "y": 14,
+      "biome": "temperate",
+      "elevation": 0.337,
+      "poi": null
+    },
+    {
+      "x": 15,
+      "y": 14,
+      "biome": "temperate",
+      "elevation": 0.591,
+      "poi": null
+    },
+    {
+      "x": 16,
+      "y": 14,
+      "biome": "coast",
+      "elevation": 0.763,
+      "poi": null
+    },
+    {
+      "x": 17,
+      "y": 14,
+      "biome": "temperate",
+      "elevation": 0.352,
+      "poi": null
+    },
+    {
+      "x": 18,
+      "y": 14,
+      "biome": "coast",
+      "elevation": 0.752,
+      "poi": null
+    },
+    {
+      "x": 19,
+      "y": 14,
+      "biome": "temperate",
+      "elevation": 0.468,
+      "poi": null
+    },
+    {
+      "x": 20,
+      "y": 14,
+      "biome": "forest",
+      "elevation": 0.284,
+      "poi": null
+    },
+    {
+      "x": 21,
+      "y": 14,
+      "biome": "desert",
+      "elevation": 0.256,
+      "poi": null
+    },
+    {
+      "x": 22,
+      "y": 14,
+      "biome": "temperate",
+      "elevation": 0.52,
+      "poi": null
+    },
+    {
+      "x": 23,
+      "y": 14,
+      "biome": "coast",
+      "elevation": 0.495,
+      "poi": null
+    },
+    {
+      "x": 0,
+      "y": 15,
+      "biome": "snow",
+      "elevation": 0.095,
+      "poi": null
+    },
+    {
+      "x": 1,
+      "y": 15,
+      "biome": "coast",
+      "elevation": 0.684,
+      "poi": null
+    },
+    {
+      "x": 2,
+      "y": 15,
+      "biome": "desert",
+      "elevation": 0.446,
+      "poi": null
+    },
+    {
+      "x": 3,
+      "y": 15,
+      "biome": "forest",
+      "elevation": 0.509,
+      "poi": null
+    },
+    {
+      "x": 4,
+      "y": 15,
+      "biome": "coast",
+      "elevation": 0.795,
+      "poi": "harbor"
+    },
+    {
+      "x": 5,
+      "y": 15,
+      "biome": "forest",
+      "elevation": 0.208,
+      "poi": null
+    },
+    {
+      "x": 6,
+      "y": 15,
+      "biome": "snow",
+      "elevation": 0.318,
+      "poi": null
+    },
+    {
+      "x": 7,
+      "y": 15,
+      "biome": "forest",
+      "elevation": 0.453,
+      "poi": null
+    },
+    {
+      "x": 8,
+      "y": 15,
+      "biome": "forest",
+      "elevation": 0.252,
+      "poi": null
+    },
+    {
+      "x": 9,
+      "y": 15,
+      "biome": "desert",
+      "elevation": 0.664,
+      "poi": null
+    },
+    {
+      "x": 10,
+      "y": 15,
+      "biome": "temperate",
+      "elevation": 0.616,
+      "poi": null
+    },
+    {
+      "x": 11,
+      "y": 15,
+      "biome": "temperate",
+      "elevation": 0.676,
+      "poi": null
+    },
+    {
+      "x": 12,
+      "y": 15,
+      "biome": "forest",
+      "elevation": 0.518,
+      "poi": null
+    },
+    {
+      "x": 13,
+      "y": 15,
+      "biome": "snow",
+      "elevation": 0.438,
+      "poi": null
+    },
+    {
+      "x": 14,
+      "y": 15,
+      "biome": "desert",
+      "elevation": 0.271,
+      "poi": null
+    },
+    {
+      "x": 15,
+      "y": 15,
+      "biome": "snow",
+      "elevation": 0.388,
+      "poi": null
+    },
+    {
+      "x": 16,
+      "y": 15,
+      "biome": "desert",
+      "elevation": 0.38,
+      "poi": null
+    },
+    {
+      "x": 17,
+      "y": 15,
+      "biome": "temperate",
+      "elevation": 0.749,
+      "poi": null
+    },
+    {
+      "x": 18,
+      "y": 15,
+      "biome": "snow",
+      "elevation": 0.069,
+      "poi": null
+    },
+    {
+      "x": 19,
+      "y": 15,
+      "biome": "temperate",
+      "elevation": 0.646,
+      "poi": null
+    },
+    {
+      "x": 20,
+      "y": 15,
+      "biome": "temperate",
+      "elevation": 0.574,
+      "poi": null
+    },
+    {
+      "x": 21,
+      "y": 15,
+      "biome": "forest",
+      "elevation": 0.514,
+      "poi": null
+    },
+    {
+      "x": 22,
+      "y": 15,
+      "biome": "desert",
+      "elevation": 0.357,
+      "poi": null
+    },
+    {
+      "x": 23,
+      "y": 15,
+      "biome": "desert",
+      "elevation": 0.577,
+      "poi": null
+    },
+    {
+      "x": 0,
+      "y": 16,
+      "biome": "forest",
+      "elevation": 0.497,
+      "poi": null
+    },
+    {
+      "x": 1,
+      "y": 16,
+      "biome": "forest",
+      "elevation": 0.256,
+      "poi": null
+    },
+    {
+      "x": 2,
+      "y": 16,
+      "biome": "forest",
+      "elevation": 0.292,
+      "poi": null
+    },
+    {
+      "x": 3,
+      "y": 16,
+      "biome": "temperate",
+      "elevation": 0.461,
+      "poi": null
+    },
+    {
+      "x": 4,
+      "y": 16,
+      "biome": "temperate",
+      "elevation": 0.602,
+      "poi": null
+    },
+    {
+      "x": 5,
+      "y": 16,
+      "biome": "coast",
+      "elevation": 0.439,
+      "poi": null
+    },
+    {
+      "x": 6,
+      "y": 16,
+      "biome": "snow",
+      "elevation": 0.031,
+      "poi": "monument"
+    },
+    {
+      "x": 7,
+      "y": 16,
+      "biome": "forest",
+      "elevation": 0.371,
+      "poi": null
+    },
+    {
+      "x": 8,
+      "y": 16,
+      "biome": "temperate",
+      "elevation": 0.465,
+      "poi": null
+    },
+    {
+      "x": 9,
+      "y": 16,
+      "biome": "coast",
+      "elevation": 0.569,
+      "poi": "outpost"
+    },
+    {
+      "x": 10,
+      "y": 16,
+      "biome": "coast",
+      "elevation": 0.876,
+      "poi": null
+    },
+    {
+      "x": 11,
+      "y": 16,
+      "biome": "coast",
+      "elevation": 0.544,
+      "poi": null
+    },
+    {
+      "x": 12,
+      "y": 16,
+      "biome": "desert",
+      "elevation": 0.46,
+      "poi": null
+    },
+    {
+      "x": 13,
+      "y": 16,
+      "biome": "forest",
+      "elevation": 0.336,
+      "poi": null
+    },
+    {
+      "x": 14,
+      "y": 16,
+      "biome": "desert",
+      "elevation": 0.312,
+      "poi": null
+    },
+    {
+      "x": 15,
+      "y": 16,
+      "biome": "coast",
+      "elevation": 0.628,
+      "poi": null
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "biome": "coast",
+      "elevation": 0.817,
+      "poi": null
+    },
+    {
+      "x": 17,
+      "y": 16,
+      "biome": "snow",
+      "elevation": 0.172,
+      "poi": null
+    },
+    {
+      "x": 18,
+      "y": 16,
+      "biome": "temperate",
+      "elevation": 0.708,
+      "poi": null
+    },
+    {
+      "x": 19,
+      "y": 16,
+      "biome": "temperate",
+      "elevation": 0.633,
+      "poi": null
+    },
+    {
+      "x": 20,
+      "y": 16,
+      "biome": "temperate",
+      "elevation": 0.604,
+      "poi": "harbor"
+    },
+    {
+      "x": 21,
+      "y": 16,
+      "biome": "temperate",
+      "elevation": 0.815,
+      "poi": null
+    },
+    {
+      "x": 22,
+      "y": 16,
+      "biome": "coast",
+      "elevation": 0.644,
+      "poi": null
+    },
+    {
+      "x": 23,
+      "y": 16,
+      "biome": "desert",
+      "elevation": 0.55,
+      "poi": null
+    },
+    {
+      "x": 0,
+      "y": 17,
+      "biome": "desert",
+      "elevation": 0.472,
+      "poi": null
+    },
+    {
+      "x": 1,
+      "y": 17,
+      "biome": "desert",
+      "elevation": 0.25,
+      "poi": null
+    },
+    {
+      "x": 2,
+      "y": 17,
+      "biome": "forest",
+      "elevation": 0.466,
+      "poi": null
+    },
+    {
+      "x": 3,
+      "y": 17,
+      "biome": "temperate",
+      "elevation": 0.561,
+      "poi": null
+    },
+    {
+      "x": 4,
+      "y": 17,
+      "biome": "desert",
+      "elevation": 0.673,
+      "poi": null
+    },
+    {
+      "x": 5,
+      "y": 17,
+      "biome": "desert",
+      "elevation": 0.63,
+      "poi": null
+    },
+    {
+      "x": 6,
+      "y": 17,
+      "biome": "forest",
+      "elevation": 0.399,
+      "poi": null
+    },
+    {
+      "x": 7,
+      "y": 17,
+      "biome": "snow",
+      "elevation": 0.083,
+      "poi": null
+    },
+    {
+      "x": 8,
+      "y": 17,
+      "biome": "forest",
+      "elevation": 0.529,
+      "poi": null
+    },
+    {
+      "x": 9,
+      "y": 17,
+      "biome": "snow",
+      "elevation": 0.21,
+      "poi": null
+    },
+    {
+      "x": 10,
+      "y": 17,
+      "biome": "desert",
+      "elevation": 0.481,
+      "poi": null
+    },
+    {
+      "x": 11,
+      "y": 17,
+      "biome": "forest",
+      "elevation": 0.328,
+      "poi": null
+    },
+    {
+      "x": 12,
+      "y": 17,
+      "biome": "forest",
+      "elevation": 0.468,
+      "poi": null
+    },
+    {
+      "x": 13,
+      "y": 17,
+      "biome": "temperate",
+      "elevation": 0.357,
+      "poi": null
+    },
+    {
+      "x": 14,
+      "y": 17,
+      "biome": "temperate",
+      "elevation": 0.481,
+      "poi": null
+    },
+    {
+      "x": 15,
+      "y": 17,
+      "biome": "temperate",
+      "elevation": 0.781,
+      "poi": null
+    },
+    {
+      "x": 16,
+      "y": 17,
+      "biome": "forest",
+      "elevation": 0.458,
+      "poi": null
+    },
+    {
+      "x": 17,
+      "y": 17,
+      "biome": "forest",
+      "elevation": 0.659,
+      "poi": null
+    },
+    {
+      "x": 18,
+      "y": 17,
+      "biome": "forest",
+      "elevation": 0.493,
+      "poi": null
+    },
+    {
+      "x": 19,
+      "y": 17,
+      "biome": "desert",
+      "elevation": 0.601,
+      "poi": null
+    },
+    {
+      "x": 20,
+      "y": 17,
+      "biome": "snow",
+      "elevation": 0.415,
+      "poi": "quarry"
+    },
+    {
+      "x": 21,
+      "y": 17,
+      "biome": "coast",
+      "elevation": 0.503,
+      "poi": null
+    },
+    {
+      "x": 22,
+      "y": 17,
+      "biome": "desert",
+      "elevation": 0.263,
+      "poi": null
+    },
+    {
+      "x": 23,
+      "y": 17,
+      "biome": "coast",
+      "elevation": 0.646,
+      "poi": null
+    },
+    {
+      "x": 0,
+      "y": 18,
+      "biome": "snow",
+      "elevation": 0.596,
+      "poi": null
+    },
+    {
+      "x": 1,
+      "y": 18,
+      "biome": "forest",
+      "elevation": 0.542,
+      "poi": null
+    },
+    {
+      "x": 2,
+      "y": 18,
+      "biome": "desert",
+      "elevation": 0.639,
+      "poi": null
+    },
+    {
+      "x": 3,
+      "y": 18,
+      "biome": "temperate",
+      "elevation": 0.769,
+      "poi": null
+    },
+    {
+      "x": 4,
+      "y": 18,
+      "biome": "desert",
+      "elevation": 0.376,
+      "poi": null
+    },
+    {
+      "x": 5,
+      "y": 18,
+      "biome": "temperate",
+      "elevation": 0.659,
+      "poi": null
+    },
+    {
+      "x": 6,
+      "y": 18,
+      "biome": "temperate",
+      "elevation": 0.382,
+      "poi": null
+    },
+    {
+      "x": 7,
+      "y": 18,
+      "biome": "temperate",
+      "elevation": 0.845,
+      "poi": null
+    },
+    {
+      "x": 8,
+      "y": 18,
+      "biome": "temperate",
+      "elevation": 0.768,
+      "poi": null
+    },
+    {
+      "x": 9,
+      "y": 18,
+      "biome": "forest",
+      "elevation": 0.602,
+      "poi": null
+    },
+    {
+      "x": 10,
+      "y": 18,
+      "biome": "coast",
+      "elevation": 0.549,
+      "poi": null
+    },
+    {
+      "x": 11,
+      "y": 18,
+      "biome": "desert",
+      "elevation": 0.506,
+      "poi": null
+    },
+    {
+      "x": 12,
+      "y": 18,
+      "biome": "temperate",
+      "elevation": 0.641,
+      "poi": null
+    },
+    {
+      "x": 13,
+      "y": 18,
+      "biome": "snow",
+      "elevation": 0.181,
+      "poi": null
+    },
+    {
+      "x": 14,
+      "y": 18,
+      "biome": "coast",
+      "elevation": 0.463,
+      "poi": null
+    },
+    {
+      "x": 15,
+      "y": 18,
+      "biome": "forest",
+      "elevation": 0.653,
+      "poi": null
+    },
+    {
+      "x": 16,
+      "y": 18,
+      "biome": "desert",
+      "elevation": 0.32,
+      "poi": null
+    },
+    {
+      "x": 17,
+      "y": 18,
+      "biome": "snow",
+      "elevation": 0.305,
+      "poi": null
+    },
+    {
+      "x": 18,
+      "y": 18,
+      "biome": "coast",
+      "elevation": 0.461,
+      "poi": null
+    },
+    {
+      "x": 19,
+      "y": 18,
+      "biome": "coast",
+      "elevation": 0.851,
+      "poi": "outpost"
+    },
+    {
+      "x": 20,
+      "y": 18,
+      "biome": "snow",
+      "elevation": 0.278,
+      "poi": null
+    },
+    {
+      "x": 21,
+      "y": 18,
+      "biome": "coast",
+      "elevation": 0.685,
+      "poi": null
+    },
+    {
+      "x": 22,
+      "y": 18,
+      "biome": "coast",
+      "elevation": 0.885,
+      "poi": null
+    },
+    {
+      "x": 23,
+      "y": 18,
+      "biome": "temperate",
+      "elevation": 0.464,
+      "poi": null
+    },
+    {
+      "x": 0,
+      "y": 19,
+      "biome": "coast",
+      "elevation": 0.763,
+      "poi": null
+    },
+    {
+      "x": 1,
+      "y": 19,
+      "biome": "temperate",
+      "elevation": 0.577,
+      "poi": null
+    },
+    {
+      "x": 2,
+      "y": 19,
+      "biome": "snow",
+      "elevation": 0.168,
+      "poi": null
+    },
+    {
+      "x": 3,
+      "y": 19,
+      "biome": "desert",
+      "elevation": 0.638,
+      "poi": null
+    },
+    {
+      "x": 4,
+      "y": 19,
+      "biome": "snow",
+      "elevation": 0.2,
+      "poi": null
+    },
+    {
+      "x": 5,
+      "y": 19,
+      "biome": "snow",
+      "elevation": 0.234,
+      "poi": null
+    },
+    {
+      "x": 6,
+      "y": 19,
+      "biome": "desert",
+      "elevation": 0.284,
+      "poi": null
+    },
+    {
+      "x": 7,
+      "y": 19,
+      "biome": "desert",
+      "elevation": 0.307,
+      "poi": null
+    },
+    {
+      "x": 8,
+      "y": 19,
+      "biome": "forest",
+      "elevation": 0.193,
+      "poi": null
+    },
+    {
+      "x": 9,
+      "y": 19,
+      "biome": "temperate",
+      "elevation": 0.428,
+      "poi": null
+    },
+    {
+      "x": 10,
+      "y": 19,
+      "biome": "temperate",
+      "elevation": 0.375,
+      "poi": null
+    },
+    {
+      "x": 11,
+      "y": 19,
+      "biome": "coast",
+      "elevation": 0.749,
+      "poi": null
+    },
+    {
+      "x": 12,
+      "y": 19,
+      "biome": "desert",
+      "elevation": 0.264,
+      "poi": null
+    },
+    {
+      "x": 13,
+      "y": 19,
+      "biome": "snow",
+      "elevation": 0.215,
+      "poi": null
+    },
+    {
+      "x": 14,
+      "y": 19,
+      "biome": "temperate",
+      "elevation": 0.552,
+      "poi": null
+    },
+    {
+      "x": 15,
+      "y": 19,
+      "biome": "forest",
+      "elevation": 0.449,
+      "poi": null
+    },
+    {
+      "x": 16,
+      "y": 19,
+      "biome": "desert",
+      "elevation": 0.669,
+      "poi": null
+    },
+    {
+      "x": 17,
+      "y": 19,
+      "biome": "forest",
+      "elevation": 0.345,
+      "poi": null
+    },
+    {
+      "x": 18,
+      "y": 19,
+      "biome": "coast",
+      "elevation": 0.758,
+      "poi": "outpost"
+    },
+    {
+      "x": 19,
+      "y": 19,
+      "biome": "temperate",
+      "elevation": 0.722,
+      "poi": null
+    },
+    {
+      "x": 20,
+      "y": 19,
+      "biome": "temperate",
+      "elevation": 0.617,
+      "poi": null
+    },
+    {
+      "x": 21,
+      "y": 19,
+      "biome": "snow",
+      "elevation": 0.122,
+      "poi": null
+    },
+    {
+      "x": 22,
+      "y": 19,
+      "biome": "coast",
+      "elevation": 0.724,
+      "poi": "harbor"
+    },
+    {
+      "x": 23,
+      "y": 19,
+      "biome": "desert",
+      "elevation": 0.255,
+      "poi": null
+    },
+    {
+      "x": 0,
+      "y": 20,
+      "biome": "desert",
+      "elevation": 0.574,
+      "poi": null
+    },
+    {
+      "x": 1,
+      "y": 20,
+      "biome": "desert",
+      "elevation": 0.464,
+      "poi": null
+    },
+    {
+      "x": 2,
+      "y": 20,
+      "biome": "desert",
+      "elevation": 0.418,
+      "poi": null
+    },
+    {
+      "x": 3,
+      "y": 20,
+      "biome": "desert",
+      "elevation": 0.648,
+      "poi": null
+    },
+    {
+      "x": 4,
+      "y": 20,
+      "biome": "desert",
+      "elevation": 0.53,
+      "poi": null
+    },
+    {
+      "x": 5,
+      "y": 20,
+      "biome": "desert",
+      "elevation": 0.175,
+      "poi": null
+    },
+    {
+      "x": 6,
+      "y": 20,
+      "biome": "desert",
+      "elevation": 0.713,
+      "poi": null
+    },
+    {
+      "x": 7,
+      "y": 20,
+      "biome": "desert",
+      "elevation": 0.198,
+      "poi": null
+    },
+    {
+      "x": 8,
+      "y": 20,
+      "biome": "desert",
+      "elevation": 0.371,
+      "poi": null
+    },
+    {
+      "x": 9,
+      "y": 20,
+      "biome": "desert",
+      "elevation": 0.305,
+      "poi": null
+    },
+    {
+      "x": 10,
+      "y": 20,
+      "biome": "desert",
+      "elevation": 0.819,
+      "poi": null
+    },
+    {
+      "x": 11,
+      "y": 20,
+      "biome": "desert",
+      "elevation": 0.537,
+      "poi": null
+    },
+    {
+      "x": 12,
+      "y": 20,
+      "biome": "desert",
+      "elevation": 0.364,
+      "poi": null
+    },
+    {
+      "x": 13,
+      "y": 20,
+      "biome": "desert",
+      "elevation": 0.631,
+      "poi": null
+    },
+    {
+      "x": 14,
+      "y": 20,
+      "biome": "desert",
+      "elevation": 0.44,
+      "poi": null
+    },
+    {
+      "x": 15,
+      "y": 20,
+      "biome": "desert",
+      "elevation": 0.282,
+      "poi": null
+    },
+    {
+      "x": 16,
+      "y": 20,
+      "biome": "desert",
+      "elevation": 0.504,
+      "poi": null
+    },
+    {
+      "x": 17,
+      "y": 20,
+      "biome": "desert",
+      "elevation": 0.642,
+      "poi": null
+    },
+    {
+      "x": 18,
+      "y": 20,
+      "biome": "desert",
+      "elevation": 0.26,
+      "poi": null
+    },
+    {
+      "x": 19,
+      "y": 20,
+      "biome": "desert",
+      "elevation": 0.341,
+      "poi": null
+    },
+    {
+      "x": 20,
+      "y": 20,
+      "biome": "desert",
+      "elevation": 0.493,
+      "poi": null
+    },
+    {
+      "x": 21,
+      "y": 20,
+      "biome": "desert",
+      "elevation": 0.716,
+      "poi": null
+    },
+    {
+      "x": 22,
+      "y": 20,
+      "biome": "desert",
+      "elevation": 0.74,
+      "poi": null
+    },
+    {
+      "x": 23,
+      "y": 20,
+      "biome": "desert",
+      "elevation": 0.653,
+      "poi": null
+    },
+    {
+      "x": 0,
+      "y": 21,
+      "biome": "desert",
+      "elevation": 0.488,
+      "poi": null
+    },
+    {
+      "x": 1,
+      "y": 21,
+      "biome": "desert",
+      "elevation": 0.672,
+      "poi": null
+    },
+    {
+      "x": 2,
+      "y": 21,
+      "biome": "desert",
+      "elevation": 0.764,
+      "poi": null
+    },
+    {
+      "x": 3,
+      "y": 21,
+      "biome": "desert",
+      "elevation": 0.206,
+      "poi": null
+    },
+    {
+      "x": 4,
+      "y": 21,
+      "biome": "desert",
+      "elevation": 0.871,
+      "poi": null
+    },
+    {
+      "x": 5,
+      "y": 21,
+      "biome": "desert",
+      "elevation": 0.783,
+      "poi": null
+    },
+    {
+      "x": 6,
+      "y": 21,
+      "biome": "desert",
+      "elevation": 0.315,
+      "poi": null
+    },
+    {
+      "x": 7,
+      "y": 21,
+      "biome": "desert",
+      "elevation": 0.465,
+      "poi": null
+    },
+    {
+      "x": 8,
+      "y": 21,
+      "biome": "desert",
+      "elevation": 0.461,
+      "poi": null
+    },
+    {
+      "x": 9,
+      "y": 21,
+      "biome": "desert",
+      "elevation": 0.582,
+      "poi": null
+    },
+    {
+      "x": 10,
+      "y": 21,
+      "biome": "desert",
+      "elevation": 0.654,
+      "poi": null
+    },
+    {
+      "x": 11,
+      "y": 21,
+      "biome": "desert",
+      "elevation": 0.647,
+      "poi": null
+    },
+    {
+      "x": 12,
+      "y": 21,
+      "biome": "desert",
+      "elevation": 0.523,
+      "poi": null
+    },
+    {
+      "x": 13,
+      "y": 21,
+      "biome": "desert",
+      "elevation": 0.565,
+      "poi": null
+    },
+    {
+      "x": 14,
+      "y": 21,
+      "biome": "desert",
+      "elevation": 0.829,
+      "poi": null
+    },
+    {
+      "x": 15,
+      "y": 21,
+      "biome": "desert",
+      "elevation": 0.574,
+      "poi": null
+    },
+    {
+      "x": 16,
+      "y": 21,
+      "biome": "desert",
+      "elevation": 0.483,
+      "poi": null
+    },
+    {
+      "x": 17,
+      "y": 21,
+      "biome": "desert",
+      "elevation": 0.159,
+      "poi": null
+    },
+    {
+      "x": 18,
+      "y": 21,
+      "biome": "desert",
+      "elevation": 0.528,
+      "poi": null
+    },
+    {
+      "x": 19,
+      "y": 21,
+      "biome": "desert",
+      "elevation": 0.548,
+      "poi": null
+    },
+    {
+      "x": 20,
+      "y": 21,
+      "biome": "desert",
+      "elevation": 0.338,
+      "poi": null
+    },
+    {
+      "x": 21,
+      "y": 21,
+      "biome": "desert",
+      "elevation": 0.518,
+      "poi": null
+    },
+    {
+      "x": 22,
+      "y": 21,
+      "biome": "desert",
+      "elevation": 0.548,
+      "poi": null
+    },
+    {
+      "x": 23,
+      "y": 21,
+      "biome": "desert",
+      "elevation": 0.663,
+      "poi": null
+    },
+    {
+      "x": 0,
+      "y": 22,
+      "biome": "desert",
+      "elevation": 0.694,
+      "poi": null
+    },
+    {
+      "x": 1,
+      "y": 22,
+      "biome": "desert",
+      "elevation": 0.343,
+      "poi": null
+    },
+    {
+      "x": 2,
+      "y": 22,
+      "biome": "desert",
+      "elevation": 0.709,
+      "poi": null
+    },
+    {
+      "x": 3,
+      "y": 22,
+      "biome": "desert",
+      "elevation": 0.569,
+      "poi": null
+    },
+    {
+      "x": 4,
+      "y": 22,
+      "biome": "desert",
+      "elevation": 0.623,
+      "poi": null
+    },
+    {
+      "x": 5,
+      "y": 22,
+      "biome": "desert",
+      "elevation": 0.745,
+      "poi": null
+    },
+    {
+      "x": 6,
+      "y": 22,
+      "biome": "desert",
+      "elevation": 0.066,
+      "poi": null
+    },
+    {
+      "x": 7,
+      "y": 22,
+      "biome": "desert",
+      "elevation": 0.344,
+      "poi": null
+    },
+    {
+      "x": 8,
+      "y": 22,
+      "biome": "desert",
+      "elevation": 0.515,
+      "poi": null
+    },
+    {
+      "x": 9,
+      "y": 22,
+      "biome": "desert",
+      "elevation": 0.918,
+      "poi": null
+    },
+    {
+      "x": 10,
+      "y": 22,
+      "biome": "desert",
+      "elevation": 0.466,
+      "poi": null
+    },
+    {
+      "x": 11,
+      "y": 22,
+      "biome": "desert",
+      "elevation": 0.367,
+      "poi": null
+    },
+    {
+      "x": 12,
+      "y": 22,
+      "biome": "desert",
+      "elevation": 0.194,
+      "poi": null
+    },
+    {
+      "x": 13,
+      "y": 22,
+      "biome": "desert",
+      "elevation": 0.432,
+      "poi": null
+    },
+    {
+      "x": 14,
+      "y": 22,
+      "biome": "desert",
+      "elevation": 0.244,
+      "poi": null
+    },
+    {
+      "x": 15,
+      "y": 22,
+      "biome": "desert",
+      "elevation": 0.538,
+      "poi": null
+    },
+    {
+      "x": 16,
+      "y": 22,
+      "biome": "desert",
+      "elevation": 0.507,
+      "poi": null
+    },
+    {
+      "x": 17,
+      "y": 22,
+      "biome": "desert",
+      "elevation": 0.484,
+      "poi": null
+    },
+    {
+      "x": 18,
+      "y": 22,
+      "biome": "desert",
+      "elevation": 0.591,
+      "poi": null
+    },
+    {
+      "x": 19,
+      "y": 22,
+      "biome": "desert",
+      "elevation": 0.273,
+      "poi": null
+    },
+    {
+      "x": 20,
+      "y": 22,
+      "biome": "desert",
+      "elevation": 0.562,
+      "poi": null
+    },
+    {
+      "x": 21,
+      "y": 22,
+      "biome": "desert",
+      "elevation": 0.639,
+      "poi": null
+    },
+    {
+      "x": 22,
+      "y": 22,
+      "biome": "desert",
+      "elevation": 0.746,
+      "poi": null
+    },
+    {
+      "x": 23,
+      "y": 22,
+      "biome": "desert",
+      "elevation": 0.485,
+      "poi": null
+    },
+    {
+      "x": 0,
+      "y": 23,
+      "biome": "desert",
+      "elevation": 0.313,
+      "poi": null
+    },
+    {
+      "x": 1,
+      "y": 23,
+      "biome": "desert",
+      "elevation": 0.522,
+      "poi": "quarry"
+    },
+    {
+      "x": 2,
+      "y": 23,
+      "biome": "desert",
+      "elevation": 0.37,
+      "poi": null
+    },
+    {
+      "x": 3,
+      "y": 23,
+      "biome": "desert",
+      "elevation": 0.68,
+      "poi": null
+    },
+    {
+      "x": 4,
+      "y": 23,
+      "biome": "desert",
+      "elevation": 0.255,
+      "poi": null
+    },
+    {
+      "x": 5,
+      "y": 23,
+      "biome": "desert",
+      "elevation": 0.221,
+      "poi": null
+    },
+    {
+      "x": 6,
+      "y": 23,
+      "biome": "desert",
+      "elevation": 0.759,
+      "poi": null
+    },
+    {
+      "x": 7,
+      "y": 23,
+      "biome": "desert",
+      "elevation": 0.521,
+      "poi": null
+    },
+    {
+      "x": 8,
+      "y": 23,
+      "biome": "desert",
+      "elevation": 0.625,
+      "poi": null
+    },
+    {
+      "x": 9,
+      "y": 23,
+      "biome": "desert",
+      "elevation": 0.73,
+      "poi": null
+    },
+    {
+      "x": 10,
+      "y": 23,
+      "biome": "desert",
+      "elevation": 0.509,
+      "poi": null
+    },
+    {
+      "x": 11,
+      "y": 23,
+      "biome": "desert",
+      "elevation": 0.519,
+      "poi": null
+    },
+    {
+      "x": 12,
+      "y": 23,
+      "biome": "desert",
+      "elevation": 0.22,
+      "poi": null
+    },
+    {
+      "x": 13,
+      "y": 23,
+      "biome": "desert",
+      "elevation": 0.603,
+      "poi": null
+    },
+    {
+      "x": 14,
+      "y": 23,
+      "biome": "desert",
+      "elevation": 0.613,
+      "poi": null
+    },
+    {
+      "x": 15,
+      "y": 23,
+      "biome": "desert",
+      "elevation": 0.814,
+      "poi": null
+    },
+    {
+      "x": 16,
+      "y": 23,
+      "biome": "desert",
+      "elevation": 0.139,
+      "poi": null
+    },
+    {
+      "x": 17,
+      "y": 23,
+      "biome": "desert",
+      "elevation": 0.623,
+      "poi": null
+    },
+    {
+      "x": 18,
+      "y": 23,
+      "biome": "desert",
+      "elevation": 0.601,
+      "poi": null
+    },
+    {
+      "x": 19,
+      "y": 23,
+      "biome": "desert",
+      "elevation": 0.637,
+      "poi": null
+    },
+    {
+      "x": 20,
+      "y": 23,
+      "biome": "desert",
+      "elevation": 0.43,
+      "poi": null
+    },
+    {
+      "x": 21,
+      "y": 23,
+      "biome": "desert",
+      "elevation": 0.353,
+      "poi": null
+    },
+    {
+      "x": 22,
+      "y": 23,
+      "biome": "desert",
+      "elevation": 0.66,
+      "poi": null
+    },
+    {
+      "x": 23,
+      "y": 23,
+      "biome": "desert",
+      "elevation": 0.612,
+      "poi": null
+    }
+  ]
+}
