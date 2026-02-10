@@ -1,0 +1,58 @@
+{
+  "platform": {
+    "target": "meta-quest",
+    "minOsVersion": 57,
+    "supportedDevices": ["Quest 2", "Quest 3", "Quest 3S"]
+  },
+  "runtime": {
+    "xrBackend": "OpenXR",
+    "handTrackingApi": "XR_EXT_hand_tracking",
+    "jointSet": "full",
+    "predictionMs": 18
+  },
+  "tracking": {
+    "enabled": true,
+    "trackingFrequencyHz": 60,
+    "confidenceThreshold": 0.6,
+    "fallbackToControllers": true,
+    "dominantHand": "auto"
+  },
+  "gestures": {
+    "pinch": {
+      "enabled": true,
+      "enterThreshold": 0.74,
+      "exitThreshold": 0.59,
+      "cooldownMs": 120
+    },
+    "grab": {
+      "enabled": true,
+      "enterThreshold": 0.8,
+      "exitThreshold": 0.65,
+      "cooldownMs": 160
+    },
+    "point": {
+      "enabled": true,
+      "enterThreshold": 0.82,
+      "exitThreshold": 0.6,
+      "cooldownMs": 100
+    },
+    "custom": [
+      {
+        "name": "menu_pose",
+        "expression": "thumb_tip_to_index_knuckle < 0.03 && palm_facing_user == true",
+        "threshold": 0.7
+      }
+    ]
+  },
+  "debug": {
+    "enabled": true,
+    "overlay": true,
+    "logLevel": "debug",
+    "recordSessionSeconds": 180,
+    "telemetry": {
+      "emitJointConfidence": true,
+      "emitFrameTiming": true,
+      "emitGestureTransitions": true
+    }
+  }
+}
