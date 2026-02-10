@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <pattern id="checker" width="56" height="56" patternUnits="userSpaceOnUse">
+      <rect width="56" height="56" fill="#5e5450"/>
+      <rect width="28" height="28" fill="#1f8192"/>
+      <rect x="28" y="28" width="28" height="28" fill="#1f8192"/>
+    </pattern>
+    <filter id="soften" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.2"/>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" fill="#1f2833"/>
+  <rect x="28" y="28" width="968" height="968" fill="url(#checker)"/>
+  <rect x="80" y="160" width="864" height="784" fill="url(#checker)" opacity="0.62" filter="url(#soften)"/>
+  <rect x="80" y="76" width="864" height="94" fill="#111b28" opacity="0.82"/>
+  <text x="512" y="132" text-anchor="middle" font-size="72" font-family="Arial, Helvetica, sans-serif" font-weight="700" fill="#f3f3f3" stroke="#000" stroke-width="2">MW2 Promod mod menu</text>
+</svg>
