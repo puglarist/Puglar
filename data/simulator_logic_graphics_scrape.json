@@ -1,0 +1,446 @@
+{
+  "summary": {
+    "sources_scanned": 26,
+    "total_extracted_lines": 1127,
+    "simulator_logic_matches": 43,
+    "graphics_matches": 58
+  },
+  "source_line_counts": {
+    "Puglar_AEN_Attention_Gorilla_Rest_v2_Cards.pdf": 75,
+    "Puglar_Command_Stances_Winter_Rain_Cards.pdf": 35,
+    "Puglar_Handbook.pdf": 40,
+    "Puglar_Handbook_v2_Language_Guide.pdf": 58,
+    "Puglar_Iron_Cross_5_Year_Roadmap_Cards.pdf": 44,
+    "Puglar_Iron_Cross_Illustrated_Angle_Plates.pdf": 22,
+    "Puglar_Lamination_Cut_Guides.pdf": 17,
+    "Puglar_Micro_Command_Cards_Wallet.pdf": 31,
+    "Puglar_Omnibus_Final_v1.pdf": 22,
+    "Puglar_Physical_Doctrine_Workouts.pdf": 59,
+    "Puglar_Pocket_Drill_Cards 2.pdf": 59,
+    "Puglar_Pocket_Drill_Cards.pdf": 59,
+    "Puglar_Ranger_Awareness_Manual_v4.pdf": 85,
+    "Puglar_Sacred_Core_Scroll.pdf": 22,
+    "Puglar_Seasonal_Drill_Cards.pdf": 31,
+    "Puglar_TreeWebs_Handbook_v2_Climb_and_Shade.pdf": 80,
+    "Puglar_Waterproof_Field_Cards.pdf": 13,
+    "Puglar_Winter_Summer_Micro_Cards.pdf": 19,
+    "Puglar_Youth_Training_Cards.pdf": 18,
+    "Puglar_Full_Doctrine_Archive_v2.zip:Puglar_Ranger_Awareness_Manual_v4.pdf": 85,
+    "Puglar_Full_Doctrine_Archive_v2.zip:Puglar_TreeWebs_Handbook.pdf": 82,
+    "Puglar_Full_Doctrine_Archive_v2.zip:Puglar_TreeWebs_Handbook_v2_Climb_and_Shade.pdf": 80,
+    "Puglar_Full_Doctrine_Archive_v2.zip:Appalachian_Backwaters_Restoration_Archive.pdf": 33,
+    "Puglar_Full_Doctrine_Archive_v2.zip:Puglar_Sacred_Core_Scroll.pdf": 22,
+    "Puglar_Full_Doctrine_Archive_v5.zip:Puglar_Lamination_Cut_Guides.pdf": 17,
+    "Puglar_Full_Doctrine_Archive_v5.zip:Puglar_Winter_Summer_Micro_Cards.pdf": 19
+  },
+  "results": {
+    "simulator_logic": [
+      {
+        "source": "Puglar_AEN_Attention_Gorilla_Rest_v2_Cards.pdf",
+        "text": "PUGLAR AEN ATTENTION & GORILLA REST \u0097 DRILL CARDS"
+      },
+      {
+        "source": "Puglar_AEN_Attention_Gorilla_Rest_v2_Cards.pdf",
+        "text": "Old-Manual Commands \u007f Tendon-Safe \u007f Long Service"
+      },
+      {
+        "source": "Puglar_AEN_Attention_Gorilla_Rest_v2_Cards.pdf",
+        "text": "\u0093Awareness without disorder.\u0094"
+      },
+      {
+        "source": "Puglar_AEN_Attention_Gorilla_Rest_v2_Cards.pdf",
+        "text": "\u007f Maintain awareness"
+      },
+      {
+        "source": "Puglar_Command_Stances_Winter_Rain_Cards.pdf",
+        "text": "PUGLAR COMMAND STANCES \u0097 WINTER & RAIN VARIANTS"
+      },
+      {
+        "source": "Puglar_Command_Stances_Winter_Rain_Cards.pdf",
+        "text": "Grip awareness"
+      },
+      {
+        "source": "Puglar_Command_Stances_Winter_Rain_Cards.pdf",
+        "text": "Awareness steady"
+      },
+      {
+        "source": "Puglar_Handbook.pdf",
+        "text": "Puglar \u00c6N not title, not rank, not bloodline. Puglar \u00c6N state of will. Breath held steady. Hand"
+      },
+      {
+        "source": "Puglar_Handbook_v2_Language_Guide.pdf",
+        "text": "IV. HOW TO SPEAK (VOX TRAINING)"
+      },
+      {
+        "source": "Puglar_Handbook_v2_Language_Guide.pdf",
+        "text": "Reading Drill"
+      },
+      {
+        "source": "Puglar_Handbook_v2_Language_Guide.pdf",
+        "text": "Week 4 \u0097 Silence training (think in Puglar)"
+      },
+      {
+        "source": "Puglar_Iron_Cross_5_Year_Roadmap_Cards.pdf",
+        "text": "\u007f No training to impress"
+      },
+      {
+        "source": "Puglar_Micro_Command_Cards_Wallet.pdf",
+        "text": "PUGLAR MICRO COMMAND CARDS (WALLET SIZE)"
+      },
+      {
+        "source": "Puglar_Omnibus_Final_v1.pdf",
+        "text": "Doctrine \u007f Movement \u007f Stewardship \u007f Command"
+      },
+      {
+        "source": "Puglar_Omnibus_Final_v1.pdf",
+        "text": "APPENDIX A \u0097 COMMAND & MOVEMENT CARDS"
+      },
+      {
+        "source": "Puglar_Omnibus_Final_v1.pdf",
+        "text": "AEN Attention \u0097 Commands, Micro Cards, Plates"
+      },
+      {
+        "source": "Puglar_Omnibus_Final_v1.pdf",
+        "text": "At Ease \u0097 Command Variants (Winter/Rain)"
+      },
+      {
+        "source": "Puglar_Physical_Doctrine_Workouts.pdf",
+        "text": "II. THE THREE STATES (RECAPPED)"
+      },
+      {
+        "source": "Puglar_Physical_Doctrine_Workouts.pdf",
+        "text": "IV. FLOW DRILLS (TRANSITION-FOCUSED)"
+      },
+      {
+        "source": "Puglar_Pocket_Drill_Cards 2.pdf",
+        "text": "GROUND STATE"
+      },
+      {
+        "source": "Puglar_Pocket_Drill_Cards 2.pdf",
+        "text": "STANDING STATE"
+      },
+      {
+        "source": "Puglar_Pocket_Drill_Cards 2.pdf",
+        "text": "\u0093Walking is training.\u0094"
+      },
+      {
+        "source": "Puglar_Pocket_Drill_Cards 2.pdf",
+        "text": "SUSPENSION STATE"
+      },
+      {
+        "source": "Puglar_Pocket_Drill_Cards.pdf",
+        "text": "GROUND STATE"
+      },
+      {
+        "source": "Puglar_Pocket_Drill_Cards.pdf",
+        "text": "STANDING STATE"
+      },
+      {
+        "source": "Puglar_Pocket_Drill_Cards.pdf",
+        "text": "\u0093Walking is training.\u0094"
+      },
+      {
+        "source": "Puglar_Pocket_Drill_Cards.pdf",
+        "text": "SUSPENSION STATE"
+      },
+      {
+        "source": "Puglar_Ranger_Awareness_Manual_v4.pdf",
+        "text": "PUGLAR RANGER AWARENESS MANUAL \u0097 v4"
+      },
+      {
+        "source": "Puglar_Ranger_Awareness_Manual_v4.pdf",
+        "text": "Strip ritual power by changing timing, setting, posture."
+      },
+      {
+        "source": "Puglar_Ranger_Awareness_Manual_v4.pdf",
+        "text": "Change timing/location of habit"
+      },
+      {
+        "source": "Puglar_Ranger_Awareness_Manual_v4.pdf",
+        "text": "Lock routines"
+      },
+      {
+        "source": "Puglar_Ranger_Awareness_Manual_v4.pdf",
+        "text": "Invite movement; never command it."
+      },
+      {
+        "source": "Puglar_Seasonal_Drill_Cards.pdf",
+        "text": "PUGLAR SEASONAL DRILL CARDS"
+      },
+      {
+        "source": "Puglar_TreeWebs_Handbook_v2_Climb_and_Shade.pdf",
+        "text": "(distributed climbing and shade). The practitioner transitions calmly between states, never hardening any"
+      },
+      {
+        "source": "Puglar_Youth_Training_Cards.pdf",
+        "text": "PUGLAR YOUTH TRAINING CARDS"
+      },
+      {
+        "source": "Puglar_Full_Doctrine_Archive_v2.zip:Puglar_Ranger_Awareness_Manual_v4.pdf",
+        "text": "PUGLAR RANGER AWARENESS MANUAL \u0097 v4"
+      },
+      {
+        "source": "Puglar_Full_Doctrine_Archive_v2.zip:Puglar_Ranger_Awareness_Manual_v4.pdf",
+        "text": "Strip ritual power by changing timing, setting, posture."
+      },
+      {
+        "source": "Puglar_Full_Doctrine_Archive_v2.zip:Puglar_Ranger_Awareness_Manual_v4.pdf",
+        "text": "Change timing/location of habit"
+      },
+      {
+        "source": "Puglar_Full_Doctrine_Archive_v2.zip:Puglar_Ranger_Awareness_Manual_v4.pdf",
+        "text": "Lock routines"
+      },
+      {
+        "source": "Puglar_Full_Doctrine_Archive_v2.zip:Puglar_Ranger_Awareness_Manual_v4.pdf",
+        "text": "Invite movement; never command it."
+      },
+      {
+        "source": "Puglar_Full_Doctrine_Archive_v2.zip:Puglar_TreeWebs_Handbook.pdf",
+        "text": "A training conversation, not a build"
+      },
+      {
+        "source": "Puglar_Full_Doctrine_Archive_v2.zip:Puglar_TreeWebs_Handbook_v2_Climb_and_Shade.pdf",
+        "text": "(distributed climbing and shade). The practitioner transitions calmly between states, never hardening any"
+      },
+      {
+        "source": "Puglar_Full_Doctrine_Archive_v2.zip:Appalachian_Backwaters_Restoration_Archive.pdf",
+        "text": "CLOSING STATEMENT"
+      }
+    ],
+    "graphics": [
+      {
+        "source": "Puglar_AEN_Attention_Gorilla_Rest_v2_Cards.pdf",
+        "text": "PUGLAR AEN ATTENTION & GORILLA REST \u0097 DRILL CARDS"
+      },
+      {
+        "source": "Puglar_AEN_Attention_Gorilla_Rest_v2_Cards.pdf",
+        "text": "CROSS STANCE"
+      },
+      {
+        "source": "Puglar_AEN_Attention_Gorilla_Rest_v2_Cards.pdf",
+        "text": "CROSS STANCE (SET)"
+      },
+      {
+        "source": "Puglar_AEN_Attention_Gorilla_Rest_v2_Cards.pdf",
+        "text": "\u007f Arms crossed lightly"
+      },
+      {
+        "source": "Puglar_AEN_Attention_Gorilla_Rest_v2_Cards.pdf",
+        "text": "\u007f Uncross arms slowly"
+      },
+      {
+        "source": "Puglar_Handbook.pdf",
+        "text": "TEM \u0097 body / frame / vessel"
+      },
+      {
+        "source": "Puglar_Handbook_v2_Language_Guide.pdf",
+        "text": "TEM \u0097 body, vessel, frame"
+      },
+      {
+        "source": "Puglar_Handbook_v2_Language_Guide.pdf",
+        "text": "Week 4 \u0097 Silence training (think in Puglar)"
+      },
+      {
+        "source": "Puglar_Iron_Cross_5_Year_Roadmap_Cards.pdf",
+        "text": "PUGLAR IRON CROSS \u0097 5-YEAR ROADMAP"
+      },
+      {
+        "source": "Puglar_Iron_Cross_5_Year_Roadmap_Cards.pdf",
+        "text": "\u007f Assisted cross leans"
+      },
+      {
+        "source": "Puglar_Iron_Cross_5_Year_Roadmap_Cards.pdf",
+        "text": "\u0093Angles before depth.\u0094"
+      },
+      {
+        "source": "Puglar_Iron_Cross_5_Year_Roadmap_Cards.pdf",
+        "text": "YEAR 3\u00964 \u0097 CROSS PROXIMITY"
+      },
+      {
+        "source": "Puglar_Iron_Cross_5_Year_Roadmap_Cards.pdf",
+        "text": "\u007f Full cross 2\u00963s"
+      },
+      {
+        "source": "Puglar_Iron_Cross_Illustrated_Angle_Plates.pdf",
+        "text": "PUGLAR IRON CROSS \u0097 ILLUSTRATED ANGLE PLATES"
+      },
+      {
+        "source": "Puglar_Iron_Cross_Illustrated_Angle_Plates.pdf",
+        "text": "Diagram Concept: Figure suspended on paracord circles, arms opened to 30\u00b0. Show scapular depression arrows"
+      },
+      {
+        "source": "Puglar_Iron_Cross_Illustrated_Angle_Plates.pdf",
+        "text": "downward, elbows locked, neutral grip. Feet shown lightly assisting for angles below 70\u00b0; none above."
+      },
+      {
+        "source": "Puglar_Iron_Cross_Illustrated_Angle_Plates.pdf",
+        "text": "Diagram Concept: Figure suspended on paracord circles, arms opened to 40\u00b0. Show scapular depression arrows"
+      },
+      {
+        "source": "Puglar_Iron_Cross_Illustrated_Angle_Plates.pdf",
+        "text": "Diagram Concept: Figure suspended on paracord circles, arms opened to 50\u00b0. Show scapular depression arrows"
+      },
+      {
+        "source": "Puglar_Iron_Cross_Illustrated_Angle_Plates.pdf",
+        "text": "Diagram Concept: Figure suspended on paracord circles, arms opened to 60\u00b0. Show scapular depression arrows"
+      },
+      {
+        "source": "Puglar_Iron_Cross_Illustrated_Angle_Plates.pdf",
+        "text": "Diagram Concept: Figure suspended on paracord circles, arms opened to 70\u00b0. Show scapular depression arrows"
+      },
+      {
+        "source": "Puglar_Iron_Cross_Illustrated_Angle_Plates.pdf",
+        "text": "Diagram Concept: Figure suspended on paracord circles, arms opened to 80\u00b0. Show scapular depression arrows"
+      },
+      {
+        "source": "Puglar_Iron_Cross_Illustrated_Angle_Plates.pdf",
+        "text": "Diagram Concept: Figure suspended on paracord circles, arms opened to 90\u00b0. Show scapular depression arrows"
+      },
+      {
+        "source": "Puglar_Lamination_Cut_Guides.pdf",
+        "text": "Guide for trimming and laminating pocket cards. Sizes are conservative for durability."
+      },
+      {
+        "source": "Puglar_Micro_Command_Cards_Wallet.pdf",
+        "text": "PUGLAR MICRO COMMAND CARDS (WALLET SIZE)"
+      },
+      {
+        "source": "Puglar_Omnibus_Final_v1.pdf",
+        "text": "APPENDIX A \u0097 COMMAND & MOVEMENT CARDS"
+      },
+      {
+        "source": "Puglar_Omnibus_Final_v1.pdf",
+        "text": "Embedded: Full-size cards, micro wallet cards, winter/rain variants, iron cross progressions."
+      },
+      {
+        "source": "Puglar_Omnibus_Final_v1.pdf",
+        "text": "APPENDIX B \u0097 ILLUSTRATED PLATES"
+      },
+      {
+        "source": "Puglar_Omnibus_Final_v1.pdf",
+        "text": "Rest, Front Leaning Rest, Iron Cross angles (10\u00b0 increments)."
+      },
+      {
+        "source": "Puglar_Omnibus_Final_v1.pdf",
+        "text": "AEN Attention \u0097 Commands, Micro Cards, Plates"
+      },
+      {
+        "source": "Puglar_Omnibus_Final_v1.pdf",
+        "text": "Iron Cross \u0097 5-Year Roadmap, Micro Angles, Winter Law"
+      },
+      {
+        "source": "Puglar_Ranger_Awareness_Manual_v4.pdf",
+        "text": "Transformation:"
+      },
+      {
+        "source": "Puglar_Ranger_Awareness_Manual_v4.pdf",
+        "text": "Choose Reversal or Transformation"
+      },
+      {
+        "source": "Puglar_Seasonal_Drill_Cards.pdf",
+        "text": "PUGLAR SEASONAL DRILL CARDS"
+      },
+      {
+        "source": "Puglar_Seasonal_Drill_Cards.pdf",
+        "text": "\u007f Drink before thirst"
+      },
+      {
+        "source": "Puglar_TreeWebs_Handbook_v2_Climb_and_Shade.pdf",
+        "text": "Prompt: Vintage 1900s outdoor field manual, black-and-white ink line art, climbable rope web among trees, no"
+      },
+      {
+        "source": "Puglar_TreeWebs_Handbook_v2_Climb_and_Shade.pdf",
+        "text": "Arrows show load wandering across many lines beneath a moving climber."
+      },
+      {
+        "source": "Puglar_TreeWebs_Handbook_v2_Climb_and_Shade.pdf",
+        "text": "Prompt: Old ranger manual diagram, monochrome ink, labels 'distributed tension' and 'moving load',"
+      },
+      {
+        "source": "Puglar_TreeWebs_Handbook_v2_Climb_and_Shade.pdf",
+        "text": "SILENT OBS DOCTRINE CARDS"
+      },
+      {
+        "source": "Puglar_TreeWebs_Handbook_v2_Climb_and_Shade.pdf",
+        "text": "Canopy movement links three disciplines: forest bars (contact), corded rings (suspension), and TreeWebs"
+      },
+      {
+        "source": "Puglar_TreeWebs_Handbook_v2_Climb_and_Shade.pdf",
+        "text": "Across cultures, bridges followed living lines and respected water flow. Puglar doctrine honors these ideas"
+      },
+      {
+        "source": "Puglar_Waterproof_Field_Cards.pdf",
+        "text": "PUGLAR WATERPROOF FIELD CARDS"
+      },
+      {
+        "source": "Puglar_Winter_Summer_Micro_Cards.pdf",
+        "text": "PUGLAR WINTER & SUMMER MICRO-CARDS"
+      },
+      {
+        "source": "Puglar_Winter_Summer_Micro_Cards.pdf",
+        "text": "Drink before thirst"
+      },
+      {
+        "source": "Puglar_Youth_Training_Cards.pdf",
+        "text": "PUGLAR YOUTH TRAINING CARDS"
+      },
+      {
+        "source": "Puglar_Full_Doctrine_Archive_v2.zip:Puglar_Ranger_Awareness_Manual_v4.pdf",
+        "text": "Transformation:"
+      },
+      {
+        "source": "Puglar_Full_Doctrine_Archive_v2.zip:Puglar_Ranger_Awareness_Manual_v4.pdf",
+        "text": "Choose Reversal or Transformation"
+      },
+      {
+        "source": "Puglar_Full_Doctrine_Archive_v2.zip:Puglar_TreeWebs_Handbook_v2_Climb_and_Shade.pdf",
+        "text": "Prompt: Vintage 1900s outdoor field manual, black-and-white ink line art, climbable rope web among trees, no"
+      },
+      {
+        "source": "Puglar_Full_Doctrine_Archive_v2.zip:Puglar_TreeWebs_Handbook_v2_Climb_and_Shade.pdf",
+        "text": "Arrows show load wandering across many lines beneath a moving climber."
+      },
+      {
+        "source": "Puglar_Full_Doctrine_Archive_v2.zip:Puglar_TreeWebs_Handbook_v2_Climb_and_Shade.pdf",
+        "text": "Prompt: Old ranger manual diagram, monochrome ink, labels 'distributed tension' and 'moving load',"
+      },
+      {
+        "source": "Puglar_Full_Doctrine_Archive_v2.zip:Puglar_TreeWebs_Handbook_v2_Climb_and_Shade.pdf",
+        "text": "SILENT OBS DOCTRINE CARDS"
+      },
+      {
+        "source": "Puglar_Full_Doctrine_Archive_v2.zip:Puglar_TreeWebs_Handbook_v2_Climb_and_Shade.pdf",
+        "text": "Canopy movement links three disciplines: forest bars (contact), corded rings (suspension), and TreeWebs"
+      },
+      {
+        "source": "Puglar_Full_Doctrine_Archive_v2.zip:Puglar_TreeWebs_Handbook_v2_Climb_and_Shade.pdf",
+        "text": "Across cultures, bridges followed living lines and respected water flow. Puglar doctrine honors these ideas"
+      },
+      {
+        "source": "Puglar_Full_Doctrine_Archive_v2.zip:Appalachian_Backwaters_Restoration_Archive.pdf",
+        "text": "drainage systems was allowed to spill across the slope without guidance. Over time, this caused"
+      },
+      {
+        "source": "Puglar_Full_Doctrine_Archive_v2.zip:Appalachian_Backwaters_Restoration_Archive.pdf",
+        "text": "pooling, stagnation, trash accumulation, and loss of natural sink into the earth. Water intended for use"
+      },
+      {
+        "source": "Puglar_Full_Doctrine_Archive_v2.zip:Appalachian_Backwaters_Restoration_Archive.pdf",
+        "text": "Following repeated stewardship, water clarity improved. Color shifted toward blue-green, indicating"
+      },
+      {
+        "source": "Puglar_Full_Doctrine_Archive_v5.zip:Puglar_Lamination_Cut_Guides.pdf",
+        "text": "Guide for trimming and laminating pocket cards. Sizes are conservative for durability."
+      },
+      {
+        "source": "Puglar_Full_Doctrine_Archive_v5.zip:Puglar_Winter_Summer_Micro_Cards.pdf",
+        "text": "PUGLAR WINTER & SUMMER MICRO-CARDS"
+      },
+      {
+        "source": "Puglar_Full_Doctrine_Archive_v5.zip:Puglar_Winter_Summer_Micro_Cards.pdf",
+        "text": "Drink before thirst"
+      }
+    ]
+  }
+}
