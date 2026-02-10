@@ -1,0 +1,27 @@
+{
+  "source": "https://www.gtabase.com/gta-6/properties/",
+  "title": "GTA 6 Properties & Safehouses Confirmed So Far",
+  "meta_description": "On this page, you find the ultimate guide to all GTA 6 Properties and Safehouses - your hub for every confirmed, purchasable, and unlockable property in Grand Theft Auto VI.",
+  "scraped_at_utc": "2026-02-10T10:27:27Z",
+  "confirmed_properties": [
+    {
+      "name": "Leonida Keys Safehouse",
+      "location": "Key Lento, Leonida Keys",
+      "unlock_condition": "Likely the starting safehouse for Jason and Lucia",
+      "notes": "Property belongs to Brian Heder and is used by Jason (later Jason and Lucia) according to the page narrative.",
+      "image_url": "https://www.gtabase.com/images/gta-6/properties/resized/leonida-keys-safehouse_192x108.jpg"
+    }
+  ],
+  "expected_property_features": [
+    "Safehouses",
+    "Businesses",
+    "Garages",
+    "Upgrades / customization"
+  ],
+  "related_guides": [
+    "GTA 6 Release Date & Platforms",
+    "GTA 6 Characters: Jason & Lucia",
+    "GTA 6 Map & Locations",
+    "GTA 6 Vehicles Database"
+  ]
+}
