@@ -1,0 +1,24 @@
+[workspace]
+members = [
+  "packages/ai-director-core",
+  "packages/ballistics-overhaul",
+  "packages/colony-needs-sim",
+  "packages/dynamic-quest-graph",
+  "packages/encounter-procgen",
+  "packages/faction-reputation",
+  "packages/forging-crafting-plus",
+  "packages/graphics-postfx-stack",
+  "packages/havok-style-ragdoll-bridge",
+  "packages/inventory-tetris-system",
+  "packages/loot-affix-roller",
+  "packages/mod-hotload-runtime",
+  "packages/network-prediction-rs",
+  "packages/open-world-streamer",
+  "packages/parkour-movement-kit",
+  "packages/physics-destruction-lite",
+  "packages/quest-cinematics-rs",
+  "packages/rust-combat-primitives",
+  "packages/shader-material-pipeline",
+  "packages/survival-weather-sim"
+]
+resolver = "2"
