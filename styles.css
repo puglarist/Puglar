@@ -1,0 +1,108 @@
+:root {
+  color-scheme: dark;
+  --bg: #070b12;
+  --panel: #121a25;
+  --accent: #4ef7ff;
+  --text: #d7e6ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: radial-gradient(circle at top, #13243f, var(--bg) 50%);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.hud {
+  padding: 1rem;
+  border-bottom: 1px solid #22324b;
+  background: #0b1320de;
+}
+
+.hud h1 {
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0.35rem 0 0.8rem;
+  color: #9ab4d6;
+}
+
+.controls {
+  display: flex;
+  gap: 0.6rem;
+  align-items: end;
+  flex-wrap: wrap;
+}
+
+.controls label {
+  display: grid;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+}
+
+input,
+button {
+  border: 1px solid #304761;
+  background: #0d1927;
+  color: var(--text);
+  border-radius: 0.4rem;
+  padding: 0.5rem 0.65rem;
+}
+
+button {
+  cursor: pointer;
+  background: #15407a;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  min-height: calc(100vh - 170px);
+}
+
+#world {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.panel {
+  border-left: 1px solid #22324b;
+  background: #0d1624d0;
+  padding: 1rem;
+}
+
+.panel h2 {
+  margin-top: 0;
+}
+
+#playerList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.4rem;
+}
+
+#playerList li {
+  padding: 0.45rem 0.6rem;
+  border-radius: 0.4rem;
+  background: #152133;
+}
+
+@media (max-width: 900px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .panel {
+    border-left: none;
+    border-top: 1px solid #22324b;
+  }
+}
