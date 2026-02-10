@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wendyverse.dev/schemas/mod-manifest.schema.json",
+  "title": "WendyVerse Mod Manifest",
+  "type": "object",
+  "required": ["name", "version", "entry", "capabilities", "signature"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^[a-z0-9-_.]{3,64}$"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "entry": {
+      "type": "string"
+    },
+    "engine": {
+      "type": "string",
+      "default": ">=0.1.0"
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "ui.overlay",
+          "ui.hud",
+          "gameplay.rules",
+          "gameplay.events",
+          "cosmetics.audio",
+          "cosmetics.visual"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "signature": {
+      "type": "object",
+      "required": ["alg", "keyId", "value"],
+      "properties": {
+        "alg": { "type": "string", "enum": ["ed25519"] },
+        "keyId": { "type": "string" },
+        "value": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
