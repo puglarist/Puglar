@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b1020" />
     <title>Puglar MetaQuest Metaverse Schema</title>
     <style>
       :root { color-scheme: dark; }
@@ -12,7 +13,7 @@
         background: #0b1020;
         color: #ecf2ff;
       }
-      main { max-width: 900px; margin: 0 auto; padding: 2rem 1rem 3rem; }
+      main { max-width: 980px; margin: 0 auto; padding: 2rem 1rem 3rem; }
       h1 { margin-bottom: .25rem; }
       .muted { color: #b9c3e5; }
       .panel {
@@ -23,11 +24,6 @@
         margin-top: 1rem;
       }
       ul { margin: .5rem 0 0; padding-left: 1.2rem; }
-      code {
-        background: #232d50;
-        padding: .12rem .36rem;
-        border-radius: 6px;
-      }
       .badge {
         display: inline-block;
         border-radius: 999px;
@@ -38,29 +34,43 @@
       }
       .ok { background: #1f6b44; color: #ccffe2; }
       .warn { background: #6e4e1f; color: #ffe2b3; }
+      .error { background: #7e1f33; color: #ffd1dc; }
       pre {
         overflow: auto;
         background: #0f162b;
         border: 1px solid #293459;
         padding: .8rem;
         border-radius: 10px;
+        white-space: pre-wrap;
+      }
+      .grid { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+      @media (min-width: 900px) {
+        .grid { grid-template-columns: 1fr 1fr; }
       }
     </style>
   </head>
   <body>
     <main>
       <h1>MetaQuest Metaverse Capability Schema</h1>
-      <p class="muted">Designed for static hosting on GitHub Pages and runtime compatibility checks in Meta Quest Browser.</p>
+      <p class="muted">Static and GitHub Pages-friendly profile checks for Meta Quest WebXR deployment.</p>
 
       <section class="panel">
         <h2>Runtime Detection <span id="questBadge" class="badge warn">Checking...</span></h2>
         <ul id="runtimeChecklist"></ul>
       </section>
 
-      <section class="panel">
-        <h2>Schema Highlights</h2>
-        <ul id="schemaHighlights"></ul>
-      </section>
+      <div class="grid">
+        <section class="panel">
+          <h2>Schema Highlights</h2>
+          <ul id="schemaHighlights"></ul>
+        </section>
+
+        <section class="panel">
+          <h2>Validation</h2>
+          <ul id="validationChecklist"></ul>
+          <p class="muted">Note: this page runs structural validation checks at runtime so your GitHub Pages deployment can be smoke-tested directly in Quest Browser.</p>
+        </section>
+      </div>
 
       <section class="panel">
         <h2>Example Profile</h2>

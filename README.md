@@ -1,20 +1,30 @@
 # Puglar MetaQuest Metaverse Schema
 
-This repository now includes a GitHub Pages-friendly web bundle and JSON Schema for defining metaverse game engine features that can run in the Meta Quest browser.
+This repository includes a GitHub Pages-friendly web bundle and JSON Schema for defining metaverse game engine capability profiles that are compatible with Meta Quest browser-based WebXR experiences.
 
 ## Files
 
-- `schema/metaverse-game-engine.schema.json` – JSON Schema (Draft 2020-12) for metaverse/game-engine capability descriptors.
-- `schema/example.metaquest-profile.json` – Example profile validated by the schema.
-- `index.html` – Static GitHub Pages app that loads and displays schema details and a Meta Quest compatibility checklist.
-- `app.js` – Client-side rendering logic with UA-based Quest detection.
+- `schema/metaverse-game-engine.schema.json` – JSON Schema (Draft 2020-12) with Quest-specific conditional requirements.
+- `schema/example.metaquest-profile.json` – Example profile intended to pass the schema.
+- `index.html` – Static GitHub Pages app that performs runtime and validation checks.
+- `app.js` – Client-side diagnostics and schema/profile smoke checks.
 
-## GitHub Pages + Meta Quest notes
+## What is improved
 
-1. Push this branch to GitHub.
-2. In repository settings, enable **Pages** with source set to this branch root.
-3. Open the generated Pages URL directly from the Meta Quest browser.
-4. Ensure HTTPS is enabled (GitHub Pages provides HTTPS by default), which is required for WebXR APIs.
+- Quest-targeted profiles now require `runtime.webXR.immersiveVR=true` and `runtime.webXR.controllerSupport=true`.
+- The demo page now checks:
+  - secure context,
+  - `navigator.xr` availability,
+  - immersive VR session support,
+  - Quest user-agent hints,
+  - structural schema/profile expectations.
+
+## GitHub Pages + Meta Quest setup
+
+1. Push to GitHub.
+2. Enable **Pages** from the repository root on this branch.
+3. Open the generated URL from Meta Quest Browser.
+4. Confirm the runtime checklist shows WebXR-related checks as passing.
 
 ## Local check
 

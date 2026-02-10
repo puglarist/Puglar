@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://puglar.github.io/schema/metaverse-game-engine.schema.json",
+  "$id": "https://puglar.github.io/Puglar/schema/metaverse-game-engine.schema.json",
   "title": "Metaverse Game Engine Capability Profile",
   "description": "Schema describing game engine and runtime capabilities for metaverse deployment, including Meta Quest and GitHub Pages web delivery requirements.",
   "type": "object",
@@ -171,5 +171,39 @@
       "additionalProperties": false
     }
   },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "runtime": {
+            "properties": {
+              "targetDevices": {
+                "contains": {
+                  "enum": ["meta-quest-2", "meta-quest-3", "meta-quest-pro"]
+                }
+              }
+            },
+            "required": ["targetDevices"]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "runtime": {
+            "properties": {
+              "webXR": {
+                "properties": {
+                  "immersiveVR": { "const": true },
+                  "controllerSupport": { "const": true }
+                },
+                "required": ["immersiveVR", "controllerSupport"]
+              }
+            },
+            "required": ["webXR"]
+          }
+        }
+      }
+    }
+  ],
   "additionalProperties": false
 }
