@@ -1,0 +1,33 @@
+{
+  "source": "https://www.gtabase.com/gta-6/weapons/",
+  "captured_at_utc": "2026-02-10T10:00:00Z",
+  "weapons": [
+    {"slug":"assault-rifle","name":"Assault Rifle","category":"Assault Rifles","based_on":"AK-47","status":"confirmed","evidence":"Listed on GTA Base GTA 6 weapons database page.","url":"https://www.gtabase.com/gta-6/weapons/assault-rifle"},
+    {"slug":"baseball-bat","name":"Baseball Bat","category":"Melee Weapons","based_on":null,"status":"confirmed","evidence":"Listed on GTA Base GTA 6 weapons database page.","url":"https://www.gtabase.com/gta-6/weapons/baseball-bat"},
+    {"slug":"bolt-action-sniper","name":"Bolt Action Sniper","category":"Sniper Rifles","based_on":"Remington 700 BDL","status":"confirmed","evidence":"Listed on GTA Base GTA 6 weapons database page.","url":"https://www.gtabase.com/gta-6/weapons/bolt-action-sniper"},
+    {"slug":"compact-smg","name":"Compact SMG","category":"Machine Guns","based_on":"Scorpion Mini-SMG","status":"confirmed","evidence":"Listed on GTA Base GTA 6 weapons database page.","url":"https://www.gtabase.com/gta-6/weapons/compact-smg"},
+    {"slug":"crowbar","name":"Crowbar","category":"Melee Weapons","based_on":null,"status":"confirmed","evidence":"Listed on GTA Base GTA 6 weapons database page.","url":"https://www.gtabase.com/gta-6/weapons/crowbar"},
+    {"slug":"fire-bottle","name":"Fire Bottle","category":"Thrown Weapons","based_on":null,"status":"confirmed","evidence":"Listed on GTA Base GTA 6 weapons database page (marked NEW).","url":"https://www.gtabase.com/gta-6/weapons/fire-bottle"},
+    {"slug":"flashbang","name":"Flashbang","category":"Thrown Weapons","based_on":null,"status":"confirmed","evidence":"Listed on GTA Base GTA 6 weapons database page (marked NEW).","url":"https://www.gtabase.com/gta-6/weapons/flashbang"},
+    {"slug":"golf-ball","name":"Golf Ball","category":"Thrown Weapons","based_on":null,"status":"confirmed","evidence":"Listed on GTA Base GTA 6 weapons database page.","url":"https://www.gtabase.com/gta-6/weapons/golf-ball"},
+    {"slug":"golf-club","name":"Golf Club","category":"Melee Weapons","based_on":null,"status":"confirmed","evidence":"Listed on GTA Base GTA 6 weapons database page.","url":"https://www.gtabase.com/gta-6/weapons/golf-club"},
+    {"slug":"grenade","name":"Grenade","category":"Thrown Weapons","based_on":"M61 Grenade","status":"confirmed","evidence":"Listed on GTA Base GTA 6 weapons database page.","url":"https://www.gtabase.com/gta-6/weapons/grenade"},
+    {"slug":"hunter-sniper","name":"Hunter Sniper","category":"Sniper Rifles","based_on":"Arctic Warfare L96A1","status":"confirmed","evidence":"Listed on GTA Base GTA 6 weapons database page.","url":"https://www.gtabase.com/gta-6/weapons/hunter-sniper"},
+    {"slug":"knife","name":"Knife","category":"Melee Weapons","based_on":"UC-RB1 Knife","status":"confirmed","evidence":"Listed on GTA Base GTA 6 weapons database page.","url":"https://www.gtabase.com/gta-6/weapons/knife"},
+    {"slug":"micro-smg","name":"Micro SMG","category":"Machine Guns","based_on":"Mini Uzi","status":"confirmed","evidence":"Listed on GTA Base GTA 6 weapons database page.","url":"https://www.gtabase.com/gta-6/weapons/micro-smg"},
+    {"slug":"molotov","name":"Molotov","category":"Thrown Weapons","based_on":null,"status":"confirmed","evidence":"Listed on GTA Base GTA 6 weapons database page.","url":"https://www.gtabase.com/gta-6/weapons/molotov"},
+    {"slug":"pistol","name":"Pistol","category":"Handguns","based_on":"Taurus PT92AF","status":"confirmed","evidence":"Listed on GTA Base GTA 6 weapons database page.","url":"https://www.gtabase.com/gta-6/weapons/pistol"},
+    {"slug":"pool-cue","name":"Pool Cue","category":"Melee Weapons","based_on":null,"status":"confirmed","evidence":"Listed on GTA Base GTA 6 weapons database page.","url":"https://www.gtabase.com/gta-6/weapons/pool-cue"},
+    {"slug":"pump-action-shotgun","name":"Pump Action Shotgun","category":"Shotguns","based_on":"Mossberg 590","status":"confirmed","evidence":"Listed on GTA Base GTA 6 weapons database page.","url":"https://www.gtabase.com/gta-6/weapons/pump-action-shotgun"},
+    {"slug":"rpg-rocket-launcher","name":"RPG (Rocket Launcher)","category":"Heavy Weapons","based_on":"RPG-7","status":"confirmed","evidence":"Listed on GTA Base GTA 6 weapons database page.","url":"https://www.gtabase.com/gta-6/weapons/rpg-rocket-launcher"},
+    {"slug":"smoke-grenade","name":"Smoke Grenade","category":"Thrown Weapons","based_on":"M18 Smoke Grenade","status":"confirmed","evidence":"Listed on GTA Base GTA 6 weapons database page.","url":"https://www.gtabase.com/gta-6/weapons/smoke-grenade"},
+    {"slug":"speargun","name":"Speargun","category":"Thrown Weapons","based_on":null,"status":"confirmed","evidence":"Listed on GTA Base GTA 6 weapons database page (marked NEW).","url":"https://www.gtabase.com/gta-6/weapons/speargun"},
+    {"slug":"unarmed-fist","name":"Unarmed (Fist)","category":"Unarmed","based_on":null,"status":"confirmed","evidence":"Listed on GTA Base GTA 6 weapons database page.","url":"https://www.gtabase.com/gta-6/weapons/unarmed-fist"},
+
+    {"slug":"glock-sig-sauer-p320-pistol","name":"Glock / SIG-Sauer P320 Pistol","category":"Handguns","based_on":"Glock / SIG-Sauer P320","status":"unconfirmed","evidence":"Found as image alt text in temporary image assets on GTA Base page; no live weapon detail page.","url":"https://www.gtabase.com/images/gta-6/weapons/temp/glock-2.jpg"},
+    {"slug":"bersa-firestorm-380","name":"Bersa Firestorm 380","category":"Handguns","based_on":"Bersa Firestorm 380","status":"unconfirmed","evidence":"Found as image alt text in temporary image assets on GTA Base page; no live weapon detail page.","url":"https://www.gtabase.com/images/gta-6/weapons/temp/bersa-firestorm.jpg"},
+    {"slug":"beretta-92fs","name":"Beretta 92FS","category":"Handguns","based_on":"Beretta 92FS","status":"unconfirmed","evidence":"Found as image alt text in temporary image assets on GTA Base page; no live weapon detail page.","url":"https://www.gtabase.com/images/gta-6/weapons/temp/beretta-92fs.jpg"},
+    {"slug":"m14-springfield-armory-m1a","name":"M14 / Springfield Armory M1A","category":"Assault Rifles","based_on":"M14 / Springfield Armory M1A","status":"unconfirmed","evidence":"Found as image alt text in temporary image assets on GTA Base page; no live weapon detail page.","url":"https://www.gtabase.com/images/gta-6/weapons/temp/m14.jpg"},
+    {"slug":"ruger-10-22","name":"Ruger 10/22","category":"Rifles","based_on":"Ruger 10/22","status":"unconfirmed","evidence":"Found as image alt text in temporary image assets on GTA Base page; no live weapon detail page.","url":"https://www.gtabase.com/images/gta-6/weapons/temp/ruger.jpg"}
+  ]
+}
