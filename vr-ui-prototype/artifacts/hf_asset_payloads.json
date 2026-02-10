@@ -1,0 +1,44 @@
+{
+  "dataset": "olympusmonsgames/unreal-engine-5-code-split",
+  "model_hint": "facebook/sam-3d-objects",
+  "export_profile": {
+    "platform": "Meta Quest",
+    "format": "glb",
+    "texture_size": 1024,
+    "lods": [
+      1.0,
+      0.5,
+      0.25
+    ]
+  },
+  "assets": [
+    {
+      "name": "street-rifle",
+      "style": "near-future tactical",
+      "target_polycount": 12000,
+      "pbr_textures": true,
+      "scale_meters": 1.0
+    },
+    {
+      "name": "wrist-computer",
+      "style": "sleek industrial",
+      "target_polycount": 7000,
+      "pbr_textures": true,
+      "scale_meters": 1.0
+    },
+    {
+      "name": "medical-kit",
+      "style": "modular field gear",
+      "target_polycount": 5000,
+      "pbr_textures": true,
+      "scale_meters": 1.0
+    },
+    {
+      "name": "urban-backpack",
+      "style": "high-detail nylon",
+      "target_polycount": 9000,
+      "pbr_textures": true,
+      "scale_meters": 1.0
+    }
+  ]
+}

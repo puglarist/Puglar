@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puglar Neon Ops VR Inventory Prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scene-backdrop"></div>
+
+    <main class="hud-shell" role="application" aria-label="Neon Ops Inventory HUD">
+      <header class="top-strip">
+        <div class="meta left">
+          <span class="chip">24°C</span>
+          <span class="chip">11:06</span>
+          <span class="chip">Sector: Beachfront</span>
+        </div>
+        <nav class="tabs" aria-label="Main tabs">
+          <button class="tab">Operations</button>
+          <button class="tab is-active">Inventory</button>
+          <button class="tab">Crew</button>
+          <button class="tab">Rewards</button>
+        </nav>
+        <div class="meta right">
+          <span class="currency lime">⚙ 12,780</span>
+          <span class="currency cyan">◈ 23,590,780</span>
+        </div>
+      </header>
+
+      <section class="content-grid">
+        <aside class="panel profile-panel">
+          <h2>Operator: Alex Vega</h2>
+          <div class="rings">
+            <div class="ring-card"><span>Armor</span><strong>86%</strong></div>
+            <div class="ring-card"><span>Hydration</span><strong>71%</strong></div>
+            <div class="ring-card"><span>Focus</span><strong>95%</strong></div>
+            <div class="ring-card"><span>XP Boost</span><strong>24%</strong></div>
+          </div>
+
+          <h3>Quick Slots</h3>
+          <div class="quick-slots" id="quickSlots"></div>
+
+          <h3>Vitals</h3>
+          <ul class="stats">
+            <li><label>Stamina</label><progress value="72" max="100"></progress></li>
+            <li><label>Alertness</label><progress value="90" max="100"></progress></li>
+            <li><label>Composure</label><progress value="64" max="100"></progress></li>
+            <li><label>Heat</label><progress value="43" max="100"></progress></li>
+          </ul>
+        </aside>
+
+        <section class="panel avatar-panel">
+          <div class="avatar-silhouette" aria-label="Character preview">
+            <div class="glow"></div>
+            <div class="avatar-label">3D Avatar Mount</div>
+          </div>
+          <div class="wearables">
+            <button>Head</button>
+            <button>Chest</button>
+            <button>Hands</button>
+            <button>Feet</button>
+            <button>Tech</button>
+          </div>
+        </section>
+
+        <section class="panel inventory-panel">
+          <div class="inventory-toolbar">
+            <button class="is-active">All</button>
+            <button>Weapons</button>
+            <button>Aid</button>
+            <button>Craft</button>
+            <button>Intel</button>
+          </div>
+          <div class="inventory-grid" id="inventoryGrid"></div>
+        </section>
+
+        <aside class="panel actions-panel">
+          <h3>Context Actions</h3>
+          <ul>
+            <li><button>Sell</button></li>
+            <li><button>Buy</button></li>
+            <li><button>Share to Squad</button></li>
+            <li><button>Drop</button></li>
+          </ul>
+
+          <h3>Ledger</h3>
+          <div class="ledger" id="ledger"></div>
+        </aside>
+      </section>
+
+      <footer class="vr-footer">
+        <span>Quest Controls: Trigger=Select • Grip=Drag Panel • Thumbstick=Scroll</span>
+      </footer>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
