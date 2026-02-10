@@ -1,0 +1,186 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://puglar.local/schemas/meta-quest-hand-tracking.schema.json",
+  "title": "Meta Quest Hand Tracking Configuration",
+  "description": "Configuration schema for enabling and debugging hand tracking on Meta Quest devices.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "platform",
+    "runtime",
+    "tracking",
+    "gestures",
+    "debug"
+  ],
+  "properties": {
+    "platform": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["target", "minOsVersion"],
+      "properties": {
+        "target": {
+          "const": "meta-quest"
+        },
+        "minOsVersion": {
+          "type": "integer",
+          "minimum": 49,
+          "description": "Quest OS version; hand tracking quality significantly improved on v49+."
+        },
+        "supportedDevices": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["Quest 2", "Quest Pro", "Quest 3", "Quest 3S"]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
+    "runtime": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["xrBackend", "handTrackingApi"],
+      "properties": {
+        "xrBackend": {
+          "type": "string",
+          "enum": ["OpenXR", "OVRPlugin"]
+        },
+        "handTrackingApi": {
+          "type": "string",
+          "enum": ["XR_EXT_hand_tracking", "OVRHand"]
+        },
+        "jointSet": {
+          "type": "string",
+          "enum": ["default", "full", "minimal"],
+          "default": "full"
+        },
+        "predictionMs": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 60,
+          "default": 20
+        }
+      }
+    },
+    "tracking": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["enabled", "trackingFrequencyHz", "confidenceThreshold"],
+      "properties": {
+        "enabled": { "type": "boolean", "const": true },
+        "trackingFrequencyHz": {
+          "type": "integer",
+          "minimum": 30,
+          "maximum": 120,
+          "default": 60
+        },
+        "confidenceThreshold": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0.55
+        },
+        "fallbackToControllers": {
+          "type": "boolean",
+          "default": true
+        },
+        "dominantHand": {
+          "type": "string",
+          "enum": ["left", "right", "auto"],
+          "default": "auto"
+        }
+      }
+    },
+    "gestures": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pinch", "grab"],
+      "properties": {
+        "pinch": {
+          "$ref": "#/$defs/gestureConfig"
+        },
+        "grab": {
+          "$ref": "#/$defs/gestureConfig"
+        },
+        "point": {
+          "$ref": "#/$defs/gestureConfig"
+        },
+        "custom": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "expression", "threshold"],
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string", "minLength": 1 },
+              "expression": { "type": "string", "minLength": 3 },
+              "threshold": { "type": "number", "minimum": 0, "maximum": 1 }
+            }
+          }
+        }
+      }
+    },
+    "debug": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["enabled", "overlay", "logLevel", "telemetry"],
+      "properties": {
+        "enabled": { "type": "boolean", "default": true },
+        "overlay": {
+          "type": "boolean",
+          "description": "Render per-joint confidence and gesture state on device."
+        },
+        "logLevel": {
+          "type": "string",
+          "enum": ["error", "warn", "info", "debug", "trace"],
+          "default": "debug"
+        },
+        "recordSessionSeconds": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1800,
+          "default": 120
+        },
+        "telemetry": {
+          "type": "object",
+          "required": ["emitJointConfidence", "emitFrameTiming", "emitGestureTransitions"],
+          "additionalProperties": false,
+          "properties": {
+            "emitJointConfidence": { "type": "boolean" },
+            "emitFrameTiming": { "type": "boolean" },
+            "emitGestureTransitions": { "type": "boolean" }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "gestureConfig": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["enabled", "enterThreshold", "exitThreshold", "cooldownMs"],
+      "properties": {
+        "enabled": { "type": "boolean", "default": true },
+        "enterThreshold": { "type": "number", "minimum": 0, "maximum": 1 },
+        "exitThreshold": { "type": "number", "minimum": 0, "maximum": 1 },
+        "cooldownMs": { "type": "integer", "minimum": 0, "maximum": 2000, "default": 150 }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "enabled": { "const": true }
+            }
+          },
+          "then": {
+            "properties": {
+              "enterThreshold": { "exclusiveMinimum": 0.1 },
+              "exitThreshold": { "exclusiveMinimum": 0 }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
