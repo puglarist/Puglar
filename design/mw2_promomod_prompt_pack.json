@@ -1,0 +1,19 @@
+{
+  "project": "MW2-style premium graphics",
+  "version": "1.0",
+  "prompts": {
+    "hero_banner": "Cinematic military promo banner, realistic tactical operator, dramatic cloudy sky, volumetric light rays, smoke and atmospheric depth, high detail weapon and gear textures, cool steel-blue grade, ad composition with text-safe area on left, title-ready, photorealistic, premium commercial render",
+    "atv_upgrade": "Transform this ATV photo into a high-end promotional visual while preserving the exact ATV model, frame shape, and wheel geometry. Clean clutter, strengthen subject lighting, cinematic contrast, realistic garage atmosphere, subtle fog and dust, premium detail retention, blue-gray cinematic grade, professional advertising look",
+    "logo_badge_style": "Neon edge-lit circular logo badge, dark textured background, subtle smoke layers, green and cyan glow accents, polished modern gaming emblem style, crisp typography, premium high-contrast finish"
+  },
+  "negative_prompt": "cartoon, anime, painterly, low-res, blurry, oversaturated, text glitches, malformed geometry, extra limbs, melted objects, watermark",
+  "settings": {
+    "recommended_resolution": [
+      "2560x1440",
+      "3840x2160"
+    ],
+    "cfg_scale_range": "6-8",
+    "steps_range": "30-45",
+    "denoise_for_img2img": "0.35-0.55"
+  }
+}
