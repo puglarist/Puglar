@@ -1,0 +1,23 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "Codex Puglar World Package"
+  },
+  "scene": 0,
+  "scenes": [
+    { "nodes": [0] }
+  ],
+  "nodes": [
+    {
+      "name": "TrainingGroundReference",
+      "translation": [0, 0, 0]
+    }
+  ],
+  "extras": {
+    "references": {
+      "ground_obj": "../../../assets/3d/puglar-training-ground.obj",
+      "drone_gltf": "../../../assets/3d/puglar-scout-drone.gltf",
+      "map_geojson": "../maps/world-overview.geojson"
+    }
+  }
+}

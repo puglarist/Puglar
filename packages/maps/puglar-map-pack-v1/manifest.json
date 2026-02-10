@@ -1,0 +1,9 @@
+{
+  "name": "puglar-map-pack-v1",
+  "version": "1.0.0",
+  "description": "Regional map and zone boundaries",
+  "assets": [
+    {"id": "region-map-svg", "type": "image/svg+xml", "path": "../../../assets/maps/puglar-region-map.svg"},
+    {"id": "zones-geojson", "type": "application/geo+json", "path": "../../../assets/maps/puglar-zones.geojson"}
+  ]
+}

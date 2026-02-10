@@ -1,0 +1,10 @@
+{
+  "name": "puglar-3d-pack-v1",
+  "version": "1.0.0",
+  "description": "Starter 3D kit for Puglar worlds",
+  "assets": [
+    {"id": "training-ground-obj", "type": "model/obj", "path": "../../../assets/3d/puglar-training-ground.obj"},
+    {"id": "training-ground-mtl", "type": "material/mtl", "path": "../../../assets/3d/puglar-training-ground.mtl"},
+    {"id": "scout-drone-gltf", "type": "model/gltf+json", "path": "../../../assets/3d/puglar-scout-drone.gltf"}
+  ]
+}

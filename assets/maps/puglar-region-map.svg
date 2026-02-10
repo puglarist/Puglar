@@ -1,0 +1,12 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" fill="#020617"/>
+  <path d="M120 220L310 140L520 180L700 110L930 180L1200 140L1410 250L1450 470L1320 700L1100 820L820 860L610 760L400 770L210 690L120 520Z" fill="#0F172A" stroke="#38BDF8" stroke-width="4"/>
+  <path d="M240 340L460 300L680 350L870 310L1060 360L1280 320" stroke="#334155" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="520" cy="520" r="18" fill="#22D3EE"/>
+  <circle cx="840" cy="450" r="18" fill="#22D3EE"/>
+  <circle cx="1080" cy="600" r="18" fill="#22D3EE"/>
+  <path d="M520 520L840 450L1080 600" stroke="#22D3EE" stroke-width="4" stroke-dasharray="10 10"/>
+  <text x="470" y="565" fill="#E2E8F0" font-size="28" font-family="Inter,Arial,sans-serif">Raven Gate</text>
+  <text x="790" y="495" fill="#E2E8F0" font-size="28" font-family="Inter,Arial,sans-serif">Iron Basin</text>
+  <text x="1030" y="645" fill="#E2E8F0" font-size="28" font-family="Inter,Arial,sans-serif">Shade Point</text>
+</svg>

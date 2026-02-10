@@ -1,0 +1,20 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(512 512) rotate(90) scale(460)">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#020617"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="128" y1="128" x2="896" y2="896" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+  <circle cx="512" cy="512" r="464" fill="url(#bg)"/>
+  <circle cx="512" cy="512" r="436" stroke="url(#ring)" stroke-width="24"/>
+  <circle cx="512" cy="512" r="378" stroke="#334155" stroke-width="8" stroke-dasharray="12 16"/>
+  <path d="M512 260L650 328V436C650 522 593 600 512 639C431 600 374 522 374 436V328L512 260Z" fill="#E2E8F0"/>
+  <path d="M512 309L605 354V430C605 490 566 546 512 575C458 546 419 490 419 430V354L512 309Z" fill="#0EA5E9"/>
+  <path d="M456 451H488V419H536V451H568V499H536V531H488V499H456V451Z" fill="#F8FAFC"/>
+  <text x="512" y="760" fill="#E5E7EB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="56" text-anchor="middle" font-weight="700" letter-spacing="6">PUGLAR</text>
+  <text x="512" y="814" fill="#94A3B8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="28" text-anchor="middle" font-weight="500" letter-spacing="4">IRON • AWARENESS • DISCIPLINE</text>
+</svg>

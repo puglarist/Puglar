@@ -1,0 +1,20 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {"name": "Spawn", "kind": "checkpoint"},
+      "geometry": {"type": "Point", "coordinates": [24, 22]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"name": "Tower", "kind": "poi"},
+      "geometry": {"type": "Point", "coordinates": [56, 44]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"name": "Extraction", "kind": "goal"},
+      "geometry": {"type": "Point", "coordinates": [84, 66]}
+    }
+  ]
+}
