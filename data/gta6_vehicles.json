@@ -1,0 +1,19 @@
+{
+  "source_url": "file:///workspace/Puglar/fixtures/gtabase_vehicles_sample.html",
+  "generated_at_utc": "2026-02-10T10:24:00.227324+00:00",
+  "vehicle_count": 3,
+  "vehicles": [
+    {
+      "name": "Bravado Banshee",
+      "url": "https://www.gtabase.com/gta-6/vehicles/bravado-banshee"
+    },
+    {
+      "name": "Declasse Tulip",
+      "url": "https://www.gtabase.com/gta-6/vehicles/declasse-tulip"
+    },
+    {
+      "name": "Vapid Police Cruiser",
+      "url": "https://www.gtabase.com/gta-6/vehicles/vapid-police-cruiser"
+    }
+  ]
+}
