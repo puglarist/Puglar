@@ -1,0 +1,44 @@
+module World.Core v0.1
+
+type Vec3 {
+  x: f32
+  y: f32
+  z: f32
+}
+
+type ItemRef {
+  id: uid
+  qty: u16 @clamp(1, 999)
+}
+
+entity Player {
+  id: uid @primary
+  name: string @index
+  level: u16 @default(1)
+  position: Vec3 @replicate(freq=20)
+  stamina: f32 @clamp(0, 100)
+  inventory: list<ItemRef> @max(64)
+}
+
+entity Input {
+  playerId: uid @index
+  axisX: f32 @clamp(-1, 1)
+  axisY: f32 @clamp(-1, 1)
+}
+
+system Movement {
+  reads: Player.position, Input.axisX, Input.axisY
+  writes: Player.position, Player.stamina
+  tick: fixed(60)
+}
+
+storage PlayerStore {
+  backend: postgres
+  partition: region
+  cache: redis(ttl=30s)
+}
+
+api PlayerAPI {
+  route GET /players/:id -> Player
+  route POST /players -> Player
+}

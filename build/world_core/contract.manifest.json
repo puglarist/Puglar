@@ -1,0 +1,127 @@
+{
+  "module": "World.Core",
+  "version": "0.1",
+  "blocks": [
+    {
+      "kind": "type",
+      "name": "Vec3",
+      "fields": [
+        {
+          "name": "x",
+          "type": "f32"
+        },
+        {
+          "name": "y",
+          "type": "f32"
+        },
+        {
+          "name": "z",
+          "type": "f32"
+        }
+      ]
+    },
+    {
+      "kind": "type",
+      "name": "ItemRef",
+      "fields": [
+        {
+          "name": "id",
+          "type": "uid"
+        },
+        {
+          "name": "qty",
+          "type": "u16"
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "name": "Player",
+      "fields": [
+        {
+          "name": "id",
+          "type": "uid"
+        },
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "level",
+          "type": "u16"
+        },
+        {
+          "name": "position",
+          "type": "Vec3"
+        },
+        {
+          "name": "stamina",
+          "type": "f32"
+        },
+        {
+          "name": "inventory",
+          "type": "list<ItemRef>"
+        }
+      ]
+    },
+    {
+      "kind": "entity",
+      "name": "Input",
+      "fields": [
+        {
+          "name": "playerId",
+          "type": "uid"
+        },
+        {
+          "name": "axisX",
+          "type": "f32"
+        },
+        {
+          "name": "axisY",
+          "type": "f32"
+        }
+      ]
+    },
+    {
+      "kind": "system",
+      "name": "Movement",
+      "fields": [
+        {
+          "name": "reads",
+          "type": "Player.position,"
+        },
+        {
+          "name": "writes",
+          "type": "Player.position,"
+        },
+        {
+          "name": "tick",
+          "type": "fixed(60)"
+        }
+      ]
+    },
+    {
+      "kind": "storage",
+      "name": "PlayerStore",
+      "fields": [
+        {
+          "name": "backend",
+          "type": "postgres"
+        },
+        {
+          "name": "partition",
+          "type": "region"
+        },
+        {
+          "name": "cache",
+          "type": "redis(ttl=30s)"
+        }
+      ]
+    },
+    {
+      "kind": "api",
+      "name": "PlayerAPI",
+      "fields": []
+    }
+  ]
+}
