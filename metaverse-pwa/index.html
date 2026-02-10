@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#111827" />
+    <title>Puglar Metaverse PWA</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <style>
+      :root { color-scheme: dark; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Inter, system-ui, Arial, sans-serif;
+        background: radial-gradient(circle at top, #1f2937, #030712);
+        color: #f9fafb;
+        display: grid;
+        place-items: center;
+      }
+      main {
+        width: min(760px, 92vw);
+        background: rgba(17, 24, 39, 0.7);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 16px;
+        padding: 24px;
+        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+      }
+      h1 { margin-top: 0; font-size: 2rem; }
+      code {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        padding: 2px 6px;
+      }
+      a { color: #93c5fd; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Puglar Metaverse PWA</h1>
+      <p>
+        This page is deployed by GitHub Actions to GitHub Pages using
+        <code>.github/workflows/deploy-pwa-metaverse.yml</code>.
+      </p>
+      <p>
+        Releases are created by <code>.github/workflows/github-release.yml</code>
+        and publish the doctrine PDFs/ZIP archives as GitHub Release assets.
+      </p>
+      <p>
+        After first load, this page caches via a service worker so it can open
+        offline.
+      </p>
+      <p><a href="../README.md">Back to repository README</a></p>
+    </main>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js');
+      }
+    </script>
+  </body>
+</html>
