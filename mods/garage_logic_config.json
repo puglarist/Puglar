@@ -1,0 +1,31 @@
+{
+  "garage": {
+    "capacity": 24,
+    "slots_per_floor": 8,
+    "floors": 3,
+    "persistence": true,
+    "damage_persistence": true,
+    "maintenance": {
+      "oil_life_km": 5000,
+      "brake_pad_life_km": 12000,
+      "tire_wear_rate": 1.0,
+      "engine_health_decay": 1.0
+    }
+  },
+  "simulator": {
+    "physics_mode": "sim",
+    "abs": "oem",
+    "traction_control": "oem",
+    "stability_control": "oem",
+    "fuel_mass_enabled": true,
+    "tire_temperature_enabled": true,
+    "brake_temperature_enabled": true,
+    "surface_grip_enabled": true
+  },
+  "graphics": {
+    "garage_reflection_probes": true,
+    "pbr_clearcoat": true,
+    "dynamic_shadow_quality": "high",
+    "screen_space_reflections": "high"
+  }
+}

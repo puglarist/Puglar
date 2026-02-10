@@ -1,0 +1,43 @@
+{
+  "pack_name": "simulator_realism_supercar_pack",
+  "version": "0.1.0",
+  "schema": "https://example.org/schemas/supercar-asset-manifest-v1.json",
+  "assets": [
+    {
+      "id": "hyper_sf90_style",
+      "display_name": "SF90-style Hybrid Supercar",
+      "inspiration": "Ferrari SF90 Stradale",
+      "license": "TBD (must allow redistribution + modification)",
+      "source_url": "TBD",
+      "attribution": "TBD",
+      "status": "planned",
+      "lods": ["lod0", "lod1", "lod2", "lod3"],
+      "materials": ["body_paint", "carbon", "glass", "metal"],
+      "physics_profile": "hybrid_awd_hypercar"
+    },
+    {
+      "id": "hyper_revuelto_style",
+      "display_name": "Revuelto-style V12 Hybrid",
+      "inspiration": "Lamborghini Revuelto",
+      "license": "TBD (must allow redistribution + modification)",
+      "source_url": "TBD",
+      "attribution": "TBD",
+      "status": "planned",
+      "lods": ["lod0", "lod1", "lod2", "lod3"],
+      "materials": ["body_paint", "carbon", "glass", "metal"],
+      "physics_profile": "v12_hybrid_awd"
+    },
+    {
+      "id": "hyper_nevera_style",
+      "display_name": "Nevera-style EV Hypercar",
+      "inspiration": "Rimac Nevera",
+      "license": "TBD (must allow redistribution + modification)",
+      "source_url": "TBD",
+      "attribution": "TBD",
+      "status": "planned",
+      "lods": ["lod0", "lod1", "lod2", "lod3"],
+      "materials": ["body_paint", "carbon", "glass", "metal"],
+      "physics_profile": "ev_torque_vector_hyper"
+    }
+  ]
+}
