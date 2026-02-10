@@ -1,0 +1,14 @@
+{
+  "task": "webxr-vr-prep",
+  "version": 1,
+  "description": "Source doctrine PDFs staged for WebXR/VR ingestion workflows.",
+  "sources": [
+    "Puglar_Handbook.pdf",
+    "Puglar_Handbook_v2_Language_Guide.pdf",
+    "Puglar_Ranger_Awareness_Manual_v4.pdf",
+    "Puglar_TreeWebs_Handbook_v2_Climb_and_Shade.pdf",
+    "Puglar_Physical_Doctrine_Workouts.pdf",
+    "Puglar_Full_Doctrine_Archive_v5.zip"
+  ],
+  "outputDir": "webxr/vr-task/staging"
+}
