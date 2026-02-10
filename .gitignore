@@ -1,0 +1,21 @@
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Python cache (if local scripts are used)
+__pycache__/
+*.pyc
+
+# Archive artifacts created during local work
+*.log
