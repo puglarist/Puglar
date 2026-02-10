@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Puglar MetaQuest-ready metaverse experience deployable on GitHub Pages." />
+    <title>Puglar Metaverse</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-environment-component@1.3.4/dist/aframe-environment-component.min.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <main class="overlay" aria-live="polite">
+      <h1>Puglar Metaverse</h1>
+      <p id="status">Loading immersive world...</p>
+      <button id="xr-button" type="button">Enter VR (Meta Quest)</button>
+      <details>
+        <summary>Controls</summary>
+        <ul>
+          <li>Desktop: <kbd>WASD</kbd> + Mouse look</li>
+          <li>Quest VR: use controllers/hand rays to teleport and interact</li>
+          <li>Open the floating PDF wall to review Puglar doctrine docs</li>
+        </ul>
+      </details>
+    </main>
+
+    <a-scene
+      renderer="antialias:true; colorManagement:true; physicallyCorrectLights:true"
+      xr-mode-ui="enabled: false"
+      background="color: #0c1224"
+      loading-screen="dotsColor: #fff; backgroundColor: #0c1224"
+    >
+      <a-assets>
+        <img id="floorTex" src="https://cdn.aframe.io/a-painter/images/floor.jpg" alt="grid floor" />
+      </a-assets>
+
+      <a-entity
+        environment="preset: forest; dressingAmount: 18; skyType: gradient; shadow: true; fog: 0.5"
+      ></a-entity>
+
+      <a-entity id="rig" position="0 1.6 8">
+        <a-entity
+          id="camera"
+          camera
+          look-controls
+          wasd-controls="acceleration: 20"
+          cursor="rayOrigin: mouse"
+          raycaster="objects: .clickable"
+        ></a-entity>
+
+        <a-entity
+          laser-controls="hand: left"
+          raycaster="objects: .clickable"
+          line="color: #6ad0ff"
+        ></a-entity>
+
+        <a-entity
+          laser-controls="hand: right"
+          raycaster="objects: .clickable"
+          line="color: #ffd06a"
+        ></a-entity>
+      </a-entity>
+
+      <a-plane
+        rotation="-90 0 0"
+        width="120"
+        height="120"
+        material="src: #floorTex; repeat: 40 40"
+      ></a-plane>
+
+      <a-entity position="0 0 -8">
+        <a-box class="clickable teleport" color="#3a7afe" depth="2" height="0.4" width="2" position="-5 0.2 0"></a-box>
+        <a-text value="Spawn" align="center" color="#ffffff" position="-5 1.1 0" width="7"></a-text>
+
+        <a-box class="clickable teleport" color="#f3722c" depth="2" height="0.4" width="2" position="0 0.2 0"></a-box>
+        <a-text value="Training Dome" align="center" color="#ffffff" position="0 1.1 0" width="7"></a-text>
+
+        <a-box class="clickable teleport" color="#43aa8b" depth="2" height="0.4" width="2" position="5 0.2 0"></a-box>
+        <a-text value="Doctrine Library" align="center" color="#ffffff" position="5 1.1 0" width="7"></a-text>
+      </a-entity>
+
+      <a-cylinder color="#2b335a" radius="3" height="2.5" position="0 1.25 -16" open-ended="true" theta-length="300"></a-cylinder>
+      <a-text value="PUGLAR TRAINING DOME" color="#eaf2ff" align="center" width="24" position="0 3.5 -16"></a-text>
+      <a-sphere color="#f9c74f" radius="0.35" position="0 2.1 -16" animation="property: rotation; to: 0 360 0; loop: true; dur: 4000"></a-sphere>
+
+      <a-entity position="13 0 -12">
+        <a-plane color="#1d3557" width="8" height="4.5" position="0 2.8 0"></a-plane>
+        <a-text value="Doctrine Library" color="#ffffff" align="center" width="10" position="0 4.6 0.02"></a-text>
+        <a-text
+          value="Open docs in a new tab:\n• Handbook\n• Drill Cards\n• Seasonal Cards"
+          color="#dce8ff"
+          align="left"
+          width="6.5"
+          position="-3.6 3.6 0.02"
+        ></a-text>
+
+        <a-box class="clickable doc-link" data-url="Puglar_Handbook.pdf" color="#457b9d" width="2.2" height="0.55" depth="0.2" position="-2.3 1.8 0.1"></a-box>
+        <a-text value="Handbook" align="center" width="4" position="-2.3 1.78 0.24" color="#fff"></a-text>
+
+        <a-box class="clickable doc-link" data-url="Puglar_Pocket_Drill_Cards.pdf" color="#e76f51" width="2.2" height="0.55" depth="0.2" position="0 1.8 0.1"></a-box>
+        <a-text value="Drill Cards" align="center" width="4" position="0 1.78 0.24" color="#fff"></a-text>
+
+        <a-box class="clickable doc-link" data-url="Puglar_Seasonal_Drill_Cards.pdf" color="#2a9d8f" width="2.2" height="0.55" depth="0.2" position="2.3 1.8 0.1"></a-box>
+        <a-text value="Seasonal" align="center" width="4" position="2.3 1.78 0.24" color="#fff"></a-text>
+      </a-entity>
+
+      <a-light type="ambient" intensity="0.6"></a-light>
+      <a-light type="directional" position="8 12 4" intensity="0.7"></a-light>
+    </a-scene>
+  </body>
+</html>
