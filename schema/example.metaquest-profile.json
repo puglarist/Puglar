@@ -1,0 +1,52 @@
+{
+  "profileName": "Quest WebXR Social Plaza",
+  "engine": {
+    "name": "three.js",
+    "version": "0.170.0",
+    "renderPipeline": "forward",
+    "shaderModel": "glsl-es3"
+  },
+  "runtime": {
+    "targetDevices": ["meta-quest-2", "meta-quest-3", "desktop"],
+    "webXR": {
+      "immersiveVR": true,
+      "handTracking": true,
+      "controllerSupport": true,
+      "anchors": false,
+      "passthroughMixedReality": false
+    },
+    "networking": {
+      "protocol": "webrtc",
+      "tickRateHz": 30,
+      "stateSync": "authoritative-server"
+    }
+  },
+  "metaverseFeatures": {
+    "identity": {
+      "walletOptional": true,
+      "federatedLogin": ["google", "meta"]
+    },
+    "avatar": {
+      "rigType": "humanoid",
+      "fullBodyIK": true,
+      "lipSync": true
+    },
+    "worldStreaming": {
+      "chunkedLoading": true,
+      "maxConcurrentUsers": 80,
+      "instancingModel": "session-based"
+    },
+    "economy": {
+      "supportsIAP": true,
+      "tokenizedAssets": false,
+      "marketplace": "first-party"
+    }
+  },
+  "deployment": {
+    "platform": "github-pages",
+    "https": true,
+    "assetCompression": "both",
+    "serviceWorker": true,
+    "crossOriginIsolation": false
+  }
+}

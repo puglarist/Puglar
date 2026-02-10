@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Puglar MetaQuest Metaverse Schema</title>
+    <style>
+      :root { color-scheme: dark; }
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        background: #0b1020;
+        color: #ecf2ff;
+      }
+      main { max-width: 900px; margin: 0 auto; padding: 2rem 1rem 3rem; }
+      h1 { margin-bottom: .25rem; }
+      .muted { color: #b9c3e5; }
+      .panel {
+        background: #151c33;
+        border: 1px solid #2a355f;
+        border-radius: 12px;
+        padding: 1rem;
+        margin-top: 1rem;
+      }
+      ul { margin: .5rem 0 0; padding-left: 1.2rem; }
+      code {
+        background: #232d50;
+        padding: .12rem .36rem;
+        border-radius: 6px;
+      }
+      .badge {
+        display: inline-block;
+        border-radius: 999px;
+        padding: .2rem .55rem;
+        margin-left: .5rem;
+        font-size: .75rem;
+        font-weight: 700;
+      }
+      .ok { background: #1f6b44; color: #ccffe2; }
+      .warn { background: #6e4e1f; color: #ffe2b3; }
+      pre {
+        overflow: auto;
+        background: #0f162b;
+        border: 1px solid #293459;
+        padding: .8rem;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>MetaQuest Metaverse Capability Schema</h1>
+      <p class="muted">Designed for static hosting on GitHub Pages and runtime compatibility checks in Meta Quest Browser.</p>
+
+      <section class="panel">
+        <h2>Runtime Detection <span id="questBadge" class="badge warn">Checking...</span></h2>
+        <ul id="runtimeChecklist"></ul>
+      </section>
+
+      <section class="panel">
+        <h2>Schema Highlights</h2>
+        <ul id="schemaHighlights"></ul>
+      </section>
+
+      <section class="panel">
+        <h2>Example Profile</h2>
+        <pre id="exampleJson">Loading...</pre>
+      </section>
+    </main>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
