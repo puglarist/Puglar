@@ -1,7 +1,10 @@
 # Puglar
 
-This repository contains Puglar doctrine PDFs and an initial visual asset pack.
+This repository contains Puglar doctrine PDFs plus an expanding asset pipeline for graphics, maps, 3D models, and world packages.
 
-## Visual assets
+## Visual and world assets
 
-A new vector graphics baseline is included in [`assets/`](assets/README.md) for reuse across cards, manuals, and digital surfaces.
+- Core vector graphics are documented in [`assets/README.md`](assets/README.md).
+- 3D assets live in [`assets/3d/`](assets/3d).
+- Map assets live in [`assets/maps/`](assets/maps).
+- Packaged bundles are organized in [`packages/`](packages).
