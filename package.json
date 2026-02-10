@@ -1,0 +1,25 @@
+{
+  "name": "puglar-threejs-vr-upgrade",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Three.js package baseline focused on VR/metaverse rendering quality and real-time performance.",
+  "type": "module",
+  "scripts": {
+    "check": "node --version"
+  },
+  "dependencies": {
+    "three": "^0.170.0",
+    "three-stdlib": "^2.35.12",
+    "postprocessing": "^6.36.6",
+    "screen-space-reflections": "^2.5.0",
+    "three-mesh-bvh": "^0.8.2",
+    "camera-controls": "^2.9.0",
+    "@dimforge/rapier3d-compat": "^0.14.0",
+    "stats.js": "^0.17.0"
+  },
+  "optionalDependencies": {
+    "@react-three/fiber": "^8.17.10",
+    "@react-three/drei": "^9.119.0",
+    "@react-three/xr": "^6.6.15"
+  }
+}
