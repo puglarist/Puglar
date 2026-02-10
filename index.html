@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puglar Metaverse</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hud">
+      <h1>Puglar Metaverse</h1>
+      <p class="subtitle">GitHub Pages + Firebase-ready realtime world</p>
+      <div class="controls">
+        <label>
+          Display name
+          <input id="displayName" maxlength="24" placeholder="Explorer" />
+        </label>
+        <button id="joinBtn">Join World</button>
+        <span id="status">Idle</span>
+      </div>
+      <small>
+        Set your Firebase web config in <code>js/firebase-config.js</code> before deploying.
+      </small>
+    </header>
+
+    <main>
+      <canvas id="world"></canvas>
+      <aside class="panel">
+        <h2>Players Online</h2>
+        <ul id="playerList"></ul>
+      </aside>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
