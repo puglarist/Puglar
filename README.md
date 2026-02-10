@@ -1,26 +1,26 @@
 # Puglar
 
-A curated doctrine and training document library for the Puglar system.
+A document repository for Puglar doctrine, drills, field cards, and print-ready training assets.
 
-## Repository Contents
+## What this repository is
 
-This repository currently serves as a **document archive** containing printable field cards,
-handbooks, manuals, roadmaps, and bundled ZIP archives.
+This repo is an **asset library** (PDF + ZIP artifacts), not an application codebase.
 
-### Core handbooks and doctrine
+- Use individual PDFs for focused printing and field use.
+- Use ZIP archives for full offline distribution snapshots.
+- Use `ASSET_MANIFEST.md` for deterministic file verification (size + SHA-256).
 
+## Asset index
+
+### Doctrine and handbooks
 - `Puglar_Handbook.pdf`
 - `Puglar_Handbook_v2_Language_Guide.pdf`
 - `Puglar_Omnibus_Final_v1.pdf`
 - `Puglar_Sacred_Core_Scroll.pdf`
-
-### Operational manuals and awareness resources
-
 - `Puglar_Ranger_Awareness_Manual_v4.pdf`
 - `Puglar_TreeWebs_Handbook_v2_Climb_and_Shade.pdf`
 
-### Drill, command, and workout cards
-
+### Cards, drills, and workouts
 - `Puglar_Pocket_Drill_Cards.pdf`
 - `Puglar_Pocket_Drill_Cards 2.pdf`
 - `Puglar_Seasonal_Drill_Cards.pdf`
@@ -32,44 +32,47 @@ handbooks, manuals, roadmaps, and bundled ZIP archives.
 - `Puglar_Waterproof_Field_Cards.pdf`
 - `Puglar_Physical_Doctrine_Workouts.pdf`
 
-### Planning and tools
-
+### Planning and production aids
 - `Puglar_Iron_Cross_5_Year_Roadmap_Cards.pdf`
 - `Puglar_Iron_Cross_Illustrated_Angle_Plates.pdf`
 - `Puglar_Lamination_Cut_Guides.pdf`
 
 ### Full archives
-
 - `Puglar_Full_Doctrine_Archive_v2.zip`
 - `Puglar_Full_Doctrine_Archive_v5.zip`
 
-## Quick Start
+## Quick start
 
-1. Clone the repository:
+```bash
+git clone <repo-url>
+cd Puglar
+```
 
-   ```bash
-   git clone <your-repo-url>
-   cd Puglar
-   ```
+Open any PDF with your local viewer, or extract a full archive:
 
-2. Open any PDF locally with your preferred viewer.
-3. Use the ZIP archives for full offline distribution snapshots.
+```bash
+unzip Puglar_Full_Doctrine_Archive_v5.zip -d ./puglar_archive_v5
+```
 
-## Suggested Enhancements (implemented in this README)
+## Integrity verification
 
-- Added a clear inventory grouped by purpose.
-- Added a quick-start section for faster onboarding.
-- Added practical organization guidance for future updates.
+Checksums and file sizes are tracked in [`ASSET_MANIFEST.md`](./ASSET_MANIFEST.md).
 
-## Maintenance Notes
+To manually verify one file hash:
 
-When adding new files:
+```bash
+sha256sum "Puglar_Handbook.pdf"
+# Compare output to the matching row in ASSET_MANIFEST.md
+```
 
-- Prefer descriptive, versioned filenames (for example: `Name_v3.pdf`).
-- Keep card variants and seasonal sets explicitly labeled.
-- Update this README index in the appropriate section.
+## Contribution and maintenance
+
+When adding or replacing assets:
+
+1. Use descriptive, versioned filenames (example: `Title_v3.pdf`).
+2. Regenerate `ASSET_MANIFEST.md` so hashes/sizes stay accurate.
+3. Update this README index if categories or asset names change.
 
 ## License
 
-No license file is currently included in this repository.
-Add a `LICENSE` file if distribution terms should be explicit.
+No license file is currently present. Add `LICENSE` if distribution terms should be explicit.
