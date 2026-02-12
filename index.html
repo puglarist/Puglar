@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Puglar WebXR Deployment Check</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        background: #111;
+        color: #f3f3f3;
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        padding: 2rem;
+      }
+      .card {
+        max-width: 760px;
+        background: #1b1b1b;
+        border: 1px solid #333;
+        border-radius: 16px;
+        padding: 1.25rem 1.5rem;
+      }
+      code {
+        background: #262626;
+        padding: 0.15rem 0.35rem;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Puglar is deployed ✅</h1>
+      <p>
+        If you can see this page on GitHub Pages, your static hosting pipeline is
+        working.
+      </p>
+      <p>
+        Next step: replace this file with your WebXR app entry point (or redirect
+        to your built app).
+      </p>
+      <p>
+        Note: iOS Safari has limited/no general WebXR VR support, so deployment
+        success does not guarantee immersive VR mode on iPhone/iPad.
+      </p>
+      <p>
+        Suggested URL check:
+        <code>https://&lt;username&gt;.github.io/&lt;repo&gt;/</code>
+      </p>
+    </main>
+  </body>
+</html>
