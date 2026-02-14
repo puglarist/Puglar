@@ -1,0 +1,25 @@
+{
+  "id": "mothball",
+  "name": "Mothball",
+  "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/mothball",
+  "map_type": "multiplayer",
+  "release_window": "Season 6",
+  "supported_playlists": [
+    "2v2",
+    "6v6"
+  ],
+  "reverse_engineered_layout": {
+    "size_class": "small",
+    "lane_count": 2,
+    "verticality": "medium",
+    "combat_pace": "high",
+    "dominant_engagement_range": "close"
+  },
+  "build_checklist": [
+    "Block out shell and exterior boundaries",
+    "Place primary objective lanes and intersections",
+    "Add elevation changes and power positions",
+    "Add cover pass and spawn safety pass",
+    "Tune traversal times and sightline balance"
+  ]
+}

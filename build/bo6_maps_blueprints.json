@@ -1,0 +1,1244 @@
+{
+  "count": 51,
+  "maps": [
+    {
+      "id": "babylon",
+      "name": "Babylon",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/babylon",
+      "map_type": "multiplayer",
+      "release_window": "Launch",
+      "supported_playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "small",
+        "lane_count": 2,
+        "verticality": "medium",
+        "combat_pace": "high",
+        "dominant_engagement_range": "close"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "derelict",
+      "name": "Derelict",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/derelict",
+      "map_type": "multiplayer",
+      "release_window": "Launch",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "gala",
+      "name": "Gala",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/gala",
+      "map_type": "multiplayer",
+      "release_window": "Launch",
+      "supported_playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "small",
+        "lane_count": 2,
+        "verticality": "medium",
+        "combat_pace": "high",
+        "dominant_engagement_range": "close"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "lowtown",
+      "name": "Lowtown",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/lowtown",
+      "map_type": "multiplayer",
+      "release_window": "Launch",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "payback",
+      "name": "Payback",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/payback",
+      "map_type": "multiplayer",
+      "release_window": "Launch",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "pit",
+      "name": "Pit",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/pit",
+      "map_type": "multiplayer",
+      "release_window": "Launch",
+      "supported_playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "small",
+        "lane_count": 2,
+        "verticality": "medium",
+        "combat_pace": "high",
+        "dominant_engagement_range": "close"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "protocol",
+      "name": "Protocol",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/protocol",
+      "map_type": "multiplayer",
+      "release_window": "Launch",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "redcard",
+      "name": "Red Card",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/redcard",
+      "map_type": "multiplayer",
+      "release_window": "Launch",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "rewind",
+      "name": "Rewind",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/rewind",
+      "map_type": "multiplayer",
+      "release_window": "Launch",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "scud",
+      "name": "Scud",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/scud",
+      "map_type": "multiplayer",
+      "release_window": "Launch",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "skyline",
+      "name": "Skyline",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/skyline",
+      "map_type": "multiplayer",
+      "release_window": "Launch",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "stakeout",
+      "name": "Stakeout",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/stakeout",
+      "map_type": "multiplayer",
+      "release_window": "Launch",
+      "supported_playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "small",
+        "lane_count": 2,
+        "verticality": "medium",
+        "combat_pace": "high",
+        "dominant_engagement_range": "close"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "subsonic",
+      "name": "Subsonic",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/subsonic",
+      "map_type": "multiplayer",
+      "release_window": "Launch",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "vault",
+      "name": "Vault",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/vault",
+      "map_type": "multiplayer",
+      "release_window": "Launch",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "vorkuta",
+      "name": "Vorkuta",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/vorkuta",
+      "map_type": "multiplayer",
+      "release_window": "Launch",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "sandhouse",
+      "name": "Warhead",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/sandhouse",
+      "map_type": "multiplayer",
+      "release_window": "Launch",
+      "supported_playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "small",
+        "lane_count": 2,
+        "verticality": "medium",
+        "combat_pace": "high",
+        "dominant_engagement_range": "close"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "nuketown",
+      "name": "Nuketown",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/nuketown",
+      "map_type": "multiplayer",
+      "release_window": "November 1",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "extraction",
+      "name": "Extraction",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/extraction",
+      "map_type": "multiplayer",
+      "release_window": "Season 1",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "hacienda",
+      "name": "Hacienda",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/hacienda",
+      "map_type": "multiplayer",
+      "release_window": "Season 1",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "heirloom",
+      "name": "Heirloom",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/heirloom",
+      "map_type": "multiplayer",
+      "release_window": "Season 1",
+      "supported_playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "small",
+        "lane_count": 2,
+        "verticality": "medium",
+        "combat_pace": "high",
+        "dominant_engagement_range": "close"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "hideout",
+      "name": "Hideout",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/hideout",
+      "map_type": "multiplayer",
+      "release_window": "Season 1",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "nuketown-holiday",
+      "name": "Nuketown Holiday",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/nuketown-holiday",
+      "map_type": "multiplayer",
+      "release_window": "Season 1",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "racket",
+      "name": "Racket",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/racket",
+      "map_type": "multiplayer",
+      "release_window": "Season 1",
+      "supported_playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "small",
+        "lane_count": 2,
+        "verticality": "medium",
+        "combat_pace": "high",
+        "dominant_engagement_range": "close"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "bounty",
+      "name": "Bounty",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/bounty",
+      "map_type": "multiplayer",
+      "release_window": "Season 2",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "bullet",
+      "name": "Bullet",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/bullet",
+      "map_type": "multiplayer",
+      "release_window": "Season 2",
+      "supported_playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "small",
+        "lane_count": 2,
+        "verticality": "medium",
+        "combat_pace": "high",
+        "dominant_engagement_range": "close"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "dealership",
+      "name": "Dealership",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/dealership",
+      "map_type": "multiplayer",
+      "release_window": "Season 2",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "grind",
+      "name": "Grind",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/grind",
+      "map_type": "multiplayer",
+      "release_window": "Season 2",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "lifeline",
+      "name": "Lifeline",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/lifeline",
+      "map_type": "multiplayer",
+      "release_window": "Season 2",
+      "supported_playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "small",
+        "lane_count": 2,
+        "verticality": "medium",
+        "combat_pace": "high",
+        "dominant_engagement_range": "close"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "barrage",
+      "name": "Barrage",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/barrage",
+      "map_type": "multiplayer",
+      "release_window": "Season 3",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "firing-range",
+      "name": "Firing Range",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/firing-range",
+      "map_type": "multiplayer",
+      "release_window": "Season 3",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "haven",
+      "name": "Haven",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/haven",
+      "map_type": "multiplayer",
+      "release_window": "Season 3",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "nomad",
+      "name": "Nomad",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/nomad",
+      "map_type": "multiplayer",
+      "release_window": "Season 3",
+      "supported_playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "small",
+        "lane_count": 2,
+        "verticality": "medium",
+        "combat_pace": "high",
+        "dominant_engagement_range": "close"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "signal",
+      "name": "Signal",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/signal",
+      "map_type": "multiplayer",
+      "release_window": "Season 3",
+      "supported_playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "small",
+        "lane_count": 2,
+        "verticality": "medium",
+        "combat_pace": "high",
+        "dominant_engagement_range": "close"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "blitz",
+      "name": "Blitz",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/blitz",
+      "map_type": "multiplayer",
+      "release_window": "Season 4",
+      "supported_playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "small",
+        "lane_count": 2,
+        "verticality": "medium",
+        "combat_pace": "high",
+        "dominant_engagement_range": "close"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "eclipse",
+      "name": "Eclipse",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/eclipse",
+      "map_type": "multiplayer",
+      "release_window": "Season 4",
+      "supported_playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "small",
+        "lane_count": 2,
+        "verticality": "medium",
+        "combat_pace": "high",
+        "dominant_engagement_range": "close"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "fringe",
+      "name": "Fringe",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/fringe",
+      "map_type": "multiplayer",
+      "release_window": "Season 4",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "fugitive",
+      "name": "Fugitive",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/fugitive",
+      "map_type": "multiplayer",
+      "release_window": "Season 4",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "shutdown",
+      "name": "Shutdown",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/shutdown",
+      "map_type": "multiplayer",
+      "release_window": "Season 4",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "exchange",
+      "name": "Exchange",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/exchange",
+      "map_type": "multiplayer",
+      "release_window": "Season 5",
+      "supported_playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "small",
+        "lane_count": 2,
+        "verticality": "medium",
+        "combat_pace": "high",
+        "dominant_engagement_range": "close"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "jackpot",
+      "name": "Jackpot",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/jackpot",
+      "map_type": "multiplayer",
+      "release_window": "Season 5",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "runway",
+      "name": "Runway",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/runway",
+      "map_type": "multiplayer",
+      "release_window": "Season 5",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "wmd",
+      "name": "WMD",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/wmd",
+      "map_type": "multiplayer",
+      "release_window": "Season 5",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "gravity",
+      "name": "Gravity",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/gravity",
+      "map_type": "multiplayer",
+      "release_window": "Season 6",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "mothball",
+      "name": "Mothball",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/mothball",
+      "map_type": "multiplayer",
+      "release_window": "Season 6",
+      "supported_playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "small",
+        "lane_count": 2,
+        "verticality": "medium",
+        "combat_pace": "high",
+        "dominant_engagement_range": "close"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "rig",
+      "name": "Rig",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/rig",
+      "map_type": "multiplayer",
+      "release_window": "Season 6",
+      "supported_playlists": [
+        "6v6"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "medium",
+        "lane_count": 3,
+        "verticality": "medium",
+        "combat_pace": "medium",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "liberty-falls",
+      "name": "Liberty Falls",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/liberty-falls",
+      "map_type": "zombies",
+      "release_window": "Launch",
+      "supported_playlists": [
+        "Round-Based"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "large",
+        "lane_count": 5,
+        "verticality": "high",
+        "combat_pace": "scaling",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "terminus",
+      "name": "Terminus",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/terminus",
+      "map_type": "zombies",
+      "release_window": "Launch",
+      "supported_playlists": [
+        "Round-Based"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "large",
+        "lane_count": 5,
+        "verticality": "high",
+        "combat_pace": "scaling",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "citadelle-des-morts",
+      "name": "Citadelle Des Morts",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/citadelle-des-morts",
+      "map_type": "zombies",
+      "release_window": "Season 1",
+      "supported_playlists": [
+        "Round-Based"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "large",
+        "lane_count": 5,
+        "verticality": "high",
+        "combat_pace": "scaling",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "the-tomb",
+      "name": "The Tomb",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/the-tomb",
+      "map_type": "zombies",
+      "release_window": "Season 2",
+      "supported_playlists": [
+        "Round-Based"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "large",
+        "lane_count": 5,
+        "verticality": "high",
+        "combat_pace": "scaling",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "shattered-veil",
+      "name": "Shattered Veil",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/shattered-veil",
+      "map_type": "zombies",
+      "release_window": "Season 3",
+      "supported_playlists": [
+        "Round-Based"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "large",
+        "lane_count": 5,
+        "verticality": "high",
+        "combat_pace": "scaling",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    },
+    {
+      "id": "reckoning",
+      "name": "Reckoning",
+      "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/reckoning",
+      "map_type": "zombies",
+      "release_window": "Season 5",
+      "supported_playlists": [
+        "Round-Based"
+      ],
+      "reverse_engineered_layout": {
+        "size_class": "large",
+        "lane_count": 5,
+        "verticality": "high",
+        "combat_pace": "scaling",
+        "dominant_engagement_range": "mixed"
+      },
+      "build_checklist": [
+        "Block out shell and exterior boundaries",
+        "Place primary objective lanes and intersections",
+        "Add elevation changes and power positions",
+        "Add cover pass and spawn safety pass",
+        "Tune traversal times and sightline balance"
+      ]
+    }
+  ]
+}

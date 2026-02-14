@@ -1,0 +1,581 @@
+{
+  "count": 51,
+  "maps": [
+    {
+      "slug": "babylon",
+      "name": "Babylon",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/babylon",
+      "type": "multiplayer",
+      "playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "release_window": "Launch",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "derelict",
+      "name": "Derelict",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/derelict",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Launch",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "gala",
+      "name": "Gala",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/gala",
+      "type": "multiplayer",
+      "playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "release_window": "Launch",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "lowtown",
+      "name": "Lowtown",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/lowtown",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Launch",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "payback",
+      "name": "Payback",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/payback",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Launch",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "pit",
+      "name": "Pit",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/pit",
+      "type": "multiplayer",
+      "playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "release_window": "Launch",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "protocol",
+      "name": "Protocol",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/protocol",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Launch",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "redcard",
+      "name": "Red Card",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/redcard",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Launch",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "rewind",
+      "name": "Rewind",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/rewind",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Launch",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "scud",
+      "name": "Scud",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/scud",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Launch",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "skyline",
+      "name": "Skyline",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/skyline",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Launch",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "stakeout",
+      "name": "Stakeout",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/stakeout",
+      "type": "multiplayer",
+      "playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "release_window": "Launch",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "subsonic",
+      "name": "Subsonic",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/subsonic",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Launch",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "vault",
+      "name": "Vault",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/vault",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Launch",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "vorkuta",
+      "name": "Vorkuta",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/vorkuta",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Launch",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "sandhouse",
+      "name": "Warhead",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/sandhouse",
+      "type": "multiplayer",
+      "playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "release_window": "Launch",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "nuketown",
+      "name": "Nuketown",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/nuketown",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "November 1",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "extraction",
+      "name": "Extraction",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/extraction",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Season 1",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "hacienda",
+      "name": "Hacienda",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/hacienda",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Season 1",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "heirloom",
+      "name": "Heirloom",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/heirloom",
+      "type": "multiplayer",
+      "playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "release_window": "Season 1",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "hideout",
+      "name": "Hideout",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/hideout",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Season 1",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "nuketown-holiday",
+      "name": "Nuketown Holiday",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/nuketown-holiday",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Season 1",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "racket",
+      "name": "Racket",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/racket",
+      "type": "multiplayer",
+      "playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "release_window": "Season 1",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "bounty",
+      "name": "Bounty",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/bounty",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Season 2",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "bullet",
+      "name": "Bullet",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/bullet",
+      "type": "multiplayer",
+      "playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "release_window": "Season 2",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "dealership",
+      "name": "Dealership",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/dealership",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Season 2",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "grind",
+      "name": "Grind",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/grind",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Season 2",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "lifeline",
+      "name": "Lifeline",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/lifeline",
+      "type": "multiplayer",
+      "playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "release_window": "Season 2",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "barrage",
+      "name": "Barrage",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/barrage",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Season 3",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "firing-range",
+      "name": "Firing Range",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/firing-range",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Season 3",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "haven",
+      "name": "Haven",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/haven",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Season 3",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "nomad",
+      "name": "Nomad",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/nomad",
+      "type": "multiplayer",
+      "playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "release_window": "Season 3",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "signal",
+      "name": "Signal",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/signal",
+      "type": "multiplayer",
+      "playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "release_window": "Season 3",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "blitz",
+      "name": "Blitz",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/blitz",
+      "type": "multiplayer",
+      "playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "release_window": "Season 4",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "eclipse",
+      "name": "Eclipse",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/eclipse",
+      "type": "multiplayer",
+      "playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "release_window": "Season 4",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "fringe",
+      "name": "Fringe",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/fringe",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Season 4",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "fugitive",
+      "name": "Fugitive",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/fugitive",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Season 4",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "shutdown",
+      "name": "Shutdown",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/shutdown",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Season 4",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "exchange",
+      "name": "Exchange",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/exchange",
+      "type": "multiplayer",
+      "playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "release_window": "Season 5",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "jackpot",
+      "name": "Jackpot",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/jackpot",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Season 5",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "runway",
+      "name": "Runway",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/runway",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Season 5",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "wmd",
+      "name": "WMD",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/wmd",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Season 5",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "gravity",
+      "name": "Gravity",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/gravity",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Season 6",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "mothball",
+      "name": "Mothball",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/mothball",
+      "type": "multiplayer",
+      "playlists": [
+        "2v2",
+        "6v6"
+      ],
+      "release_window": "Season 6",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "rig",
+      "name": "Rig",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/rig",
+      "type": "multiplayer",
+      "playlists": [
+        "6v6"
+      ],
+      "release_window": "Season 6",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "liberty-falls",
+      "name": "Liberty Falls",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/liberty-falls",
+      "type": "zombies",
+      "playlists": [
+        "Round-Based"
+      ],
+      "release_window": "Launch",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "terminus",
+      "name": "Terminus",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/terminus",
+      "type": "zombies",
+      "playlists": [
+        "Round-Based"
+      ],
+      "release_window": "Launch",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "citadelle-des-morts",
+      "name": "Citadelle Des Morts",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/citadelle-des-morts",
+      "type": "zombies",
+      "playlists": [
+        "Round-Based"
+      ],
+      "release_window": "Season 1",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "the-tomb",
+      "name": "The Tomb",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/the-tomb",
+      "type": "zombies",
+      "playlists": [
+        "Round-Based"
+      ],
+      "release_window": "Season 2",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "shattered-veil",
+      "name": "Shattered Veil",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/shattered-veil",
+      "type": "zombies",
+      "playlists": [
+        "Round-Based"
+      ],
+      "release_window": "Season 3",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    },
+    {
+      "slug": "reckoning",
+      "name": "Reckoning",
+      "url": "https://www.gamesatlas.com/cod-black-ops-6/maps/reckoning",
+      "type": "zombies",
+      "playlists": [
+        "Round-Based"
+      ],
+      "release_window": "Season 5",
+      "source": "https://www.gamesatlas.com/cod-black-ops-6/maps/"
+    }
+  ]
+}

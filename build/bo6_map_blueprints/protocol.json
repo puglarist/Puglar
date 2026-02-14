@@ -1,0 +1,24 @@
+{
+  "id": "protocol",
+  "name": "Protocol",
+  "source_url": "https://www.gamesatlas.com/cod-black-ops-6/maps/protocol",
+  "map_type": "multiplayer",
+  "release_window": "Launch",
+  "supported_playlists": [
+    "6v6"
+  ],
+  "reverse_engineered_layout": {
+    "size_class": "medium",
+    "lane_count": 3,
+    "verticality": "medium",
+    "combat_pace": "medium",
+    "dominant_engagement_range": "mixed"
+  },
+  "build_checklist": [
+    "Block out shell and exterior boundaries",
+    "Place primary objective lanes and intersections",
+    "Add elevation changes and power positions",
+    "Add cover pass and spawn safety pass",
+    "Tune traversal times and sightline balance"
+  ]
+}
