@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puglar Three.js Iterations</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+        background: radial-gradient(circle at top, #13233a 0%, #040711 70%);
+        font-family: Arial, sans-serif;
+      }
+
+      #overlay {
+        position: fixed;
+        top: 16px;
+        left: 16px;
+        color: #e8f2ff;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 8px 12px;
+        border-radius: 8px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="overlay">Three.js scene generated with 50 iterations</div>
+    <script type="module">
+      import * as THREE from 'https://unpkg.com/three@0.163.0/build/three.module.js';
+
+      const ITERATIONS = 50;
+
+      const renderer = new THREE.WebGLRenderer({ antialias: true });
+      renderer.setPixelRatio(window.devicePixelRatio);
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      document.body.appendChild(renderer.domElement);
+
+      const scene = new THREE.Scene();
+      scene.fog = new THREE.FogExp2(0x040711, 0.035);
+
+      const camera = new THREE.PerspectiveCamera(
+        55,
+        window.innerWidth / window.innerHeight,
+        0.1,
+        200,
+      );
+      camera.position.set(0, 4, 17);
+
+      const ambient = new THREE.AmbientLight(0xffffff, 0.8);
+      scene.add(ambient);
+
+      const directional = new THREE.DirectionalLight(0x6ab7ff, 1.5);
+      directional.position.set(8, 10, 8);
+      scene.add(directional);
+
+      const rootGroup = new THREE.Group();
+      scene.add(rootGroup);
+
+      const hueStart = 0.52;
+      for (let i = 0; i < ITERATIONS; i += 1) {
+        const t = i / ITERATIONS;
+        const radius = 1.8 + t * 8;
+        const angle = i * 0.45;
+        const y = (i - ITERATIONS / 2) * 0.16;
+
+        const geometry = new THREE.TorusKnotGeometry(0.3 + t * 0.22, 0.07, 96, 12);
+        const color = new THREE.Color().setHSL((hueStart + t * 0.35) % 1, 0.75, 0.58);
+        const material = new THREE.MeshStandardMaterial({
+          color,
+          emissive: color.clone().multiplyScalar(0.15),
+          metalness: 0.55,
+          roughness: 0.35,
+        });
+
+        const mesh = new THREE.Mesh(geometry, material);
+        mesh.position.set(Math.cos(angle) * radius, y, Math.sin(angle) * radius);
+        mesh.rotation.set(t * Math.PI, angle, t * Math.PI * 1.5);
+        mesh.scale.setScalar(0.4 + t * 0.85);
+        rootGroup.add(mesh);
+      }
+
+      window.addEventListener('resize', () => {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+      });
+
+      const clock = new THREE.Clock();
+      function animate() {
+        requestAnimationFrame(animate);
+        const elapsed = clock.getElapsedTime();
+
+        rootGroup.rotation.y = elapsed * 0.12;
+        rootGroup.rotation.x = Math.sin(elapsed * 0.33) * 0.2;
+
+        rootGroup.children.forEach((mesh, index) => {
+          const pulse = Math.sin(elapsed * 1.4 + index * 0.16) * 0.08;
+          mesh.scale.setScalar((0.7 + index / ITERATIONS) * (1 + pulse));
+          mesh.rotation.x += 0.003;
+          mesh.rotation.y += 0.0025;
+        });
+
+        renderer.render(scene, camera);
+      }
+
+      animate();
+    </script>
+  </body>
+</html>
