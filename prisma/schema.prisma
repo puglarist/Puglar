@@ -1,0 +1,133 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum AgentType {
+  CODING
+  REVIEW
+  PLANNING
+  CUSTOM
+}
+
+enum RunStatus {
+  QUEUED
+  RUNNING
+  COMPLETED
+  FAILED
+  CANCELED
+}
+
+enum MessageRole {
+  SYSTEM
+  USER
+  ASSISTANT
+  TOOL
+}
+
+model Agent {
+  id          String   @id @default(cuid())
+  name        String
+  slug        String   @unique
+  description String?
+  type        AgentType @default(CODING)
+
+  // Keep provider/model values configurable per agent.
+  provider    String   @default("deepseek")
+  model       String   @default("deepseek-coder")
+  temperature Float    @default(0.2)
+  maxTokens   Int?
+
+  // Optional runtime configuration payload (prompting/tooling settings, etc.).
+  config      Json?
+
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  runs        AgentRun[]
+
+  @@index([type])
+  @@index([isActive])
+}
+
+model AgentRun {
+  id            String    @id @default(cuid())
+  agentId       String
+  status        RunStatus @default(QUEUED)
+
+  // User request + execution metadata.
+  input         Json
+  output        Json?
+  error         String?
+
+  // Token/accounting fields for usage tracking.
+  promptTokens     Int?
+  completionTokens Int?
+  totalTokens      Int?
+
+  startedAt     DateTime?
+  finishedAt    DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  agent         Agent      @relation(fields: [agentId], references: [id], onDelete: Cascade)
+  messages      RunMessage[]
+  toolCalls     ToolCall[]
+
+  @@index([agentId])
+  @@index([status])
+  @@index([createdAt])
+}
+
+model RunMessage {
+  id          String      @id @default(cuid())
+  runId        String
+  role         MessageRole
+  content      String
+
+  // Optional structured payload for richer message formats.
+  metadata     Json?
+
+  createdAt    DateTime    @default(now())
+
+  run          AgentRun    @relation(fields: [runId], references: [id], onDelete: Cascade)
+
+  @@index([runId, createdAt])
+}
+
+model ToolCall {
+  id            String     @id @default(cuid())
+  runId          String
+  toolName       String
+  arguments      Json
+  result         Json?
+  error          String?
+  startedAt      DateTime?
+  finishedAt     DateTime?
+  createdAt      DateTime  @default(now())
+
+  run            AgentRun  @relation(fields: [runId], references: [id], onDelete: Cascade)
+
+  @@index([runId])
+  @@index([toolName])
+}
+
+model ApiCredential {
+  id            String   @id @default(cuid())
+  provider      String   // e.g. "deepseek"
+  label         String   // human-readable identifier
+
+  // Store only encrypted secrets or references to a secret manager.
+  encryptedKey  String
+  isActive      Boolean  @default(true)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@unique([provider, label])
+  @@index([provider, isActive])
+}
