@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puglar TCG Crypto Tournament Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Puglar TCG Crypto Tournament Lab</h1>
+      <p class="subtitle">
+        Pokémon-inspired TCG battle emulator with mock crypto prize pool logic,
+        live canvas graphics, and a custom card builder.
+      </p>
+    </header>
+
+    <main>
+      <section class="panel">
+        <h2>1) Tournament Setup</h2>
+        <div class="grid two">
+          <label>
+            Entry fee (ETH)
+            <input id="entryFee" type="number" value="0.05" min="0" step="0.01" />
+          </label>
+          <label>
+            Number of players
+            <input id="playerCount" type="number" value="8" min="2" max="64" step="1" />
+          </label>
+          <label>
+            Platform rake (%)
+            <input id="rake" type="number" value="5" min="0" max="25" step="1" />
+          </label>
+          <label>
+            Seed randomness
+            <input id="seed" type="text" value="PUGLAR-TOURNEY" />
+          </label>
+        </div>
+        <button id="createTournament">Create Tournament</button>
+        <div id="poolInfo" class="note"></div>
+      </section>
+
+      <section class="panel">
+        <h2>2) Custom Card Builder</h2>
+        <div class="grid three">
+          <label>
+            Card Name
+            <input id="cardName" type="text" value="Spark Fox" />
+          </label>
+          <label>
+            Type
+            <select id="cardType">
+              <option>Fire</option>
+              <option>Water</option>
+              <option>Grass</option>
+              <option>Electric</option>
+              <option>Psychic</option>
+              <option>Fighting</option>
+              <option>Dark</option>
+            </select>
+          </label>
+          <label>
+            HP
+            <input id="cardHp" type="number" value="90" min="10" max="300" />
+          </label>
+          <label>
+            Attack Name
+            <input id="cardAttackName" type="text" value="Volt Slash" />
+          </label>
+          <label>
+            Damage
+            <input id="cardDamage" type="number" value="45" min="5" max="180" />
+          </label>
+          <label>
+            Energy Cost
+            <input id="cardEnergy" type="number" value="2" min="1" max="5" />
+          </label>
+        </div>
+        <button id="addCard">Add Card to Deck Builder</button>
+        <ul id="customDeck" class="deck-list"></ul>
+      </section>
+
+      <section class="panel">
+        <h2>3) Battle Emulator & Graphics</h2>
+        <canvas id="battleCanvas" width="900" height="360"></canvas>
+        <div class="actions">
+          <button id="runRound">Run Tournament Round</button>
+          <button id="autoPlay">Autoplay Full Tournament</button>
+          <button id="reset">Reset</button>
+        </div>
+        <div id="battleLog" class="log"></div>
+      </section>
+    </main>
+
+    <footer>
+      <small>
+        Educational prototype only. No real blockchain transactions are executed.
+      </small>
+    </footer>
+
+    <script src="tcg.js"></script>
+  </body>
+</html>
