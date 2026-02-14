@@ -1,0 +1,3 @@
+# Treat large binary doctrine assets as binary
+*.pdf binary
+*.zip binary
