@@ -1,0 +1,270 @@
+// Prisma schema for the Puglar platform
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  ADMIN
+  COACH
+  ATHLETE
+  ANALYST
+  DEVELOPER
+}
+
+enum DifficultyTier {
+  NOVICE
+  INTERMEDIATE
+  ADVANCED
+  ELITE
+  LEGENDARY
+}
+
+enum SessionState {
+  PLANNED
+  ACTIVE
+  COMPLETED
+  ABORTED
+}
+
+enum SimulationEngine {
+  PHYSICS
+  TACTICAL
+  BIOMECHANICAL
+  AERIAL
+  MULTI_DOMAIN
+}
+
+enum PlatformType {
+  WEB
+  IOS
+  ANDROID
+  DESKTOP
+  XR
+}
+
+enum EventType {
+  CLICK
+  VIEW
+  DRILL_COMPLETE
+  SESSION_COMPLETE
+  ACHIEVEMENT_UNLOCKED
+  ERROR
+}
+
+model User {
+  id                String                @id @default(cuid())
+  email             String                @unique
+  displayName       String
+  role              UserRole              @default(ATHLETE)
+  avatarUrl         String?
+  locale            String                @default("en-US")
+  timezone          String                @default("UTC")
+  createdAt         DateTime              @default(now())
+  updatedAt         DateTime              @updatedAt
+
+  memberships       TeamMembership[]
+  authoredPrograms  TrainingProgram[]     @relation("ProgramAuthor")
+  assignedSessions  TrainingSession[]     @relation("SessionAthlete")
+  coachingSessions  TrainingSession[]     @relation("SessionCoach")
+  achievements      UserAchievement[]
+  telemetryEvents   TelemetryEvent[]
+}
+
+model Team {
+  id            String           @id @default(cuid())
+  name          String
+  slug          String           @unique
+  description   String?
+  createdAt     DateTime         @default(now())
+  updatedAt     DateTime         @updatedAt
+
+  members       TeamMembership[]
+  programs      TrainingProgram[]
+}
+
+model TeamMembership {
+  id            String    @id @default(cuid())
+  teamId        String
+  userId        String
+  joinedAt      DateTime  @default(now())
+  isCaptain     Boolean   @default(false)
+
+  team          Team      @relation(fields: [teamId], references: [id], onDelete: Cascade)
+  user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([teamId, userId])
+  @@index([userId])
+}
+
+model TrainingProgram {
+  id                  String              @id @default(cuid())
+  teamId              String
+  authorId            String
+  title               String
+  summary             String
+  objective           String
+  difficulty          DifficultyTier
+  version             Int                 @default(1)
+  published           Boolean             @default(false)
+  estimatedMinutes    Int
+  tags                String[]
+  createdAt           DateTime            @default(now())
+  updatedAt           DateTime            @updatedAt
+
+  team                Team                @relation(fields: [teamId], references: [id], onDelete: Cascade)
+  author              User                @relation("ProgramAuthor", fields: [authorId], references: [id], onDelete: Restrict)
+  sessions            TrainingSession[]
+  modules             ProgramModule[]
+  achievements        Achievement[]
+
+  @@index([teamId, published])
+  @@index([difficulty])
+}
+
+model ProgramModule {
+  id                  String              @id @default(cuid())
+  programId           String
+  title               String
+  orderIndex          Int
+  theoryContent       String?
+  expectedOutcome     String?
+
+  program             TrainingProgram     @relation(fields: [programId], references: [id], onDelete: Cascade)
+  drills              Drill[]
+
+  @@unique([programId, orderIndex])
+}
+
+model Drill {
+  id                    String             @id @default(cuid())
+  moduleId              String
+  name                  String
+  instructions          String
+  durationSeconds       Int
+  restSeconds           Int                @default(0)
+  difficulty            DifficultyTier
+  safetyNotes           String?
+  metricsSchema         Json?
+
+  module                ProgramModule      @relation(fields: [moduleId], references: [id], onDelete: Cascade)
+  drillResults          DrillResult[]
+  simulationScenes      SimulationScene[]
+
+  @@index([moduleId])
+}
+
+model TrainingSession {
+  id                    String             @id @default(cuid())
+  programId             String
+  athleteId             String
+  coachId               String?
+  scheduledAt           DateTime
+  startedAt             DateTime?
+  completedAt           DateTime?
+  state                 SessionState       @default(PLANNED)
+  intensityTarget       Int                @default(5)
+  notes                 String?
+
+  program               TrainingProgram    @relation(fields: [programId], references: [id], onDelete: Cascade)
+  athlete               User               @relation("SessionAthlete", fields: [athleteId], references: [id], onDelete: Cascade)
+  coach                 User?              @relation("SessionCoach", fields: [coachId], references: [id], onDelete: SetNull)
+  drillResults          DrillResult[]
+
+  @@index([athleteId, scheduledAt])
+  @@index([state])
+}
+
+model DrillResult {
+  id                    String             @id @default(cuid())
+  sessionId             String
+  drillId               String
+  score                 Float
+  precisionPct          Float?
+  completionMs          Int?
+  fatigueIndex          Float?
+  metadata              Json?
+  createdAt             DateTime           @default(now())
+
+  session               TrainingSession    @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  drill                 Drill              @relation(fields: [drillId], references: [id], onDelete: Cascade)
+
+  @@unique([sessionId, drillId])
+  @@index([score])
+}
+
+model Achievement {
+  id                    String             @id @default(cuid())
+  programId             String
+  key                   String             @unique
+  title                 String
+  description           String
+  threshold             Float
+  rarity                String             @default("common")
+
+  program               TrainingProgram    @relation(fields: [programId], references: [id], onDelete: Cascade)
+  unlockedBy            UserAchievement[]
+}
+
+model UserAchievement {
+  id                    String             @id @default(cuid())
+  userId                String
+  achievementId         String
+  unlockedAt            DateTime           @default(now())
+
+  user                  User               @relation(fields: [userId], references: [id], onDelete: Cascade)
+  achievement           Achievement        @relation(fields: [achievementId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, achievementId])
+}
+
+model SimulationScene {
+  id                    String             @id @default(cuid())
+  drillId               String
+  name                  String
+  engine                SimulationEngine
+  seed                  String?
+  weatherPreset         String?
+  terrainPreset         String?
+  config                Json
+  createdAt             DateTime           @default(now())
+
+  drill                 Drill              @relation(fields: [drillId], references: [id], onDelete: Cascade)
+  assets                Asset[]
+
+  @@index([engine])
+}
+
+model Asset {
+  id                    String             @id @default(cuid())
+  simulationSceneId     String
+  uri                   String
+  platform              PlatformType
+  checksum              String?
+  sizeBytes             Int?
+  metadata              Json?
+  createdAt             DateTime           @default(now())
+
+  simulationScene       SimulationScene    @relation(fields: [simulationSceneId], references: [id], onDelete: Cascade)
+}
+
+model TelemetryEvent {
+  id                    String             @id @default(cuid())
+  userId                String
+  eventType             EventType
+  route                 String?
+  clientTimestamp       DateTime
+  platform              PlatformType
+  payload               Json?
+  createdAt             DateTime           @default(now())
+
+  user                  User               @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+  @@index([eventType])
+}
