@@ -1,0 +1,132 @@
+{
+  "generated_at_utc": "2026-02-10T09:47:03.039421+00:00",
+  "artifact_count": 21,
+  "artifacts": [
+    {
+      "filename": "Puglar_AEN_Attention_Gorilla_Rest_v2_Cards.pdf",
+      "extension": ".pdf",
+      "size_bytes": 4842,
+      "sha256_12": "577039e23c22"
+    },
+    {
+      "filename": "Puglar_Command_Stances_Winter_Rain_Cards.pdf",
+      "extension": ".pdf",
+      "size_bytes": 2395,
+      "sha256_12": "814d0ce0ced7"
+    },
+    {
+      "filename": "Puglar_Full_Doctrine_Archive_v2.zip",
+      "extension": ".zip",
+      "size_bytes": 16936206,
+      "sha256_12": "00f038cee812"
+    },
+    {
+      "filename": "Puglar_Full_Doctrine_Archive_v5.zip",
+      "extension": ".zip",
+      "size_bytes": 16960091,
+      "sha256_12": "e465de95e041"
+    },
+    {
+      "filename": "Puglar_Handbook.pdf",
+      "extension": ".pdf",
+      "size_bytes": 3424,
+      "sha256_12": "91b78b83f2c5"
+    },
+    {
+      "filename": "Puglar_Handbook_v2_Language_Guide.pdf",
+      "extension": ".pdf",
+      "size_bytes": 3977,
+      "sha256_12": "6525e31c11bd"
+    },
+    {
+      "filename": "Puglar_Iron_Cross_5_Year_Roadmap_Cards.pdf",
+      "extension": ".pdf",
+      "size_bytes": 2754,
+      "sha256_12": "c5002838ebf7"
+    },
+    {
+      "filename": "Puglar_Iron_Cross_Illustrated_Angle_Plates.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1914,
+      "sha256_12": "0bd4ea0f88f1"
+    },
+    {
+      "filename": "Puglar_Lamination_Cut_Guides.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1950,
+      "sha256_12": "ba8faf9d2025"
+    },
+    {
+      "filename": "Puglar_Micro_Command_Cards_Wallet.pdf",
+      "extension": ".pdf",
+      "size_bytes": 2274,
+      "sha256_12": "119175e17099"
+    },
+    {
+      "filename": "Puglar_Omnibus_Final_v1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 3199,
+      "sha256_12": "1d4f3a99d75e"
+    },
+    {
+      "filename": "Puglar_Physical_Doctrine_Workouts.pdf",
+      "extension": ".pdf",
+      "size_bytes": 3600,
+      "sha256_12": "0db59c018405"
+    },
+    {
+      "filename": "Puglar_Pocket_Drill_Cards 2.pdf",
+      "extension": ".pdf",
+      "size_bytes": 2766,
+      "sha256_12": "c3abce7df42c"
+    },
+    {
+      "filename": "Puglar_Pocket_Drill_Cards.pdf",
+      "extension": ".pdf",
+      "size_bytes": 2766,
+      "sha256_12": "c3abce7df42c"
+    },
+    {
+      "filename": "Puglar_Ranger_Awareness_Manual_v4.pdf",
+      "extension": ".pdf",
+      "size_bytes": 6018,
+      "sha256_12": "783dd1d3343c"
+    },
+    {
+      "filename": "Puglar_Sacred_Core_Scroll.pdf",
+      "extension": ".pdf",
+      "size_bytes": 3966,
+      "sha256_12": "d1377a885df1"
+    },
+    {
+      "filename": "Puglar_Seasonal_Drill_Cards.pdf",
+      "extension": ".pdf",
+      "size_bytes": 2356,
+      "sha256_12": "25abae4f5d47"
+    },
+    {
+      "filename": "Puglar_TreeWebs_Handbook_v2_Climb_and_Shade.pdf",
+      "extension": ".pdf",
+      "size_bytes": 8196,
+      "sha256_12": "3037bc1f1232"
+    },
+    {
+      "filename": "Puglar_Waterproof_Field_Cards.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1955,
+      "sha256_12": "15fa6fa77dff"
+    },
+    {
+      "filename": "Puglar_Winter_Summer_Micro_Cards.pdf",
+      "extension": ".pdf",
+      "size_bytes": 2028,
+      "sha256_12": "ea16b088fb15"
+    },
+    {
+      "filename": "Puglar_Youth_Training_Cards.pdf",
+      "extension": ".pdf",
+      "size_bytes": 2050,
+      "sha256_12": "8b753b07abdb"
+    }
+  ]
+}
