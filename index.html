@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0d1117" />
+    <meta name="description" content="Puglar Metaverse Engine - Quest ready Unreal-style WebXR PWA prototype" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icons/icon.svg" />
+    <title>Puglar Metaverse Engine (WebXR PWA)</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --panel: rgba(7, 10, 18, 0.88);
+        --line: rgba(255, 255, 255, 0.12);
+        --text: #e6edf3;
+        --good: #3fb950;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #030712;
+        color: var(--text);
+        font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, sans-serif;
+      }
+      #app {
+        position: fixed;
+        inset: 0;
+      }
+      #hud,
+      #instructions {
+        position: fixed;
+        z-index: 10;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: var(--panel);
+        backdrop-filter: blur(8px);
+      }
+      #hud {
+        left: 12px;
+        top: 12px;
+        padding: 10px;
+        min-width: 210px;
+        font-size: 0.86rem;
+      }
+      #hud b {
+        color: #79c0ff;
+      }
+      #instructions {
+        right: 12px;
+        bottom: 12px;
+        max-width: min(460px, 90vw);
+        padding: 12px;
+        font-size: 0.85rem;
+        line-height: 1.45;
+      }
+      .pill {
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 99px;
+        border: 1px solid var(--line);
+        margin-top: 6px;
+      }
+      .ok {
+        color: var(--good);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <section id="hud" aria-live="polite">
+      <div><b>Engine:</b> Puglar Unreal-style Prototype</div>
+      <div>FPS: <span id="fps">--</span></div>
+      <div>Frame Time: <span id="frametime">--</span> ms</div>
+      <div>Draw Calls: <span id="drawcalls">--</span></div>
+      <div>VR: <span id="vrstate">inactive</span></div>
+      <div>Resolution Scale: <span id="resScale">1.0</span></div>
+      <div class="pill" id="perfState">Profiling active</div>
+    </section>
+    <section id="instructions">
+      <strong>Meta Quest PWA controls:</strong>
+      <ul>
+        <li>Desktop: <kbd>WASD</kbd> + mouse drag orbit.</li>
+        <li>VR: use "Enter VR" button to start immersive mode.</li>
+        <li>The engine auto-scales rendering if frametime rises.</li>
+      </ul>
+      <div class="ok">Install this PWA from Quest Browser for homescreen launch.</div>
+    </section>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
